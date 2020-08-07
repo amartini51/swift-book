@@ -1025,8 +1025,11 @@ game.play(rounds: 3)
 
 You can extend an existing type to adopt and conform to a new protocol,
 even if you don't have access to the source code for the existing type.
-Extensions can add new properties, methods, and subscripts to an existing type,
-and are therefore able to add any requirements that a protocol may demand.
+Because extensions can add
+new properties, methods, subscripts and initializers to an existing type,
+an extension can implement the requirements for a protocol.
+However, an extension can't implement a required initializer,
+so some protocols can't be implemented in an extension.
 For more about extensions, see <doc:Extensions>.
 
 > Note: Existing instances of a type automatically adopt and conform to a protocol
