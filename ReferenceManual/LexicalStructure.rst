@@ -805,10 +805,12 @@ no runtime concatenation is performed.
     interpolated-string-literal --> multiline-string-literal-opening-delimiter multiline-interpolated-text-OPT multiline-string-literal-closing-delimiter
 
     interpolated-text --> interpolated-text-item interpolated-text-OPT
-    interpolated-text-item --> ``\(`` expression ``)`` | quoted-text-item
+    interpolated-text-item --> ``\(`` interpolated-text-list ``)`` | quoted-text-item
+    interpolated-text-list --> interpolated-text-element | interpolated-text-element ``,`` interpolated-text-list
+    interpolated-text-element --> expression | identifier ``:`` expression
 
     multiline-interpolated-text --> multiline-interpolated-text-item multiline-interpolated-text-OPT
-    multiline-interpolated-text-item --> ``\(`` expression ``)`` | multiline-quoted-text-item
+    multiline-interpolated-text-item --> ``\(`` interpolated-text-list ``)`` | multiline-quoted-text-item
 
     escape-sequence --> ``\`` extended-string-literal-delimiter
     escaped-character --> escape-sequence ``0`` | escape-sequence ``\`` | escape-sequence ``t`` | escape-sequence ``n`` | escape-sequence ``r`` | escape-sequence ``"`` | escape-sequence ``'``
