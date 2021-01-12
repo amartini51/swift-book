@@ -678,6 +678,19 @@ a carriage return, or a line feed.
 
 .. x``  Bogus `` paired with the one in the listing, to fix VIM syntax highlighting.
 
+.. XXX
+   The expressions inside the \() are passed as arguments
+   to the StringInterpolationProtocol.appendInterpolation(...) method
+   that matches the arity and argument labels.
+   For example, \(x, with: y) becomes a call to appendInterpolation(x, with: y)
+   The string literal's type
+   (which is probably from type inference)
+   determines the type whose appendLiteral(_:) and appendInterpolation(...) methods are called.
+   The string literal's type's conformance to ExpressibleByStringInterpolation
+   tells the compiler which interpolation type to use.
+
+       associatedtype StringInterpolation: StringInterpolationProtocol = String.StringInterpolation
+
 For example, all of the following string literals have the same value:
 
 .. testcode:: string-literals
