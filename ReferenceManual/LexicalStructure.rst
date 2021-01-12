@@ -822,7 +822,7 @@ no runtime concatenation is performed.
    repetition in the quoted-text/escaped-character rule too.
 
 .. Now that single quotes are gone, we don't have a character literal.
-   Because we may one bring them back, here's the old grammar for them:
+   Because we may one day bring them back, here's the old grammar for them:
 
    textual-literal --> character-literal | string-literal
 
