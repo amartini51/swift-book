@@ -676,20 +676,7 @@ The interpolated expression can contain a string literal,
 but can't contain an unescaped backslash,
 a carriage return, or a line feed.
 
-.. x``  Bogus `` paired with the one in the listing, to fix VIM syntax highlighting.
-
-.. XXX
-   The expressions inside the \() are passed as arguments
-   to the StringInterpolationProtocol.appendInterpolation(...) method
-   that matches the arity and argument labels.
-   For example, \(x, with: y) becomes a call to appendInterpolation(x, with: y)
-   The string literal's type
-   (which is probably from type inference)
-   determines the type whose appendLiteral(_:) and appendInterpolation(...) methods are called.
-   The string literal's type's conformance to ExpressibleByStringInterpolation
-   tells the compiler which interpolation type to use.
-
-       associatedtype StringInterpolation: StringInterpolationProtocol = String.StringInterpolation
+.. x``  Bogus `` paired with the one above, to fix VIM syntax highlighting.
 
 For example, all of the following string literals have the same value:
 
@@ -714,6 +701,59 @@ For example, all of the following string literals have the same value:
 
 .. Refactor the above if possible to avoid using bare expressions.
    Tracking bug is <rdar://problem/35301593>
+
+A string literal that contains interpolation using the ``\( )`` syntax
+is syntactic sugar for a series of calls
+to the string interpolation type for that string literal.
+For example, the two approaches below are equivalent:
+
+.. testcode:: string-literal-interpolation
+
+   >> struct SomeString: ExpressibleByStringLiteral {
+   >>     var parts: [String] = []
+   >>     typealias StringLiteralType = S
+   >> }
+   >> struct S: StringInterpolationProtocol {
+   >>     mutating func appendLiteral(_ s: String) {
+   >>         parts.append(s)
+   >>     }
+   >>     mutating func appendInterpolation(_ a: Int, with b: Int) {
+   >>         parts.append("a: \(a)")
+   >>         parts.append("b: \(b)")
+   >>     }
+   >> }
+   >> let x = 10; let y = 20
+   -> let interpolating: SomeString = "before \(x, with: y) after"
+   >> print(interpolating.parts)
+   ---
+   -> var appending = SomeString.StringLiteralType()
+   -> appending.appendLiteral("before ")
+   -> appending.appendInterpolation(x, with: y)
+   -> appending.appendLiteral(" after")
+   >> print(appending.parts)
+.. XXX pull the final literal out of 'appending' above
+
+.. https://developer.apple.com/documentation/swift/stringinterpolationprotocol
+
+
+    calling methods defined by
+    ``StringInterpolationProtocol``.
+
+The interpolated expressions are passed as the arguments
+in a call to the append-interpolation method
+whose parameters match the number, type, and label
+of the interpolated expressions.
+
+.. XXX
+   The string literal's type
+   (which is probably from type inference)
+   determines the type whose appendLiteral(_:) and appendInterpolation(...) methods are called.
+   The string literal's type's conformance to ExpressibleByStringInterpolation
+   tells the compiler which interpolation type to use.
+
+       associatedtype StringInterpolation: StringInterpolationProtocol = String.StringInterpolation
+
+   XREF https://developer.apple.com/documentation/swift/stringinterpolationprotocol
 
 A string delimited by extended delimiters is a sequence of characters
 surrounded by quotation marks and a balanced set of one or more number signs (``#``).
