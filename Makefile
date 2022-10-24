@@ -18,3 +18,7 @@ archive: .build/plugins/Swift-DocC/outputs/TSPL.doccarchive
 .build/plugins/Swift-DocC/outputs/TSPL.doccarchive: Sources/TSPL/TSPL.docc/*/*.md
 .build/plugins/Swift-DocC/outputs/TSPL.doccarchive: Sources/TSPL/TSPL.docc/Assets/*.png
 	swift package generate-documentation
+
+.PHONY: clean
+clean:
+	rm -rf .build
