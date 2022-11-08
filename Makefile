@@ -21,4 +21,4 @@ archive: .build/plugins/Swift-DocC/outputs/TSPL.doccarchive
 
 .PHONY: clean
 clean:
-	rm -rf .build
+	rm -rf .build .docc-build
