@@ -42,12 +42,20 @@ git worktree add --checkout gh-pages "$REMOTE"/gh-pages
 # any changes to the content.
 export DOCC_JSON_PRETTYPRINT="YES"
 
+DOCC_CMD=""
+if [ -z "${DOCC_EXEC}" ]; then
+    DOCC_CMD="$(DOCC_EXEC)"
+elif [ -x "$(command -v xcrun)" ]; then
+    DOCC_CMD="xcrun docc"
+elif [ -x "$(command -v docc)" ]; then
+    DOCC_CMD="docc"
+else
+    echo >&2 "No `docc` command found in the current path. Add the `docc` executable to your current path or set the `DOCC_EXEC` environment variable."
+    exit 1
+fi
+
 # Build documentation, writing output in the gh-pages/docs subdirectory.
-swift package \
-    --allow-writing-to-directory "./gh-pages/docs" \
-    generate-documentation \
-    --target TSPL \
-    --disable-indexing \
+DOCC_CMD convert \
     --experimental-enable-custom-templates \
     --hosting-base-path swift-book \
     --output-path "./gh-pages/docs"

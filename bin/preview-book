@@ -1,0 +1,44 @@
+#! /bin/bash
+
+# This source file is part of the Swift.org open source project
+#
+# Copyright (c) 2022 Apple Inc. and the Swift project authors
+# Licensed under Apache License v2.0 with Runtime Library Exception
+#
+# See https://swift.org/LICENSE.txt for license information
+# See https://swift.org/CONTRIBUTORS.txt for Swift project authors
+
+# Previews the Swift Book documentation site.
+#
+# To use top-of-tree DocC, clone the following repositories:
+#
+#     https://github.com/apple/swift-docc
+#     https://github.com/apple/swift-docc-render
+#
+# Then set environment variables to paths in their working directories,
+# like the following, before running this script:
+#
+#     DOCC_EXEC=~/git/DocC/.build/arm64-apple-macosx/debug/docc
+#     DOCC_HTML_DIR=~/git/DocC-Renderer/dist/
+
+set -ex
+
+# Pretty print DocC JSON output, so that it has a stable ordering and
+# can be diffed.  This lets us determine whether rebuilding resulted in
+# any changes to the content.
+export DOCC_JSON_PRETTYPRINT="YES"
+
+DOCC_CMD=""
+if [ ! -z "${DOCC_EXEC}" ]; then
+    DOCC_CMD="${DOCC_EXEC}"
+elif [ -x "$(command -v xcrun)" ]; then
+    DOCC_CMD="xcrun docc"
+elif [ -x "$(command -v docc)" ]; then
+    DOCC_CMD="docc"
+else
+    echo >&2 "No `docc` command found in the current path. Add the `docc` executable to your current path or set the `DOCC_EXEC` environment variable."
+    exit 1
+fi
+
+# Preview documentation
+$DOCC_CMD preview --experimental-enable-custom-templates
