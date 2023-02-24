@@ -1,0 +1,12 @@
+TSPL Archive Branch
+-------------------
+
+This branch has no content. Feature branches that have been abandoned
+and won't ever be merged to 'main' are merged here, to archive them for
+future reference.
+
+To archive a branch:
+
+	git checkout archive
+	git merge --strategy ours --allow-unrelated-histories my_feature
+    git branch --delete my_feature
