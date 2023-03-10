@@ -968,6 +968,80 @@
         {
           "inlineContent" : [
             {
+              "text" : "You can write ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "after the equals sign (",
+              "type" : "text"
+            },
+            {
+              "code" : "=",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") of an assignment",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or after ",
+              "type" : "text"
+            },
+            {
+              "code" : "return",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to choose a value based on the condition.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let scoreDecoration = if teamScore > 10 {",
+            "    \"🎉\"",
+            "} else {",
+            "    \"\"",
+            "}",
+            "print(\"Score:\", teamScore, scoreDecoration)",
+            "\/\/ Prints \"Score: 11 🎉\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
               "text" : "You can use ",
               "type" : "text"
             },
@@ -4522,7 +4596,7 @@
               "type" : "text"
             },
             {
-              "text" : "When you work with values whose type is a boxed protocol type,",
+              "text" : "When you work with values whose type is a protocol type,",
               "type" : "text"
             },
             {
@@ -4538,7 +4612,7 @@
         },
         {
           "code" : [
-            "let protocolValue: any ExampleProtocol = a",
+            "let protocolValue: ExampleProtocol = a",
             "print(protocolValue.simpleDescription)",
             "\/\/ Prints \"A very simple class.  Now 100% adjusted.\"",
             "\/\/ print(protocolValue.anotherProperty)  \/\/ Uncomment to see the error"

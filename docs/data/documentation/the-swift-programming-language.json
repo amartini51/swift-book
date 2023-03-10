@@ -504,7 +504,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
   "kind" : "article",
   "role" : "article",
-  "title" : "Opaque and Boxed Types",
+  "title" : "Opaque Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
 },
