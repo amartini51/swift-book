@@ -7,6 +7,6 @@ future reference.
 
 To archive a branch:
 
-	git checkout archive
-	git merge --strategy ours --allow-unrelated-histories my_feature
-    git branch --delete my_feature
+$ git checkout archive
+$ git merge --strategy ours --allow-unrelated-histories my_feature
+$ git branch --delete my_feature
