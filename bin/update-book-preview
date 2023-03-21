@@ -28,8 +28,19 @@
 
 set -eu
 
-REMOTE=${1:-origin}
+REMOTE="${1:-origin}"
 CURRENT_COMMIT_HASH="$(git rev-parse --short HEAD)"
+
+OUTPUT_PATH="./gh-pages/docs"
+
+# Support a --use-branch flag to put the build product in a directory,
+# so a single GitHub Pages site can host multiple previews.
+USE_BRANCH="${2:-}"
+if [[ "$USE_BRANCH" == "--use-branch" ]]
+then
+    CURRENT_BRANCH="$(symbolic-ref --short HEAD)"
+    OUTPUT_PATH="${OUTPUT_PATH}/${CURRENT_BRANCH}"
+fi
 
 # Start at the top level directory of the repository.
 cd "$(git rev-parse --show-toplevel)"
@@ -45,11 +56,11 @@ export DOCC_JSON_PRETTYPRINT="YES"
 # The staging version of the book gets the staging header.
 cp -n TSPL.docc/header-staging.html TSPL.docc/header.html
 
-# Build documentation, writing output in the gh-pages/docs subdirectory.
+# Build documentation, writing output in the GitHub Pages subdirectory.
 docc convert \
     --experimental-enable-custom-templates \
     --hosting-base-path swift-book \
-    --output-path "./gh-pages/docs" \
+    --output-path "$OUTPUT_PATH" \
     TSPL.docc
 
 rm TSPL.docc/header.html
