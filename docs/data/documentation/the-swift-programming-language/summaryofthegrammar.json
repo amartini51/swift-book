@@ -8985,33 +8985,6 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "conditional-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "primary-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
                       "text" : "closure-expression",
                       "type" : "text"
                     }
@@ -10764,481 +10737,6 @@
             }
           ],
           "name" : "Grammar of a superclass expression",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "conditional-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " | ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "if",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "condition-list",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "{",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "}",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "else",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "else",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "{",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "}",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "switch",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "{",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-cases",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "}",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-cases",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-case",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-cases",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "?",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-case",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "case-label",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-case",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "default-label",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Grammar of a conditional expression",
           "style" : "note",
           "type" : "aside"
         },
@@ -34132,6 +33630,49 @@
           "name" : "Grammar of a generic argument clause",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -34157,6 +33698,18 @@
   "title" : "The Swift Programming Language",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

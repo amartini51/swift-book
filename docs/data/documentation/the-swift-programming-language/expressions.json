@@ -3769,33 +3769,6 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "conditional-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "primary-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
                       "text" : "closure-expression",
                       "type" : "text"
                     }
@@ -3905,6 +3878,33 @@
                   "inlineContent" : [
                     {
                       "text" : "wildcard-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "primary-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "macro-expansion-expression",
                       "type" : "text"
                     }
                   ],
@@ -7125,960 +7125,6 @@
             }
           ],
           "name" : "Grammar of a superclass expression",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
-          "anchor" : "Conditional-Expression",
-          "level" : 3,
-          "text" : "Conditional Expression",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "conditional expression",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " evaluates to one of several given values",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "based on the value of a condition.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "It has one the following forms:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "if <#condition 1#> {",
-            "   <#expression used if condition 1 is true#>",
-            "} else if <#condition 2#> {",
-            "   <#expression used if condition 2 is true#>",
-            "} else {",
-            "   <#expression used if both conditions are false#>",
-            "}",
-            "",
-            "switch <#expression#> {",
-            "case <#pattern 1#>:",
-            "    <#expression 1#>",
-            "case <#pattern 2#> where <#condition#>:",
-            "    <#expression 2#>",
-            "default:",
-            "    <#expression 3#>",
-            "}"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A conditional expression",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "has the same behavior and syntax as an ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " statement or a ",
-              "type" : "text"
-            },
-            {
-              "code" : "switch",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " statement,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "except for the differences listed below.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A conditional expression appears only in the following contexts:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "items" : [
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As the value assigned to a variable.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            },
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As the initial value in a variable or constant declaration.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            },
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As the error thrown by a ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "throw",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " expression.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            },
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As the value returned by a function, closure, or property getter.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            },
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "As the value inside a branch of a conditional expression.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            }
-          ],
-          "type" : "unorderedList"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The branches of a conditional expression are exhaustive,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "ensuring that the expression always produces a value",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "regardless of the condition.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "This means each ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " branch needs a corresponding ",
-              "type" : "text"
-            },
-            {
-              "code" : "else",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " branch.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Each branch contains either a single expression,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which is used as the value for the conditional expression",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "when that branch’s conditional is true,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "a ",
-              "type" : "text"
-            },
-            {
-              "code" : "throw",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " statement,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or a call to a function that never returns.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Each branch must produce a value of the same type.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Because type checking of each branch is independent,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you sometimes need to add type context,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "like when branches include different kinds of literals,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or when a branch’s value is ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "To provide this type context,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "add a type annotation to the variable that the result is assigned to,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or add an ",
-              "type" : "text"
-            },
-            {
-              "code" : "as",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " cast to the branches’ values.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let number: Double = if someCondition { 10 } else { 12.34 }",
-            "let number = if someCondition { 10 as Double } else { 12.34 }"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Inside a result builder,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "conditional expressions can appear",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "only as the initial value of a variable or constant.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "This behavior means when you write ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " or ",
-              "type" : "text"
-            },
-            {
-              "code" : "switch",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " in a result builder,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "outside of a variable or constant declaration,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "that code is understood as a branch statement",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and one of the result builder’s methods transforms that code.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Don’t put a conditional expression in a ",
-              "type" : "text"
-            },
-            {
-              "code" : "try",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " expression,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "even if one of the branches of a conditional expression is throwing.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "conditional-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " | ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "if",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "condition-list",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "{",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "}",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "else",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "else",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "{",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "}",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "if-expression-tail",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "switch",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "expression",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "{",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-cases",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "}",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-cases",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-case",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-cases",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "?",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-case",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "case-label",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "switch-expression-case",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "default-label",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "statement",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Grammar of a conditional expression",
           "style" : "note",
           "type" : "aside"
         },
@@ -11544,6 +10590,167 @@
             }
           ],
           "name" : "Grammar of a wildcard expression",
+          "style" : "note",
+          "type" : "aside"
+        },
+        {
+          "anchor" : "Macro-Expansion-Expression",
+          "level" : 3,
+          "text" : "Macro-Expansion Expression",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A macro expression can’t appear as the default value for a parameter,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "except for the ",
+              "type" : "text"
+            },
+            {
+              "code" : "#file",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "#line",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " macros from the Swift standard library.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "macro-expansion-expression",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "#",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "identifier",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "generic-argument-clause",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "function-call-argument-clause",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "trailing-closures",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Grammar of a macro-expansion expression",
           "style" : "note",
           "type" : "aside"
         },
@@ -18519,6 +17726,49 @@
           "name" : "Grammar of an optional-chaining expression",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -18806,6 +18056,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/library\/content\/documentation\/Cocoa\/Conceptual\/KeyValueObserving\/KeyValueObserving.html#\/\/apple_ref\/doc\/uid\/10000177i"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 },
 "https://help.apple.com/xcode/mac/current/#/dev4c60242fc": {
   "identifier" : "https:\/\/help.apple.com\/xcode\/mac\/current\/#\/dev4c60242fc",

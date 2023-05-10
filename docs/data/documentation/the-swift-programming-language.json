@@ -51,6 +51,7 @@
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OptionalChaining",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency",
+        "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TypeCasting",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/NestedTypes",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Extensions",
@@ -451,6 +452,20 @@
   "title" : "Lexical Structure",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/lexicalstructure"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Macros": {
+  "abstract" : [
+    {
+      "text" : "Transform code at compile time to generate repetitive code.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Macros",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/macros"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/MemorySafety": {
   "abstract" : [

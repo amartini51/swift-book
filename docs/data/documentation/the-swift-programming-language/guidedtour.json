@@ -968,80 +968,6 @@
         {
           "inlineContent" : [
             {
-              "text" : "You can write ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " or ",
-              "type" : "text"
-            },
-            {
-              "code" : "switch",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "after the equals sign (",
-              "type" : "text"
-            },
-            {
-              "code" : "=",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ") of an assignment",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or after ",
-              "type" : "text"
-            },
-            {
-              "code" : "return",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to choose a value based on the condition.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let scoreDecoration = if teamScore > 10 {",
-            "    \"🎉\"",
-            "} else {",
-            "    \"\"",
-            "}",
-            "print(\"Score:\", teamScore, scoreDecoration)",
-            "\/\/ Prints \"Score: 11 🎉\""
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
               "text" : "You can use ",
               "type" : "text"
             },
@@ -5446,6 +5372,49 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -5471,6 +5440,18 @@
   "title" : "The Swift Programming Language",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }
