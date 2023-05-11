@@ -1688,8 +1688,9 @@
               "type" : "text"
             },
             {
-              "text" : "doc:Attributes:freestanding",
-              "type" : "text"
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#freestanding",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " ",
@@ -3621,6 +3622,16 @@
   "title" : "attached",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/attributes#attached"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#freestanding": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#freestanding",
+  "kind" : "section",
+  "title" : "freestanding",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#freestanding"
 },
 "http://github.com/apple/swift-syntax/": {
   "identifier" : "http:\/\/github.com\/apple\/swift-syntax\/",
