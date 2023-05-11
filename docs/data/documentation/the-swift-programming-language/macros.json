@@ -1924,9 +1924,8 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros#Debugging-Macros",
-              "isActive" : true,
-              "type" : "reference"
+              "text" : "doc:Macros#Implementing-Macros",
+              "type" : "text"
             },
             {
               "text" : " section below",
@@ -3006,7 +3005,7 @@
             "    for character in characters {",
             "        result = result << 8",
             "        guard let asciiValue = character.asciiValue else { return nil }",
-            "        result += UInt32(exactly: asciiValue)!",
+            "        result += UInt32(asciiValue)",
             "    }",
             "    return result.bigEndian",
             "}"
@@ -3621,16 +3620,6 @@
   "title" : "attached",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/attributes#attached"
-},
-"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Macros#Debugging-Macros": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros#Debugging-Macros",
-  "kind" : "section",
-  "title" : "Debugging Macros",
-  "type" : "topic",
-  "url" : "\/documentation\/the-swift-programming-language\/macros#Debugging-Macros"
 },
 "http://github.com/apple/swift-syntax/": {
   "identifier" : "http:\/\/github.com\/apple\/swift-syntax\/",
