@@ -23267,7 +23267,156 @@
         {
           "inlineContent" : [
             {
+              "text" : "A ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "macro declaration",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " introduces a new macro.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It begins with the ",
+              "type" : "text"
+            },
+            {
+              "code" : "macro",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " keyword",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and has the following form:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "macro <#name#> = <#macro implementation#>"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "macro implementation",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " is another macro,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and indicates the location of the code that performs this macro’s expansion.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Call the ",
+              "type" : "text"
+            },
+            {
+              "code" : "externalMacro(module:type:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " macro from the Swift standard library,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "passing in the name of a type that contains the macro’s implementation,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the name of the module that contains that type.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Macros can be overloaded,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "following the same model used by functions.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
               "text" : "A macro declaration appears only at file scope.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For more information, see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -28304,6 +28453,20 @@
   "title" : "Operators",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/lexicalstructure#Operators"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Macros": {
+  "abstract" : [
+    {
+      "text" : "Transform code at compile time to generate repetitive code.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Macros",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/macros"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/MemorySafety": {
   "abstract" : [

@@ -207,7 +207,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " attribute, to the declaration of an macro.",
+              "text" : " attribute to a macro declaration.",
               "type" : "text"
             },
             {
@@ -265,333 +265,207 @@
         {
           "items" : [
             {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Peer macros have ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "peer",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " as the first argument to this attribute.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "The type that implements the macro conforms to the ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "PeerMacro",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " protocol.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "These macros produce new declarations",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "in the same scope as the declaration",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "that the macro is attached to.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "For example,",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "applying a peer macro to a method of a structure",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "can define additional methods and properties on that structure.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "peer",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "PeerMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros produce new declarations in the same scope as the declaration that the macro is attached to. For example, applying a peer macro to a method of a structure can define additional methods and properties on that structure.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Peer macros",
+                    "type" : "text"
+                  }
+                ]
+              }
             },
             {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Member macros have ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "member",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " as the first argument to this attribute.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "The type that implements the macro conforms to the ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "MemberMacro",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " protocol.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "These macros produce new declarations",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "that are members of the type or extension",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "that the macro is attached to.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "For example,",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "applying a member macro to a structure declaration",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "can define additional methods and properties on that structure.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "member",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "MemberMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros produce new declarations that are members of the type or extension that the macro is attached to. For example, applying a member macro to a structure declaration can define additional methods and properties on that structure.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Member macros",
+                    "type" : "text"
+                  }
+                ]
+              }
             },
             {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Member attribute macros have ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "memberAttribute",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " as the first argument to this attribute.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "The type that implements the macro conforms to the ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "MemberAttributeMacro",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " protocol.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "These macros add attributes to members of the type or extension",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "that the macro is attached to.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write have ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "memberAttribute",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "MemberAttributeMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros add attributes to members of the type or extension that the macro is attached to.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Member attribute",
+                    "type" : "text"
+                  }
+                ]
+              }
             },
             {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Accessor macros have ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "accessor",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " as the first argument to this attribute.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "The type that implements the macro conforms to the ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "AccessorMacro",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " protocol.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "These macros add accessors to the stored property they’re attached to,",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "turning it into a computed property.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "accessor",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "AccessorMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros add accessors to the stored property they’re attached to, turning it into a computed property.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Accessor macros",
+                    "type" : "text"
+                  }
+                ]
+              }
             },
             {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Conformance macros have ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "conformance",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " as the first argument to this attribute.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "The type that implements the macro conforms to the ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "ConformanceMacro",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " protocol.",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "These macros add protocol conformance to the type they’re attached to.",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Write ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "conformance",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " as the first argument to this attribute. The type that implements the macro conforms to the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "ConformanceMacro",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " protocol. These macros add protocol conformance to the type they’re attached to.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "text" : "Conformance macros",
+                    "type" : "text"
+                  }
+                ]
+              }
             }
           ],
-          "type" : "unorderedList"
+          "type" : "termList"
         },
         {
           "inlineContent" : [
             {
-              "text" : "The XXX and XXX macro roles require a ",
+              "text" : "The peer, member, and accessor macro roles require a ",
               "type" : "text"
             },
             {
@@ -705,7 +579,7 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "for a name that’s known in advanced",
+                      "text" : "for a name that’s known in advance.",
                       "type" : "text"
                     }
                   ],
@@ -726,7 +600,7 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "for a name that’s the same as an existing symbol",
+                      "text" : "for a name that’s the same as an existing symbol.",
                       "type" : "text"
                     }
                   ],
@@ -768,7 +642,7 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "for a name that starts with a fixed string",
+                      "text" : "for a name that starts with a fixed string.",
                       "type" : "text"
                     }
                   ],
@@ -810,7 +684,7 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "for a name that ends with a fixed string",
+                      "text" : "for a name that ends with a fixed string.",
                       "type" : "text"
                     }
                   ],
@@ -823,7 +697,7 @@
                 {
                   "inlineContent" : [
                     {
-                      "code" : "arbirtary",
+                      "code" : "arbitrary",
                       "type" : "codeVoice"
                     },
                     {
@@ -831,7 +705,7 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "for a name that can’t be determined until the macro is expanded",
+                      "text" : "for a name that can’t be determined until macro expansion.",
                       "type" : "text"
                     }
                   ],

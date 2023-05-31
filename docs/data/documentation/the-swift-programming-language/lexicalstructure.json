@@ -3110,30 +3110,6 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "#column",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#dsohandle",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
                       "code" : "#elseif",
                       "type" : "codeVoice"
                     },
@@ -3159,78 +3135,6 @@
                     },
                     {
                       "code" : "#endif",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#error",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#fileID",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#fileLiteral",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#filePath",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#file",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#function",
                       "type" : "codeVoice"
                     },
                     {
@@ -3278,18 +3182,6 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "#line",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
                       "code" : "#selector",
                       "type" : "codeVoice"
                     },
@@ -3306,22 +3198,6 @@
                       "type" : "codeVoice"
                     },
                     {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "and ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "#warning",
-                      "type" : "codeVoice"
-                    },
-                    {
                       "text" : ".",
                       "type" : "text"
                     }
@@ -3332,6 +3208,170 @@
             }
           ],
           "type" : "unorderedList"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Prior to Swift 5.9,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "the following keywords are reserved,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "which are now implemented as macros in the Swift standard library:",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#column",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#dsohandle",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#error",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#fileID",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#fileLiteral",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#filePath",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#file",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#function",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#line",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "#warning",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Note",
+          "style" : "note",
+          "type" : "aside"
         },
         {
           "items" : [

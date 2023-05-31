@@ -34,7 +34,7 @@
               "type" : "text"
             },
             {
-              "text" : "letting you avoid writing out repetitive code by hand",
+              "text" : "letting you avoid writing repetitive code by hand.",
               "type" : "text"
             },
             {
@@ -42,7 +42,7 @@
               "type" : "text"
             },
             {
-              "text" : "and omit boilerplate code.",
+              "text" : "During compilation,",
               "type" : "text"
             },
             {
@@ -50,15 +50,7 @@
               "type" : "text"
             },
             {
-              "text" : "For code that uses macros,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Swift expands each macro as the first step in building that code.",
+              "text" : "Swift expands macros before building your code as usual.",
               "type" : "text"
             }
           ],
@@ -92,15 +84,7 @@
               "type" : "text"
             },
             {
-              "text" : "but they never delete code",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or modify code that you wrote by hand.",
+              "text" : "but they never delete or modify existing code.",
               "type" : "text"
             }
           ],
@@ -143,6 +127,62 @@
             {
               "text" : "are checked to ensure they have the correct types.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In addition,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if the macro’s implementation encounters an error when expanding that macro,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the compiler treats this as a compilation error.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "These guarantees make it easier to reason about code that uses macros,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and they make it easier to identify issues",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like using macro incorrectly",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or a macro implementation that has a bug.",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -150,41 +190,73 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift has two kinds of macros.",
+              "text" : "Swift has two kinds of macros:",
               "type" : "text"
-            },
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
             {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
+              "content" : [
                 {
-                  "text" : "Attached macros",
-                  "type" : "text"
+                  "inlineContent" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "Freestanding macros",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : " appear on their own,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "without being attached to a declaration.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
                 }
-              ],
-              "type" : "emphasis"
+              ]
             },
             {
-              "text" : " modify the declaration that they’re attached to.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
+              "content" : [
                 {
-                  "text" : "Freestanding macros",
-                  "type" : "text"
+                  "inlineContent" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "Attached macros",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : " modify the declaration that they’re attached to.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
                 }
-              ],
-              "type" : "emphasis"
-            },
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
             {
-              "text" : " appear on their own,",
+              "text" : "You call attached and freestanding macros slightly differently,",
               "type" : "text"
             },
             {
@@ -192,7 +264,23 @@
               "type" : "text"
             },
             {
-              "text" : "without being attached to a declaration.",
+              "text" : "but they both follow the same model for macro expansion,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and you implement them both using the same approach.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The following sections describe both kinds of macros in more detail.",
               "type" : "text"
             }
           ],
@@ -231,7 +319,7 @@
               "type" : "text"
             },
             {
-              "text" : "followed by any arguments to the macro in parentheses.",
+              "text" : "and you write any arguments to the macro in parentheses after its name.",
               "type" : "text"
             },
             {
@@ -247,7 +335,7 @@
         },
         {
           "code" : [
-            "let currentLine = #line",
+            "let currentFunctionName = #function",
             "#warning(\"Something's wrong\")"
           ],
           "syntax" : "swift",
@@ -264,15 +352,15 @@
               "type" : "text"
             },
             {
-              "code" : "#line",
+              "code" : "#function",
               "type" : "codeVoice"
             },
             {
-              "text" : " is a call to the ",
+              "text" : " calls the ",
               "type" : "text"
             },
             {
-              "code" : "line",
+              "code" : "function",
               "type" : "codeVoice"
             },
             {
@@ -304,11 +392,11 @@
               "type" : "text"
             },
             {
-              "code" : "#line",
+              "code" : "#function",
               "type" : "codeVoice"
             },
             {
-              "text" : " with the current line number.",
+              "text" : " with the name of the current function.",
               "type" : "text"
             },
             {
@@ -336,7 +424,7 @@
               "type" : "text"
             },
             {
-              "text" : "to produce a custom warning when the code is compiled.",
+              "text" : "to produce a custom compile-time warning.",
               "type" : "text"
             }
           ],
@@ -349,11 +437,11 @@
               "type" : "text"
             },
             {
-              "code" : "#line",
+              "code" : "#function",
               "type" : "codeVoice"
             },
             {
-              "text" : ",",
+              "text" : " does,",
               "type" : "text"
             },
             {
@@ -369,7 +457,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ".",
+              "text" : " does.",
               "type" : "text"
             }
           ],
@@ -408,7 +496,7 @@
               "type" : "text"
             },
             {
-              "text" : "followed by any arguments to the macro in parentheses.",
+              "text" : "and you write any arguments to the macro in parentheses after its name.",
               "type" : "text"
             }
           ],
@@ -567,8 +655,9 @@
               "type" : "text"
             },
             {
-              "code" : "@OptionSet",
-              "type" : "codeVoice"
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.macro",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " macro from the Swift standard library.",
@@ -599,8 +688,9 @@
               "type" : "text"
             },
             {
-              "code" : "OptionSet",
-              "type" : "codeVoice"
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.protocol",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " protocol.",
@@ -620,7 +710,7 @@
               "type" : "text"
             },
             {
-              "text" : "after the compiler expands the ",
+              "text" : "here’s what the expanded version of the ",
               "type" : "text"
             },
             {
@@ -628,7 +718,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " macro,",
+              "text" : " macro looks like.",
               "type" : "text"
             },
             {
@@ -636,7 +726,23 @@
               "type" : "text"
             },
             {
-              "text" : "here’s what the source code looks like:",
+              "text" : "You don’t write this code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and you would see it only if you specifically asked Swift",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to show the macro’s expansion.",
               "type" : "text"
             }
           ],
@@ -719,7 +825,7 @@
               "type" : "text"
             },
             {
-              "text" : "than the manual version at the start of this section.",
+              "text" : "than the manual-coded version, earlier.",
               "type" : "text"
             }
           ],
@@ -790,7 +896,7 @@
               "type" : "text"
             },
             {
-              "text" : "as well as the macro’s name, what parameters it takes,",
+              "text" : "as well as the macro’s name, the parameters it takes,",
               "type" : "text"
             },
             {
@@ -920,7 +1026,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " macro from the standard library",
+              "text" : " macro from the Swift standard library",
               "type" : "text"
             },
             {
@@ -991,6 +1097,55 @@
           "type" : "paragraph"
         },
         {
+          "inlineContent" : [
+            {
+              "text" : "Because ",
+              "type" : "text"
+            },
+            {
+              "code" : "OptionSet",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is an attached macro,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "its name uses upper camel case",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like the names for structures and classes.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Freestanding macros have lower camel case names,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like the names for variables and functions.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "content" : [
             {
               "inlineContent" : [
@@ -1049,7 +1204,20 @@
         {
           "inlineContent" : [
             {
-              "text" : "A macro declaration also includes information",
+              "text" : "A macro declaration defines the macro’s ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "roles",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " —",
               "type" : "text"
             },
             {
@@ -1057,7 +1225,39 @@
               "type" : "text"
             },
             {
-              "text" : "about where that macro can be used.",
+              "text" : "the places in source code where that macro can be called,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the kinds of code the macro can generate.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Every macro has one or more roles,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which you write as part of the attributes",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "at the beginning of the macro declaration.",
               "type" : "text"
             },
             {
@@ -1081,7 +1281,7 @@
               "type" : "text"
             },
             {
-              "text" : "with those attributes added:",
+              "text" : "including the attributes for its roles:",
               "type" : "text"
             }
           ],
@@ -1108,7 +1308,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " attribute on this macro declaration",
+              "text" : " attribute appears twice in this declaration,",
               "type" : "text"
             },
             {
@@ -1116,7 +1316,39 @@
               "type" : "text"
             },
             {
-              "text" : "indicates that the ",
+              "text" : "once for each macro role.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The first use, ",
+              "type" : "text"
+            },
+            {
+              "code" : "@attached(member)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", indicates that the macro",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "adds new members to the type you apply it to.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
               "type" : "text"
             },
             {
@@ -1124,7 +1356,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " macro is an attached macro.",
+              "text" : " macro adds an ",
+              "type" : "text"
+            },
+            {
+              "code" : "init(rawValue:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " initializer",
               "type" : "text"
             },
             {
@@ -1132,7 +1372,15 @@
               "type" : "text"
             },
             {
-              "text" : "That attribute appears twice in this declaration,",
+              "text" : "that’s required by the ",
+              "type" : "text"
+            },
+            {
+              "code" : "OptionSet",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol,",
               "type" : "text"
             },
             {
@@ -1140,7 +1388,23 @@
               "type" : "text"
             },
             {
-              "text" : "once for each macro role that ",
+              "text" : "as well as some additional members.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The second use, ",
+              "type" : "text"
+            },
+            {
+              "code" : "@attached(conformance)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", tells you that ",
               "type" : "text"
             },
             {
@@ -1148,159 +1412,11 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " has.",
-              "type" : "text"
-            },
-            {
               "text" : " ",
               "type" : "text"
             },
             {
-              "text" : "For a freestanding macro, you write ",
-              "type" : "text"
-            },
-            {
-              "code" : "@freestanding",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instead.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "@freestanding(expression)",
-            "public macro line<T: ExpressibleByIntegerLiteral>() -> T =",
-            "        \/* ... location of the macro implementation... *\/"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "macro role",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " indicates where the code that the macro generate goes.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Every macro has one or more roles,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which you write as part of the attributes",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "at the beginning of the macro declaration.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "For example,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the ",
-              "type" : "text"
-            },
-            {
-              "code" : "#line",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " macro above has the ",
-              "type" : "text"
-            },
-            {
-              "code" : "expression",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " role,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and the ",
-              "type" : "text"
-            },
-            {
-              "code" : "@OptionSet",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " macro above has two roles — ",
-              "type" : "text"
-            },
-            {
-              "code" : "conformance",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " and ",
-              "type" : "text"
-            },
-            {
-              "code" : "member",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "An expression macro produces a value or performs an action.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "A conformance macro adds one or more protocol conformances.",
+              "text" : "adds one or more protocol conformances.",
               "type" : "text"
             },
             {
@@ -1342,21 +1458,14 @@
             {
               "text" : " protocol.",
               "type" : "text"
-            },
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
             {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "A member macro adds new members to the type you apply the macro to.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "In this case,",
+              "text" : "For a freestanding macro,",
               "type" : "text"
             },
             {
@@ -1364,23 +1473,49 @@
               "type" : "text"
             },
             {
-              "text" : "the ",
+              "text" : "you write the ",
               "type" : "text"
             },
             {
-              "code" : "@OptionSet",
+              "code" : "@freestanding",
               "type" : "codeVoice"
             },
             {
-              "text" : " macro adds an ",
+              "text" : " attribute to specify its role:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "@freestanding(expression)",
+            "public macro line<T: ExpressibleByIntegerLiteral>() -> T =",
+            "        \/* ... location of the macro implementation... *\/"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
               "type" : "text"
             },
             {
-              "code" : "init(rawValue:)",
+              "code" : "#line",
               "type" : "codeVoice"
             },
             {
-              "text" : " initializer",
+              "text" : " macro above has the ",
+              "type" : "text"
+            },
+            {
+              "code" : "expression",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " role.",
               "type" : "text"
             },
             {
@@ -1388,15 +1523,7 @@
               "type" : "text"
             },
             {
-              "text" : "that’s required by the ",
-              "type" : "text"
-            },
-            {
-              "code" : "OptionSet",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol,",
+              "text" : "An expression macro produces a value,",
               "type" : "text"
             },
             {
@@ -1404,7 +1531,7 @@
               "type" : "text"
             },
             {
-              "text" : "as well as some additional members.",
+              "text" : "or performs a compile-time action like generating a warning.",
               "type" : "text"
             }
           ],
@@ -1840,6 +1967,15 @@
         {
           "inlineContent" : [
             {
+              "text" : "These steps transform the code as shown below:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
               "identifier" : "macro-expansion-full",
               "type" : "image"
             }
@@ -1849,15 +1985,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "To go through the specific steps,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "consider the following code:",
+              "text" : "To go through the specific steps, consider the following:",
               "type" : "text"
             }
           ],
@@ -1889,7 +2017,7 @@
               "type" : "text"
             },
             {
-              "text" : "and returns a unsigned 32-bin integer",
+              "text" : "and returns a unsigned 32-bit integer",
               "type" : "text"
             },
             {
@@ -1905,7 +2033,7 @@
               "type" : "text"
             },
             {
-              "text" : "Some file formats use a integers like this to identify data,",
+              "text" : "Some file formats use integers like this to identify data",
               "type" : "text"
             },
             {
@@ -1983,7 +2111,7 @@
               "type" : "emphasis"
             },
             {
-              "text" : " or AST.",
+              "text" : ", or AST.",
               "type" : "text"
             },
             {
@@ -2023,7 +2151,7 @@
               "type" : "text"
             },
             {
-              "text" : "slightly simplified by omitting some extra detail.",
+              "text" : "slightly simplified by omitting some extra detail:",
               "type" : "text"
             }
           ],
@@ -2032,144 +2160,16 @@
         {
           "inlineContent" : [
             {
-              "text" : "[XXX placeholder art]",
-              "type" : "text"
+              "identifier" : "macro-ast-original",
+              "type" : "image"
             }
           ],
           "type" : "paragraph"
         },
         {
-          "items" : [
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Constant declaration",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                },
-                {
-                  "items" : [
-                    {
-                      "content" : [
-                        {
-                          "inlineContent" : [
-                            {
-                              "text" : "Identifier: ",
-                              "type" : "text"
-                            },
-                            {
-                              "code" : "magicNumber",
-                              "type" : "codeVoice"
-                            }
-                          ],
-                          "type" : "paragraph"
-                        }
-                      ]
-                    },
-                    {
-                      "content" : [
-                        {
-                          "inlineContent" : [
-                            {
-                              "text" : "Value",
-                              "type" : "text"
-                            }
-                          ],
-                          "type" : "paragraph"
-                        },
-                        {
-                          "items" : [
-                            {
-                              "content" : [
-                                {
-                                  "inlineContent" : [
-                                    {
-                                      "text" : "Macro",
-                                      "type" : "text"
-                                    }
-                                  ],
-                                  "type" : "paragraph"
-                                },
-                                {
-                                  "items" : [
-                                    {
-                                      "content" : [
-                                        {
-                                          "inlineContent" : [
-                                            {
-                                              "text" : "Identifier: ",
-                                              "type" : "text"
-                                            },
-                                            {
-                                              "code" : "fourCharacterCode",
-                                              "type" : "codeVoice"
-                                            }
-                                          ],
-                                          "type" : "paragraph"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "content" : [
-                                        {
-                                          "inlineContent" : [
-                                            {
-                                              "text" : "Arguments",
-                                              "type" : "text"
-                                            }
-                                          ],
-                                          "type" : "paragraph"
-                                        },
-                                        {
-                                          "items" : [
-                                            {
-                                              "content" : [
-                                                {
-                                                  "inlineContent" : [
-                                                    {
-                                                      "text" : "String literal: ",
-                                                      "type" : "text"
-                                                    },
-                                                    {
-                                                      "code" : "\"ABCD\"",
-                                                      "type" : "codeVoice"
-                                                    }
-                                                  ],
-                                                  "type" : "paragraph"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "type" : "unorderedList"
-                                        }
-                                      ]
-                                    }
-                                  ],
-                                  "type" : "unorderedList"
-                                }
-                              ]
-                            }
-                          ],
-                          "type" : "unorderedList"
-                        }
-                      ]
-                    }
-                  ],
-                  "type" : "unorderedList"
-                }
-              ]
-            }
-          ],
-          "type" : "unorderedList"
-        },
-        {
           "inlineContent" : [
             {
-              "text" : "The compiler also ensures that the input code is valid Swift:",
+              "text" : "The diagram above shows how the structure of this code",
               "type" : "text"
             },
             {
@@ -2177,7 +2177,7 @@
               "type" : "text"
             },
             {
-              "text" : "for example, that the input to macros is syntactically valid",
+              "text" : "is represented in memory.",
               "type" : "text"
             },
             {
@@ -2185,7 +2185,7 @@
               "type" : "text"
             },
             {
-              "text" : "and that the types of values match.",
+              "text" : "Each of the elements in the AST",
               "type" : "text"
             },
             {
@@ -2193,7 +2193,7 @@
               "type" : "text"
             },
             {
-              "text" : "For example, in the code above,",
+              "text" : "corresponds to part of the source code’s meaning.",
               "type" : "text"
             },
             {
@@ -2201,7 +2201,79 @@
               "type" : "text"
             },
             {
-              "text" : "it checks that the argument to ",
+              "text" : "The “Constant declaration” AST element",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "has two child elements under it,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which represent the two parts of a constant declaration:",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "its name and its value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The “Macro call” element has child elements",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that represent the macro’s name",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the list of arguments being passed to the macro.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "As part of constructing this AST,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the compiler checks that the source code is valid Swift.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, ",
               "type" : "text"
             },
             {
@@ -2209,7 +2281,47 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " is a string.",
+              "text" : " takes a single argument,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which must be a string.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If you tried to pass an integer argument,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or forgot the quotation mark (",
+              "type" : "text"
+            },
+            {
+              "code" : "\"",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") at the end of the string literal,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you’d get an error at this point in the process.",
               "type" : "text"
             }
           ],
@@ -2244,12 +2356,11 @@
             {
               "text" : "the compiler passes part of the AST to that macro’s implementation.",
               "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
             {
               "text" : "Here’s a representation of that partial AST:",
               "type" : "text"
@@ -2260,115 +2371,16 @@
         {
           "inlineContent" : [
             {
-              "text" : "[XXX placeholder art]",
-              "type" : "text"
+              "identifier" : "macro-ast-input",
+              "type" : "image"
             }
           ],
           "type" : "paragraph"
         },
         {
-          "items" : [
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Macro",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                },
-                {
-                  "items" : [
-                    {
-                      "content" : [
-                        {
-                          "inlineContent" : [
-                            {
-                              "text" : "Identifier: ",
-                              "type" : "text"
-                            },
-                            {
-                              "code" : "fourCharacterCode",
-                              "type" : "codeVoice"
-                            }
-                          ],
-                          "type" : "paragraph"
-                        }
-                      ]
-                    },
-                    {
-                      "content" : [
-                        {
-                          "inlineContent" : [
-                            {
-                              "text" : "Arguments",
-                              "type" : "text"
-                            }
-                          ],
-                          "type" : "paragraph"
-                        },
-                        {
-                          "items" : [
-                            {
-                              "content" : [
-                                {
-                                  "inlineContent" : [
-                                    {
-                                      "text" : "String literal ",
-                                      "type" : "text"
-                                    },
-                                    {
-                                      "code" : "\"ABCD\"",
-                                      "type" : "codeVoice"
-                                    }
-                                  ],
-                                  "type" : "paragraph"
-                                }
-                              ]
-                            }
-                          ],
-                          "type" : "unorderedList"
-                        }
-                      ]
-                    }
-                  ],
-                  "type" : "unorderedList"
-                }
-              ]
-            }
-          ],
-          "type" : "unorderedList"
-        },
-        {
           "inlineContent" : [
             {
-              "text" : "The implementation of a macro",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "operates only on the code that contains the macro.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "In this example,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the implementation of the ",
+              "text" : "The implementation of the ",
               "type" : "text"
             },
             {
@@ -2384,7 +2396,7 @@
               "type" : "text"
             },
             {
-              "text" : "reads this partial AST that contains only the macro call.",
+              "text" : "reads this partial AST as its input when expanding the macro.",
               "type" : "text"
             },
             {
@@ -2392,7 +2404,160 @@
               "type" : "text"
             },
             {
-              "text" : "A macro can’t depend on code outside of the place where it’s used.",
+              "text" : "A macro’s implementation",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "operates only on the partial AST that it receives as its input,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "meaning a macro always expands the same way",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "regardless of what code comes before and after it.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This limitation helps make macro expansion easier to understand,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and helps your code build faster",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because Swift can avoid expanding macros that haven’t changed.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Swift helps macro authors avoid accidentally reading other input",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "by restricting the code that implements macros:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "The AST passed to a macro implementation",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "contains only the AST elements that represent the macro,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "not any of the code that comes before or after it.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "The macro implementation runs in a sandboxed environment",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "that prevents it from accessing the file system or the network.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In addition to these safeguards,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the macro’s author is responsible for not reading or modifying anything",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "outside of the macro’s inputs.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, a macro’s expansion can’t depend on the current time of day.",
               "type" : "text"
             }
           ],
@@ -2430,38 +2595,16 @@
         {
           "inlineContent" : [
             {
-              "text" : "[XXX placeholder art]",
-              "type" : "text"
+              "identifier" : "macro-ast-output",
+              "type" : "image"
             }
           ],
           "type" : "paragraph"
         },
         {
-          "items" : [
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Integer literal: ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "1145258561",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            }
-          ],
-          "type" : "unorderedList"
-        },
-        {
           "inlineContent" : [
             {
-              "text" : "When the compiler gets this expansion back,",
+              "text" : "When the compiler receives this expansion,",
               "type" : "text"
             },
             {
@@ -2509,7 +2652,7 @@
               "type" : "text"
             },
             {
-              "text" : "and the all the types are correct.",
+              "text" : "and all the types are correct.",
               "type" : "text"
             },
             {
@@ -2526,86 +2669,11 @@
         {
           "inlineContent" : [
             {
-              "text" : "[XXX placeholder art]",
-              "type" : "text"
+              "identifier" : "macro-ast-result",
+              "type" : "image"
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "items" : [
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "Constant declaration",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                },
-                {
-                  "items" : [
-                    {
-                      "content" : [
-                        {
-                          "inlineContent" : [
-                            {
-                              "text" : "Identifier: ",
-                              "type" : "text"
-                            },
-                            {
-                              "code" : "magicNumber",
-                              "type" : "codeVoice"
-                            }
-                          ],
-                          "type" : "paragraph"
-                        }
-                      ]
-                    },
-                    {
-                      "content" : [
-                        {
-                          "inlineContent" : [
-                            {
-                              "text" : "Value",
-                              "type" : "text"
-                            }
-                          ],
-                          "type" : "paragraph"
-                        },
-                        {
-                          "items" : [
-                            {
-                              "content" : [
-                                {
-                                  "inlineContent" : [
-                                    {
-                                      "text" : "Integer literal: ",
-                                      "type" : "text"
-                                    },
-                                    {
-                                      "code" : "1145258561",
-                                      "type" : "codeVoice"
-                                    }
-                                  ],
-                                  "type" : "paragraph"
-                                }
-                              ]
-                            }
-                          ],
-                          "type" : "unorderedList"
-                        }
-                      ]
-                    }
-                  ],
-                  "type" : "unorderedList"
-                }
-              ]
-            }
-          ],
-          "type" : "unorderedList"
         },
         {
           "inlineContent" : [
@@ -2690,7 +2758,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "To implement a macro, you make two parts:",
+              "text" : "To implement a macro, you make two components:",
               "type" : "text"
             },
             {
@@ -2781,11 +2849,12 @@
             {
               "text" : "including a template for a macro implementation and declaration.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "To add macros to an existing project,",
               "type" : "text"
@@ -2844,7 +2913,7 @@
         {
           "code" : [
             "targets: [",
-            "    \/\/ Macro implementation that performs the source transformations",
+            "    \/\/ Macro implementation that performs the source transformations.",
             "    .macro(",
             "        name: \"MyProjectMacros\",",
             "        dependencies: [",
@@ -2853,7 +2922,7 @@
             "        ]",
             "    ),",
             "",
-            "    \/\/ Library that exposes a macro as part of its API",
+            "    \/\/ Library that exposes a macro as part of its API.",
             "    .target(name: \"MyProject\", dependencies: [\"MyProjectMacros\"]),",
             "]"
           ],
@@ -2863,7 +2932,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The implementation of a macro is a Swift type",
+              "text" : "The code above defines two targets:",
               "type" : "text"
             },
             {
@@ -2871,7 +2940,44 @@
               "type" : "text"
             },
             {
-              "text" : "that uses the ",
+              "code" : "MyProjectMacros",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " contains the implementation of the macros,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
+              "type" : "text"
+            },
+            {
+              "code" : "MyProject",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " makes those macros available.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The implementation of a macro",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "uses the ",
               "type" : "text"
             },
             {
@@ -2880,7 +2986,47 @@
               "type" : "reference"
             },
             {
-              "text" : " module to interact with an AST.",
+              "text" : " module to interact with Swift code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in a structured way, using an abstract syntax trees (AST).",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If you created a new macro package with Swift Package Manager,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the generated ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " file",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "automatically includes a dependency on SwiftSyntax.",
               "type" : "text"
             },
             {
@@ -2913,11 +3059,36 @@
         {
           "code" : [
             "dependencies: [",
-            "    .package(url: \"https:\/\/github.com\/apple\/swift-syntax.git\", from: \"509.0.0-swift-5.9-DEVELOPMENT-SNAPSHOT-2023-04-25-b\"),",
+            "    .package(url: \"https:\/\/github.com\/apple\/swift-syntax.git\", from: \"some-tag\"),",
             "],"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Replace the ",
+              "type" : "text"
+            },
+            {
+              "code" : "some-tag",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " placeholder in the code above",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "with the Git tag for the version of SwiftSyntax you want to use.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         },
         {
           "inlineContent" : [
@@ -3010,7 +3181,8 @@
             "        result += UInt32(asciiValue)",
             "    }",
             "    return result.bigEndian",
-            "}"
+            "}",
+            "enum CustomError: Error { case message(String) }"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -3018,7 +3190,23 @@
         {
           "inlineContent" : [
             {
-              "text" : "This is a freestanding macro that produces an expression,",
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "#fourCharacterCode",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " macro",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is a freestanding macro that produces an expression,",
               "type" : "text"
             },
             {
@@ -3034,7 +3222,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " type that implements the macro",
+              "text" : " type that implements it",
               "type" : "text"
             },
             {
@@ -3246,11 +3434,27 @@
               "type" : "text"
             },
             {
-              "text" : "and the second ",
+              "text" : "assigning that AST element to ",
               "type" : "text"
             },
             {
-              "code" : "gaurd",
+              "code" : "literalSegment",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The second ",
+              "type" : "text"
+            },
+            {
+              "code" : "guard",
               "type" : "codeVoice"
             },
             {
@@ -3278,7 +3482,7 @@
               "type" : "text"
             },
             {
-              "text" : "Both of these blocks of code throw an error if the macro is use incorrectly —",
+              "text" : "Both of these blocks throw an error if the macro is used incorrectly —",
               "type" : "text"
             },
             {
@@ -3419,16 +3623,16 @@
               "type" : "text"
             },
             {
-              "text" : "so you can use this approach when implementing any kind  of macro.",
+              "text" : "so you can use this approach when implementing any kind of macro.",
               "type" : "text"
             }
           ],
           "type" : "paragraph"
         },
         {
-          "anchor" : "Debugging-Macros",
+          "anchor" : "Developing-and-Debugging-Macros",
           "level" : 2,
-          "text" : "Debugging Macros",
+          "text" : "Developing and Debugging Macros",
           "type" : "heading"
         },
         {
@@ -3442,7 +3646,7 @@
               "type" : "text"
             },
             {
-              "text" : "they transform one AST into another AST,",
+              "text" : "they transform one AST into another AST",
               "type" : "text"
             },
             {
@@ -3458,7 +3662,7 @@
               "type" : "text"
             },
             {
-              "text" : "and without causing any any side effects.",
+              "text" : "and without making changes to any external state..",
               "type" : "text"
             },
             {
@@ -3498,7 +3702,7 @@
               "type" : "text"
             },
             {
-              "text" : "to get a string that you can compare to an expected value.",
+              "text" : "to get a string to compare against an expected value.",
               "type" : "text"
             },
             {
@@ -3531,9 +3735,9 @@
         {
           "code" : [
             "let source: SourceFileSyntax =",
-            "\"\"\"",
-            "let abcd = #fourCharacterCode(\"ABCD\")",
-            "\"\"\"",
+            "    \"\"\"",
+            "    let abcd = #fourCharacterCode(\"ABCD\")",
+            "    \"\"\"",
             "",
             "let file = BasicMacroExpansionContext.KnownSourceFile(",
             "    moduleName: \"MyModule\",",
@@ -3548,9 +3752,9 @@
             ")",
             "",
             "let expectedDescription =",
-            "\"\"\"",
-            "let abcd = 1145258561",
-            "\"\"\"",
+            "    \"\"\"",
+            "    let abcd = 1145258561",
+            "    \"\"\"",
             "",
             "precondition(transformedSF.description == expectedDescription)"
           ],
@@ -3645,8 +3849,116 @@
   "type" : "link",
   "url" : "http:\/\/github.com\/apple\/swift-syntax\/"
 },
+"https://developer.apple.com/documentation/swift/optionset-swift.macro": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.macro",
+  "title" : "@OptionSet",
+  "titleInlineContent" : [
+    {
+      "code" : "@OptionSet",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.macro"
+},
+"https://developer.apple.com/documentation/swift/optionset-swift.protocol": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.protocol",
+  "title" : "OptionSet",
+  "titleInlineContent" : [
+    {
+      "code" : "OptionSet",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.protocol"
+},
+"macro-ast-input": {
+  "alt" : "A tree diagram, with a macro call as the root element.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.",
+  "identifier" : "macro-ast-input",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "2x",
+        "light"
+      ],
+      "url" : "\/images\/macro-ast-input@2x.png"
+    },
+    {
+      "traits" : [
+        "2x",
+        "dark"
+      ],
+      "url" : "\/images\/macro-ast-input~dark@2x.png"
+    }
+  ]
+},
+"macro-ast-original": {
+  "alt" : "A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant’s value is a macro call.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.",
+  "identifier" : "macro-ast-original",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "2x",
+        "light"
+      ],
+      "url" : "\/images\/macro-ast-original@2x.png"
+    },
+    {
+      "traits" : [
+        "2x",
+        "dark"
+      ],
+      "url" : "\/images\/macro-ast-original~dark@2x.png"
+    }
+  ]
+},
+"macro-ast-output": {
+  "alt" : "A tree diagram with a sigle node, the integer literal 1145258561.",
+  "identifier" : "macro-ast-output",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "2x",
+        "light"
+      ],
+      "url" : "\/images\/macro-ast-output@2x.png"
+    },
+    {
+      "traits" : [
+        "2x",
+        "dark"
+      ],
+      "url" : "\/images\/macro-ast-output~dark@2x.png"
+    }
+  ]
+},
+"macro-ast-result": {
+  "alt" : "A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant’s value is the integer literal 1145258561",
+  "identifier" : "macro-ast-result",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "2x",
+        "light"
+      ],
+      "url" : "\/images\/macro-ast-result@2x.png"
+    },
+    {
+      "traits" : [
+        "2x",
+        "dark"
+      ],
+      "url" : "\/images\/macro-ast-result~dark@2x.png"
+    }
+  ]
+},
 "macro-expansion": {
-  "alt" : null,
+  "alt" : "A diagram showing an overview of macro expansion.  On the left, a stylized representation of Swift code.  On the right, the same code with several lines added by the macro.",
   "identifier" : "macro-expansion",
   "type" : "image",
   "variants" : [
@@ -3667,7 +3979,7 @@
   ]
 },
 "macro-expansion-full": {
-  "alt" : null,
+  "alt" : "Diagram showing the four steps of expanding macros.  The input is Swift source code.  This becomes a tree, representing the code’s structure.  The macro implementation adds branches to the tree.  The result is Swift source with additional code.",
   "identifier" : "macro-expansion-full",
   "type" : "image",
   "variants" : [
