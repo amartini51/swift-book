@@ -52,3 +52,9 @@ cp -r bin/redirects/LanguageGuide "$output"
 cp -r bin/redirects/ReferenceManual "$output"
 cp -r bin/redirects/RevisionHistory "$output"
 cp -r bin/redirects/index.html "$output"
+
+# Replace the default favicon from DocC with the Swift.org one.
+rm $output/favicon.ico
+rm $output/favicon.svg
+curl -o $output/favicon.ico "https://www.swift.org/favicon.ico"
+curl -o $output/favicon.svg "https://www.swift.org/favicon.svg"
