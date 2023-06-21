@@ -348,7 +348,7 @@
                   {
                     "inlineContent" : [
                       {
-                        "text" : "Write have ",
+                        "text" : "Write ",
                         "type" : "text"
                       },
                       {
@@ -5890,7 +5890,7 @@
               "type" : "text"
             },
             {
-              "text" : "The ",
+              "text" : "A result builder must implement either the ",
               "type" : "text"
             },
             {
@@ -5898,7 +5898,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " method is required;",
+              "text" : " method",
               "type" : "text"
             },
             {
@@ -5906,7 +5906,35 @@
               "type" : "text"
             },
             {
-              "text" : "the other methods —",
+              "text" : "or both the ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(first:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(accumulated:next:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " methods.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The other methods —",
               "type" : "text"
             },
             {
@@ -6072,7 +6100,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The result-building methods are as follows:",
+              "text" : "The block-building methods are as follows:",
               "type" : "text"
             }
           ],
@@ -6086,7 +6114,7 @@
                   {
                     "inlineContent" : [
                       {
-                        "text" : "Combines an array of partial results into a single partial result. A result builder must implement this method.",
+                        "text" : "Combines an array of partial results into a single partial result.",
                         "type" : "text"
                       }
                     ],
@@ -6103,6 +6131,187 @@
                 ]
               }
             },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Builds a partial result component from the first component. Implement both this method and ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildPartialBlock(accumulated:next:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " to support building blocks one component at a time. Compared to ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildBlock(_:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : ", this approach reduces the need for generic overloads that handle different numbers of arguments.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "static func buildPartialBlock(first: Component) -> Component",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Builds a partial result component by combining an accumulated component with a new component. Implement both this method and ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildPartialBlock(first:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " to support building blocks one component at a time. Compared to ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "buildBlock(_:)",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : ", this approach reduces the need for generic overloads that handle different numbers of arguments.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "static func buildPartialBlock(accumulated: Component, next: Component) -> Component",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            }
+          ],
+          "type" : "termList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A result builder can implement all three of the block-building methods listed above;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in that case, availability determines which method is called.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "By default, Swift calls the ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(first:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(second:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " methods.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To make Swift call ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildBlock(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instead,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "mark the enclosing declaration as being available",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "before the availability you write on ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(first:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "buildPartialBlock(second:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The additional result-building methods are as follows:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
             {
               "definition" : {
                 "content" : [
@@ -10245,7 +10454,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },

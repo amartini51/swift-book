@@ -7230,7 +7230,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "A parameter with an equals sign (",
+              "text" : "A parameter with an equal sign (",
               "type" : "text"
             },
             {
@@ -23681,8 +23681,8 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "`->``",
-                      "type" : "text"
+                      "code" : "->",
+                      "type" : "codeVoice"
                     }
                   ],
                   "type" : "strong"
@@ -23721,8 +23721,8 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "`=``",
-                      "type" : "text"
+                      "code" : "=",
+                      "type" : "codeVoice"
                     }
                   ],
                   "type" : "strong"
@@ -27970,7 +27970,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -28457,7 +28457,7 @@
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Macros": {
   "abstract" : [
     {
-      "text" : "Transform code at compile time to generate repetitive code.",
+      "text" : "Use macros to generate code at compile time.",
       "type" : "text"
     }
   ],

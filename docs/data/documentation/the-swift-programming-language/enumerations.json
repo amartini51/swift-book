@@ -2142,7 +2142,7 @@
               "type" : "text"
             },
             {
-              "code" : "var",
+              "code" : "let",
               "type" : "codeVoice"
             },
             {
@@ -2150,7 +2150,7 @@
               "type" : "text"
             },
             {
-              "code" : "let",
+              "code" : "var",
               "type" : "codeVoice"
             },
             {
@@ -3558,7 +3558,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },

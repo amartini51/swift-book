@@ -304,54 +304,6 @@
             {
               "text" : " a value at all”.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Using optionals is similar to using ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " with pointers in Objective-C,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "but they work for any type, not just classes.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Not only are optionals safer and more expressive than ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " pointers in Objective-C,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "they’re at the heart of many of Swift’s most powerful features.",
-              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -1256,7 +1208,15 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "surround the keyword with backticks (```) when using it as a name.",
+                  "text" : "surround the keyword with backticks (",
+                  "type" : "text"
+                },
+                {
+                  "code" : "`",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ") when using it as a name.",
                   "type" : "text"
                 },
                 {
@@ -5685,158 +5645,9 @@
           "type" : "paragraph"
         },
         {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The concept of optionals doesn’t exist in C or Objective-C.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "The nearest thing in Objective-C is",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "the ability to return ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " from a method that would otherwise return an object,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "with ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " meaning “the absence of a valid object.”",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "However, this only works for objects — it doesn’t work for",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "structures, basic C types, or enumeration values.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "For these types,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "Objective-C methods typically return a special value (such as ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "NSNotFound",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ")",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "to indicate the absence of a value.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "This approach assumes that the method’s caller knows there’s a special value to test against",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "and remembers to check for it.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "Swift’s optionals let you indicate the absence of a value for ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "any type at all",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : ",",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "without the need for special constants.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
           "inlineContent" : [
             {
-              "text" : "Here’s an example of how optionals can be used to cope with the absence of a value.",
+              "text" : "For example,",
               "type" : "text"
             },
             {
@@ -5860,7 +5671,7 @@
               "type" : "text"
             },
             {
-              "text" : "which tries to convert a ",
+              "text" : "that tries to convert a ",
               "type" : "text"
             },
             {
@@ -6028,15 +5839,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ", not ",
-              "type" : "text"
-            },
-            {
-              "code" : "Int",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
+              "text" : ",",
               "type" : "text"
             },
             {
@@ -6044,7 +5847,7 @@
               "type" : "text"
             },
             {
-              "text" : "The question mark indicates that the value it contains is optional,",
+              "text" : "with a question mark to indicate that the value it contains is optional,",
               "type" : "text"
             },
             {
@@ -6102,7 +5905,7 @@
               "type" : "text"
             },
             {
-              "text" : "(It can’t contain anything else, such as a ",
+              "text" : "It can’t contain anything else, such as a ",
               "type" : "text"
             },
             {
@@ -6118,7 +5921,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " value.",
+              "text" : " value;",
               "type" : "text"
             },
             {
@@ -6126,7 +5929,7 @@
               "type" : "text"
             },
             {
-              "text" : "It’s either an ",
+              "text" : "it’s either an ",
               "type" : "text"
             },
             {
@@ -6134,7 +5937,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ", or it’s nothing at all.)",
+              "text" : ", or it’s nothing at all.",
               "type" : "text"
             }
           ],
@@ -6182,54 +5985,6 @@
           "type" : "codeListing"
         },
         {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "You can’t use ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " with non-optional constants and variables.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "If a constant or variable in your code needs to work with",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "the absence of a value under certain conditions,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "always declare it as an optional value of the appropriate type.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "If you define an optional variable without providing a default value,",
@@ -6263,27 +6018,372 @@
           "type" : "codeListing"
         },
         {
+          "inlineContent" : [
+            {
+              "text" : "You can’t use ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " with non-optional constants or variables.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If a constant or variable in your code needs to work with",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the absence of a value under certain conditions,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "declare it as an optional value of the appropriate type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "A constant or variable that’s declared as a non-optional value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is guaranteed to never contain a ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If you try to assign ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to a non-optional value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you’ll get a compile-time error.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This separation of optional and non-optional values",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "lets you explicitly mark what information can be missing,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and makes it easier to write correct code that handle missing values.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can’t accidentally treat an optional as if it were non-optional,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "forgetting to check for ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and assuming there’s a value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because this mistake produces an error at compile time.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "After you unwrap the value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "none of the other code that works with that value needs to check for ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so there’s no need to repeatedly check the same value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in different parts of your code.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you access an optional value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "your code always handles both the ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and non-",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " case.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "There are several things you can do when a value is missing,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which are described in more detail in the following sections:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Skip the code that operates on the value when it’s ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "nil",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Propagate the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "nil",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " value,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "by returning ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "nil",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "or using the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "?.",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " operator described in ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OptionalChaining",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Provide a fallback value, using the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "??",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " operator.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Stop program execution, using the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "!",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " operator.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
           "content" : [
             {
               "inlineContent" : [
                 {
-                  "text" : "Swift’s ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " isn’t the same as ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " in Objective-C.",
+                  "text" : "",
                   "type" : "text"
                 },
                 {
@@ -6356,287 +6456,6 @@
           "type" : "aside"
         },
         {
-          "anchor" : "If-Statements-and-Forced-Unwrapping",
-          "level" : 3,
-          "text" : "If Statements and Forced Unwrapping",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "You can use an ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " statement to find out whether an optional contains a value",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "by comparing the optional against ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "You perform this comparison with the “equal to” operator (",
-              "type" : "text"
-            },
-            {
-              "code" : "==",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ")",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "or the “not equal to” operator (",
-              "type" : "text"
-            },
-            {
-              "code" : "!=",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ").",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "If an optional has a value, it’s considered to be “not equal to” ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ":",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "if convertedNumber != nil {",
-            "    print(\"convertedNumber contains some integer value.\")",
-            "}",
-            "\/\/ Prints \"convertedNumber contains some integer value.\""
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Once you’re sure that the optional ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "does",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " contain a value,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you can access its underlying value",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "by adding an exclamation point (",
-              "type" : "text"
-            },
-            {
-              "code" : "!",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ") to the end of the optional’s name.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "The exclamation point effectively says,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "“I know that this optional definitely has a value; please use it.”",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "This is known as ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "forced unwrapping",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " of the optional’s value:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "if convertedNumber != nil {",
-            "    print(\"convertedNumber has an integer value of \\(convertedNumber!).\")",
-            "}",
-            "\/\/ Prints \"convertedNumber has an integer value of 123.\""
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "For more about the ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " statement, see ",
-              "type" : "text"
-            },
-            {
-              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow",
-              "isActive" : true,
-              "type" : "reference"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Trying to use ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "!",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " to access a nonexistent optional value triggers",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "a runtime error.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "Always make sure that an optional contains a non-",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " value",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "before using ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "!",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " to force-unwrap its value.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
           "anchor" : "Optional-Binding",
           "level" : 3,
           "text" : "Optional Binding",
@@ -6645,20 +6464,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "You use ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "optional binding",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " to find out whether an optional contains a value,",
+              "text" : "You use optional binding to find out whether an optional contains a value,",
               "type" : "text"
             },
             {
@@ -6682,7 +6488,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " and ",
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "guard",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", and ",
               "type" : "text"
             },
             {
@@ -6722,11 +6536,23 @@
               "type" : "text"
             },
             {
+              "text" : "For more information about ",
+              "type" : "text"
+            },
+            {
               "code" : "if",
               "type" : "codeVoice"
             },
             {
-              "text" : " and ",
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "guard",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", and ",
               "type" : "text"
             },
             {
@@ -6734,7 +6560,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " statements are described in more detail in ",
+              "text" : " statements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
               "type" : "text"
             },
             {
@@ -6943,15 +6777,7 @@
               "type" : "text"
             },
             {
-              "text" : "and so you don’t use the ",
-              "type" : "text"
-            },
-            {
-              "code" : "!",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " suffix to access its value.",
+              "text" : "and has the corresponding non-optional type.",
               "type" : "text"
             },
             {
@@ -6959,7 +6785,27 @@
               "type" : "text"
             },
             {
-              "text" : "In this example, ",
+              "text" : "In this case, the type of ",
+              "type" : "text"
+            },
+            {
+              "code" : "possibleNumber",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int?",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so the type of ",
               "type" : "text"
             },
             {
@@ -6967,7 +6813,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " is simply used to print the result of the conversion.",
+              "text" : " is ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -7126,7 +6980,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " refers to the optional integer constant.",
+              "text" : " refers to the original optional integer constant.",
               "type" : "text"
             }
           ],
@@ -7151,7 +7005,7 @@
               "type" : "text"
             },
             {
-              "text" : "write just the name of the constant or variable that you’re unwrapping.",
+              "text" : "Write just the name of the constant or variable that you’re unwrapping.",
               "type" : "text"
             },
             {
@@ -7430,93 +7284,635 @@
           "type" : "codeListing"
         },
         {
-          "content" : [
+          "inlineContent" : [
+            {
+              "text" : "Constants and variables created with optional binding in an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "are available only within the body of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In contrast, the constants and variables created with a ",
+              "type" : "text"
+            },
+            {
+              "code" : "guard",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "are available in the lines of code that follow the ",
+              "type" : "text"
+            },
+            {
+              "code" : "guard",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Early-Exit",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Providing-a-Fallback-Value",
+          "level" : 3,
+          "text" : "Providing a Fallback Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Another way to handle a missing value is to supply",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a default value using the nil-coalescing operator operator (",
+              "type" : "text"
+            },
+            {
+              "code" : "??",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ").",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If the optional on the left side of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "??",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " isn’t ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that value is unwrapped and used.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Otherwise, the value on the right side of ",
+              "type" : "text"
+            },
+            {
+              "code" : "??",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is used.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the code below greets someone by name if one is specified,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and uses a generic greeting when the name is ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let name: String? = nil",
+            "let greeting = \"Hello, \" + (name ?? \"friend\") + \"!\"",
+            "print(greeting)",
+            "\/\/ Prints \"Hello, friend!\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For more information about using ",
+              "type" : "text"
+            },
+            {
+              "code" : "??",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to provide a fallback value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/BasicOperators#Nil-Coalescing-Operator",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Force-Unwrapping",
+          "level" : 3,
+          "text" : "Force Unwrapping",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can use an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement to find out whether an optional contains a value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "by comparing the optional against ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You perform this comparison with the “equal to” operator (",
+              "type" : "text"
+            },
+            {
+              "code" : "==",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ")",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or the “not equal to” operator (",
+              "type" : "text"
+            },
+            {
+              "code" : "!=",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ").",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If an optional has a value, it’s considered to be “not equal to” ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let possibleNumber = \"123\"",
+            "let convertedNumber = Int(possibleNumber)",
+            "",
+            "if convertedNumber != nil {",
+            "    print(\"convertedNumber contains some integer value.\")",
+            "}",
+            "\/\/ Prints \"convertedNumber contains some integer value.\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "After you’re sure that the optional contains a value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "one way to access its underlying value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is adding an exclamation mark (",
+              "type" : "text"
+            },
+            {
+              "code" : "!",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") to the end of the optional’s name.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The exclamation point effectively says,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "“I know that this optional definitely has a value; please use it.”",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This is known as ",
+              "type" : "text"
+            },
             {
               "inlineContent" : [
                 {
-                  "text" : "Constants and variables created with optional binding in an ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "if",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " statement",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "are available only within the body of the ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "if",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " statement.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "In contrast, the constants and variables created with a ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "guard",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " statement",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "are available in the lines of code that follow the ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "guard",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " statement,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "as described in ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Early-Exit",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
+                  "text" : "forced unwrapping",
                   "type" : "text"
                 }
               ],
-              "type" : "paragraph"
+              "type" : "emphasis"
+            },
+            {
+              "text" : " of the optional’s value:",
+              "type" : "text"
             }
           ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "if convertedNumber != nil {",
+            "    print(\"convertedNumber has an integer value of \\(convertedNumber!).\")",
+            "}",
+            "\/\/ Prints \"convertedNumber has an integer value of 123.\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you force unwrap a non-",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the result is its unwrapped value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Force unwrapping a ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " value triggers a runtime error.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Because a ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " value stops the program,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "another reason to force unwrap an optional",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is when ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " represents an unrecoverable failure,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "such a programmer error or corrupted data.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In that usage, the ",
+              "type" : "text"
+            },
+            {
+              "code" : "!",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is a shorter spelling of ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fatalerror(_:file:line:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, the code below shows two equivalent approaches:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let number = convertedNumber!",
+            "",
+            "guard let number = convertedNumber else {",
+            "    fatalError(\"The number was invalid\")",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Both versions of the code above depend on ",
+              "type" : "text"
+            },
+            {
+              "code" : "convertedNumber",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "always containing a value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Writing that requirement as part of the code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using either of the approaches above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "lets your code check that the requirement is true at run time.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For more information about enforcing data requirements",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and checking assumptions at runtime,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Assertions-and-Preconditions",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " below.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         },
         {
           "anchor" : "Implicitly-Unwrapped-Optionals",
@@ -7750,6 +8146,55 @@
         {
           "inlineContent" : [
             {
+              "text" : "Don’t use an implicitly unwrapped optional when there’s a possibility of",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a variable becoming ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " at a later point.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Always use a normal optional type if you need to check for a ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "during the lifetime of a variable.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
               "text" : "An implicitly unwrapped optional is a normal optional behind the scenes,",
               "type" : "text"
             },
@@ -7807,10 +8252,10 @@
         {
           "code" : [
             "let possibleString: String? = \"An optional string.\"",
-            "let forcedString: String = possibleString! \/\/ requires an exclamation point",
+            "let forcedString: String = possibleString! \/\/ Requires explicit unwrapping",
             "",
             "let assumedString: String! = \"An implicitly unwrapped optional string.\"",
-            "let implicitString: String = assumedString \/\/ no need for an exclamation point"
+            "let implicitString: String = assumedString \/\/ Unwrapped automatically"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -7979,7 +8424,7 @@
               "type" : "text"
             },
             {
-              "text" : "The result is exactly the same as if you place an exclamation point",
+              "text" : "The result is exactly the same as if you write an exclamation point",
               "type" : "text"
             },
             {
@@ -7987,7 +8432,7 @@
               "type" : "text"
             },
             {
-              "text" : "after a normal optional that doesn’t contain a value.",
+              "text" : "to force unwrap a normal optional that doesn’t contain a value.",
               "type" : "text"
             }
           ],
@@ -8050,62 +8495,6 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Don’t use an implicitly unwrapped optional when there’s a possibility of",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "a variable becoming ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " at a later point.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "Always use a normal optional type if you need to check for a ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " value",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "during the lifetime of a variable.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
         },
         {
           "anchor" : "Error-Handling",
@@ -8739,6 +9128,62 @@
             {
               "text" : "code execution ends, and your app is terminated.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Stopping execution immediately helps make the program easier to debug.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In a program with unchecked assumptions,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you might not notice this kind problem until much later",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when code elsewhere starts failing visibly,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and after user data has been silently corrupted.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Although termination isn’t a good experience for your users,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "it contains the user impact of the problem and helps reduce data loss.",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -8877,6 +9322,46 @@
             },
             {
               "text" : "there’s no way to catch a failed assertion.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Trying to recover from an invalid state isn’t possible —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because the assertion failed,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you know that at least one piece of the program’s data is invalid,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but you don’t know why it’s invalid",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or what additional state is also invalid.",
               "type" : "text"
             }
           ],
@@ -9686,7 +10171,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -9713,6 +10198,16 @@
   "title" : "Basic Operators",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/basicoperators"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/BasicOperators#Nil-Coalescing-Operator": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/BasicOperators#Nil-Coalescing-Operator",
+  "kind" : "section",
+  "title" : "Nil-Coalescing Operator",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/basicoperators#Nil-Coalescing-Operator"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ClassesAndStructures": {
   "abstract" : [
@@ -9814,6 +10309,20 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/functions#Functions-with-Multiple-Return-Values"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OptionalChaining": {
+  "abstract" : [
+    {
+      "text" : "Access members of an optional value without unwrapping.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OptionalChaining",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Optional Chaining",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/optionalchaining"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/StringsAndCharacters#String-Interpolation": {
   "abstract" : [
 
@@ -9823,6 +10332,16 @@
   "title" : "String Interpolation",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/stringsandcharacters#String-Interpolation"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TheBasics#Assertions-and-Preconditions": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Assertions-and-Preconditions",
+  "kind" : "section",
+  "title" : "Assertions and Preconditions",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/thebasics#Assertions-and-Preconditions"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TheBasics#Error-Handling": {
   "abstract" : [
@@ -9901,6 +10420,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/1541112-assert"
+},
+"https://developer.apple.com/documentation/swift/fatalerror(_:file:line:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fatalerror(_:file:line:)",
+  "title" : "fatalError(_:file:line:)",
+  "titleInlineContent" : [
+    {
+      "code" : "fatalError(_:file:line:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/fatalerror(_:file:line:)"
 },
 "https://developer.apple.com/support/beta-software/": {
   "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",

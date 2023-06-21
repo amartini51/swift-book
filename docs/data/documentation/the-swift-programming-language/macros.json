@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Transform code at compile time to generate repetitive code.",
+      "text" : "Use macros to generate code at compile time.",
       "type" : "text"
     }
   ],
@@ -50,7 +50,7 @@
               "type" : "text"
             },
             {
-              "text" : "Swift expands macros before building your code as usual.",
+              "text" : "Swift expands any macros in your code before building your code as usual.",
               "type" : "text"
             }
           ],
@@ -173,7 +173,7 @@
               "type" : "text"
             },
             {
-              "text" : "like using macro incorrectly",
+              "text" : "like using a macro incorrectly",
               "type" : "text"
             },
             {
@@ -335,8 +335,10 @@
         },
         {
           "code" : [
-            "let currentFunctionName = #function",
-            "#warning(\"Something's wrong\")"
+            "func myFunction() {",
+            "    print(\"Currently running \\(#function)\")",
+            "    #warning(\"Something's wrong\")",
+            "}"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -360,8 +362,9 @@
               "type" : "text"
             },
             {
-              "code" : "function",
-              "type" : "codeVoice"
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " macro from the Swift standard library.",
@@ -404,6 +407,30 @@
               "type" : "text"
             },
             {
+              "text" : "When you run this code and call ",
+              "type" : "text"
+            },
+            {
+              "code" : "myFunction()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "it prints “Currently running myFunction()”.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
               "text" : "In the second line,",
               "type" : "text"
             },
@@ -416,7 +443,16 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " calls another macro from the standard library",
+              "text" : " calls the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " macro from the Swift standard library",
               "type" : "text"
             },
             {
@@ -765,7 +801,7 @@
             "    static let cherry: Self = Self(rawValue: 1 << Options.cherry.rawValue)",
             "    static let fudge: Self = Self(rawValue: 1 << Options.fudge.rawValue)",
             "}",
-            "extension SundaeToppings: OptionSet  {}"
+            "extension SundaeToppings: OptionSet { }"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -825,7 +861,7 @@
               "type" : "text"
             },
             {
-              "text" : "than the manual-coded version, earlier.",
+              "text" : "than the manually coded version, earlier.",
               "type" : "text"
             }
           ],
@@ -848,7 +884,7 @@
               "type" : "text"
             },
             {
-              "text" : "you implement a symbol, like a function or type,",
+              "text" : "when you implement a symbol, like a function or type,",
               "type" : "text"
             },
             {
@@ -856,7 +892,7 @@
               "type" : "text"
             },
             {
-              "text" : "and there’s no separate declaration.",
+              "text" : "there’s no separate declaration.",
               "type" : "text"
             },
             {
@@ -872,7 +908,7 @@
               "type" : "text"
             },
             {
-              "text" : "A macro’s implementation contains the code",
+              "text" : "A macro’s declaration contains its name,",
               "type" : "text"
             },
             {
@@ -880,23 +916,7 @@
               "type" : "text"
             },
             {
-              "text" : "that expands the macro by generating Swift code,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and its declaration",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "as well as the macro’s name, the parameters it takes,",
+              "text" : "the parameters it takes,",
               "type" : "text"
             },
             {
@@ -913,6 +933,22 @@
             },
             {
               "text" : "and what kind of code it generates.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "A macro’s implementation contains the code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that expands the macro by generating Swift code.",
               "type" : "text"
             }
           ],
@@ -986,15 +1022,7 @@
               "type" : "text"
             },
             {
-              "text" : "specifies the macro’s name, ",
-              "type" : "text"
-            },
-            {
-              "code" : "OptionSet",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
+              "text" : "specifies the macro’s name and its arguments —",
               "type" : "text"
             },
             {
@@ -1002,7 +1030,15 @@
               "type" : "text"
             },
             {
-              "text" : "and the arguments that takes, in this case none.",
+              "text" : "the name is ",
+              "type" : "text"
+            },
+            {
+              "code" : "OptionSet",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", and it doesn’t take any arguments.",
               "type" : "text"
             },
             {
@@ -1022,8 +1058,9 @@
               "type" : "text"
             },
             {
-              "code" : "#externalMacro(module:type:)",
-              "type" : "codeVoice"
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/externalmacro(module:type:)",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " macro from the Swift standard library",
@@ -1034,7 +1071,7 @@
               "type" : "text"
             },
             {
-              "text" : "to tell Swift where the macro’s implementation is.",
+              "text" : "to tell Swift where the macro’s implementation is located.",
               "type" : "text"
             },
             {
@@ -1115,7 +1152,7 @@
               "type" : "text"
             },
             {
-              "text" : "its name uses upper camel case",
+              "text" : "its name uses upper camel case,",
               "type" : "text"
             },
             {
@@ -1265,7 +1302,7 @@
               "type" : "text"
             },
             {
-              "text" : "Here’s a partial declaration of ",
+              "text" : "Here’s a bit more of the declaration for ",
               "type" : "text"
             },
             {
@@ -1749,7 +1786,7 @@
               "type" : "text"
             },
             {
-              "text" : "In this case,",
+              "text" : "For example,",
               "type" : "text"
             },
             {
@@ -1757,19 +1794,7 @@
               "type" : "text"
             },
             {
-              "text" : "for each case in the private ",
-              "type" : "text"
-            },
-            {
-              "code" : "Options",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " enumeration,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
+              "text" : "when the ",
               "type" : "text"
             },
             {
@@ -1777,7 +1802,51 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " generates a corresponding declaration with the same name.",
+              "text" : " macro is applied to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "SundaeToppings",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "it generates type properties that correspond to the enumeration cases,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "nuts",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "cherry",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", and ",
+              "type" : "text"
+            },
+            {
+              "code" : "fudge",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -1831,6 +1900,10 @@
               "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes",
               "isActive" : true,
               "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -1844,7 +1917,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "As part of building Swift code that uses macros,",
+              "text" : "When building Swift code that uses macros,",
               "type" : "text"
             },
             {
@@ -1852,15 +1925,7 @@
               "type" : "text"
             },
             {
-              "text" : "the compiler and the macro’s implementation",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "pass that code back and forth to expand the macros.",
+              "text" : "the compiler calls the macros’ implementation to expand them.",
               "type" : "text"
             }
           ],
@@ -1869,7 +1934,16 @@
         {
           "inlineContent" : [
             {
-              "text" : "Macros are expanded as follows:",
+              "identifier" : "macro-expansion-full",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Specifically, Swift expands macros in the following way:",
               "type" : "text"
             }
           ],
@@ -1967,24 +2041,6 @@
         {
           "inlineContent" : [
             {
-              "text" : "These steps transform the code as shown below:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "identifier" : "macro-expansion-full",
-              "type" : "image"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
               "text" : "To go through the specific steps, consider the following:",
               "type" : "text"
             }
@@ -2017,7 +2073,7 @@
               "type" : "text"
             },
             {
-              "text" : "and returns a unsigned 32-bit integer",
+              "text" : "and returns an unsigned 32-bit integer",
               "type" : "text"
             },
             {
@@ -2053,8 +2109,9 @@
               "type" : "text"
             },
             {
-              "text" : "doc:Macros#Implementing-Macros",
-              "type" : "text"
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros#Implementing-a-Macro",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " section below",
@@ -2119,7 +2176,7 @@
               "type" : "text"
             },
             {
-              "text" : "The AST makes the code’s meaning and structure explicit,",
+              "text" : "The AST makes the code’s structure explicit,",
               "type" : "text"
             },
             {
@@ -2185,7 +2242,7 @@
               "type" : "text"
             },
             {
-              "text" : "Each of the elements in the AST",
+              "text" : "Each element in the AST",
               "type" : "text"
             },
             {
@@ -2193,7 +2250,7 @@
               "type" : "text"
             },
             {
-              "text" : "corresponds to part of the source code’s meaning.",
+              "text" : "corresponds to a part of the source code.",
               "type" : "text"
             },
             {
@@ -2251,11 +2308,12 @@
             {
               "text" : "and the list of arguments being passed to the macro.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "As part of constructing this AST,",
               "type" : "text"
@@ -2557,7 +2615,7 @@
               "type" : "text"
             },
             {
-              "text" : "For example, a macro’s expansion can’t depend on the current time of day.",
+              "text" : "For example, a macro’s expansion must not depend on the current time of day.",
               "type" : "text"
             }
           ],
@@ -2994,7 +3052,7 @@
               "type" : "text"
             },
             {
-              "text" : "in a structured way, using an abstract syntax trees (AST).",
+              "text" : "in a structured way, using an AST.",
               "type" : "text"
             },
             {
@@ -3299,8 +3357,9 @@
               "type" : "text"
             },
             {
-              "text" : "doc:Attributes:freestanding",
-              "type" : "text"
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#freestanding",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " ",
@@ -3646,7 +3705,7 @@
               "type" : "text"
             },
             {
-              "text" : "they transform one AST into another AST",
+              "text" : "They transform one AST into another AST",
               "type" : "text"
             },
             {
@@ -3662,7 +3721,7 @@
               "type" : "text"
             },
             {
-              "text" : "and without making changes to any external state..",
+              "text" : "and without making changes to any external state.",
               "type" : "text"
             },
             {
@@ -3678,7 +3737,7 @@
               "type" : "text"
             },
             {
-              "text" : "which simplifies setting up the input for a unit test.",
+              "text" : "which simplifies setting up the input for a test.",
               "type" : "text"
             },
             {
@@ -3799,7 +3858,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language",
+  "title" : "The Swift Programming Language (5.9 beta)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -3837,6 +3896,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/attributes#freestanding"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Macros#Implementing-a-Macro": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros#Implementing-a-Macro",
+  "kind" : "section",
+  "title" : "Implementing a Macro",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/macros#Implementing-a-Macro"
+},
 "http://github.com/apple/swift-syntax/": {
   "identifier" : "http:\/\/github.com\/apple\/swift-syntax\/",
   "title" : "SwiftSyntax",
@@ -3848,6 +3917,30 @@
   ],
   "type" : "link",
   "url" : "http:\/\/github.com\/apple\/swift-syntax\/"
+},
+"https://developer.apple.com/documentation/swift/externalmacro(module:type:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/externalmacro(module:type:)",
+  "title" : "externalMacro(module:type:)",
+  "titleInlineContent" : [
+    {
+      "code" : "externalMacro(module:type:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/externalmacro(module:type:)"
+},
+"https://developer.apple.com/documentation/swift/function": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
+  "title" : "function",
+  "titleInlineContent" : [
+    {
+      "code" : "function",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/function"
 },
 "https://developer.apple.com/documentation/swift/optionset-swift.macro": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.macro",
@@ -3872,6 +3965,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.protocol"
+},
+"https://developer.apple.com/documentation/swift/warning(_:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
+  "title" : "warning(_:)",
+  "titleInlineContent" : [
+    {
+      "code" : "warning(_:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)"
 },
 "macro-ast-input": {
   "alt" : "A tree diagram, with a macro call as the root element.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.",
