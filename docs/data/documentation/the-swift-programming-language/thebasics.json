@@ -9128,62 +9128,6 @@
             {
               "text" : "code execution ends, and your app is terminated.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Stopping execution immediately helps make the program easier to debug.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "In a program with unchecked assumptions,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you might not notice this kind problem until much later",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "when code elsewhere starts failing visibly,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and after user data has been silently corrupted.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Although termination isn’t a good experience for your users,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "it contains the user impact of the problem and helps reduce data loss.",
-              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -9427,6 +9371,38 @@
             },
             {
               "text" : "and helps make the problem easier to debug.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When assumptions aren’t checked,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you might not notice this kind problem until much later",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when code elsewhere starts failing visibly,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and after user data has been silently corrupted.",
               "type" : "text"
             },
             {
