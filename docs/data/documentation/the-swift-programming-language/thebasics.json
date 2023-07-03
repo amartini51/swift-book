@@ -5617,7 +5617,15 @@
               "type" : "emphasis"
             },
             {
-              "text" : " a value, and you can unwrap the optional to access that value,",
+              "text" : " a value of a specified type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and you can unwrap the optional to access that value,",
               "type" : "text"
             },
             {
@@ -5647,7 +5655,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "For example,",
+              "text" : "As an example of a value that might be missing,",
               "type" : "text"
             },
             {
@@ -5695,7 +5703,7 @@
               "type" : "text"
             },
             {
-              "text" : "However, not every string can be converted into an integer.",
+              "text" : "However, only some strings can be converted into integers.",
               "type" : "text"
             },
             {
@@ -5735,14 +5743,13 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " doesn’t have an obvious numeric value to convert to.",
+              "text" : " doesn’t have a corresponding numeric value.",
               "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
             {
               "text" : "The example below uses the initializer to try to convert a ",
               "type" : "text"
@@ -5770,7 +5777,7 @@
           "code" : [
             "let possibleNumber = \"123\"",
             "let convertedNumber = Int(possibleNumber)",
-            "\/\/ convertedNumber is inferred to be of type \"Int?\", or \"optional Int\""
+            "\/\/ The type of convertedNumber is \"optional Int\""
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -5778,7 +5785,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Because the initializer might fail,",
+              "text" : "Because the initializer in the code above might fail,",
               "type" : "text"
             },
             {
@@ -5817,6 +5824,63 @@
             {
               "text" : ".",
               "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To write an optional type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you write a question mark (",
+              "type" : "text"
+            },
+            {
+              "code" : "?",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ")",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "after the name of the type that the optional contains —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example, the type of an optional ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int?",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
             },
             {
               "text" : " ",
@@ -5831,15 +5895,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " is written as ",
-              "type" : "text"
-            },
-            {
-              "code" : "Int?",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
+              "text" : " always contains",
               "type" : "text"
             },
             {
@@ -5847,28 +5903,7 @@
               "type" : "text"
             },
             {
-              "text" : "with a question mark to indicate that the value it contains is optional,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "meaning that it might contain ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "some",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " ",
+              "text" : "either some ",
               "type" : "text"
             },
             {
@@ -5876,7 +5911,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " value,",
+              "text" : " value or no value at all.",
               "type" : "text"
             },
             {
@@ -5884,28 +5919,7 @@
               "type" : "text"
             },
             {
-              "text" : "or it might contain ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "no value at all",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "It can’t contain anything else, such as a ",
+              "text" : "It can’t contain anything else, like a ",
               "type" : "text"
             },
             {
@@ -5921,23 +5935,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " value;",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "it’s either an ",
-              "type" : "text"
-            },
-            {
-              "code" : "Int",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ", or it’s nothing at all.",
+              "text" : " value.",
               "type" : "text"
             }
           ],
@@ -6013,6 +6011,101 @@
           "code" : [
             "var surveyAnswer: String?",
             "\/\/ surveyAnswer is automatically set to nil"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can use an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement to find out whether an optional contains a value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "by comparing the optional against ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You perform this comparison with the “equal to” operator (",
+              "type" : "text"
+            },
+            {
+              "code" : "==",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ")",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or the “not equal to” operator (",
+              "type" : "text"
+            },
+            {
+              "code" : "!=",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ").",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If an optional has a value, it’s considered to be “not equal to” ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let possibleNumber = \"123\"",
+            "let convertedNumber = Int(possibleNumber)",
+            "",
+            "if convertedNumber != nil {",
+            "    print(\"convertedNumber contains some integer value.\")",
+            "}",
+            "\/\/ Prints \"convertedNumber contains some integer value.\""
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -6133,23 +6226,7 @@
               "type" : "text"
             },
             {
-              "text" : "You can’t accidentally treat an optional as if it were non-optional,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "forgetting to check for ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " and assuming there’s a value,",
+              "text" : "You can’t accidentally treat an optional as if it were non-optional",
               "type" : "text"
             },
             {
@@ -7382,7 +7459,7 @@
               "type" : "text"
             },
             {
-              "text" : "a default value using the nil-coalescing operator operator (",
+              "text" : "a default value using the nil-coalescing operator (",
               "type" : "text"
             },
             {
@@ -7529,23 +7606,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "You can use an ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " statement to find out whether an optional contains a value",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "by comparing the optional against ",
+              "text" : "When ",
               "type" : "text"
             },
             {
@@ -7553,7 +7614,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ".",
+              "text" : " represents an unrecoverable failure,",
               "type" : "text"
             },
             {
@@ -7561,15 +7622,7 @@
               "type" : "text"
             },
             {
-              "text" : "You perform this comparison with the “equal to” operator (",
-              "type" : "text"
-            },
-            {
-              "code" : "==",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ")",
+              "text" : "such a programmer error or corrupted data,",
               "type" : "text"
             },
             {
@@ -7577,54 +7630,7 @@
               "type" : "text"
             },
             {
-              "text" : "or the “not equal to” operator (",
-              "type" : "text"
-            },
-            {
-              "code" : "!=",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ").",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "If an optional has a value, it’s considered to be “not equal to” ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ":",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let possibleNumber = \"123\"",
-            "let convertedNumber = Int(possibleNumber)",
-            "",
-            "if convertedNumber != nil {",
-            "    print(\"convertedNumber contains some integer value.\")",
-            "}",
-            "\/\/ Prints \"convertedNumber contains some integer value.\""
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "After you’re sure that the optional contains a value,",
+              "text" : "you can access the underlying value",
               "type" : "text"
             },
             {
@@ -7632,15 +7638,7 @@
               "type" : "text"
             },
             {
-              "text" : "one way to access its underlying value",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "is adding an exclamation mark (",
+              "text" : "by adding an exclamation mark (",
               "type" : "text"
             },
             {
@@ -7656,53 +7654,26 @@
               "type" : "text"
             },
             {
-              "text" : "The exclamation point effectively says,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "“I know that this optional definitely has a value; please use it.”",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
               "text" : "This is known as ",
               "type" : "text"
             },
             {
               "inlineContent" : [
                 {
-                  "text" : "forced unwrapping",
+                  "text" : "force unwrapping",
                   "type" : "text"
                 }
               ],
               "type" : "emphasis"
             },
             {
-              "text" : " of the optional’s value:",
+              "text" : " the optional’s value.",
               "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "if convertedNumber != nil {",
-            "    print(\"convertedNumber has an integer value of \\(convertedNumber!).\")",
-            "}",
-            "\/\/ Prints \"convertedNumber has an integer value of 123.\""
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
             {
               "text" : "When you force unwrap a non-",
               "type" : "text"
@@ -7745,55 +7716,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Because a ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " value stops the program,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "another reason to force unwrap an optional",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "is when ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " represents an unrecoverable failure,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "such a programmer error or corrupted data.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "In that usage, the ",
+              "text" : "The ",
               "type" : "text"
             },
             {
@@ -7801,7 +7724,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " is a shorter spelling of ",
+              "text" : " is, effectively, a shorter spelling of ",
               "type" : "text"
             },
             {
@@ -7826,6 +7749,9 @@
         },
         {
           "code" : [
+            "let possibleNumber = \"123\"",
+            "let convertedNumber = Int(possibleNumber)",
+            "",
             "let number = convertedNumber!",
             "",
             "guard let number = convertedNumber else {",
