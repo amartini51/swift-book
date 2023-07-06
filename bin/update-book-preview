@@ -38,7 +38,7 @@ OUTPUT_PATH="./gh-pages/docs"
 USE_BRANCH="${2:-}"
 if [[ "$USE_BRANCH" == "--use-branch" ]]
 then
-    CURRENT_BRANCH="$(symbolic-ref --short HEAD)"
+    CURRENT_BRANCH="$(git symbolic-ref --short HEAD)"
     OUTPUT_PATH="${OUTPUT_PATH}/${CURRENT_BRANCH}"
 fi
 
