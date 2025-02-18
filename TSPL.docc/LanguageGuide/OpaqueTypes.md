@@ -467,7 +467,7 @@ Here's an example of a function that incorporates its type parameter
 into the underlying type of the value it returns:
 
 ```swift
-func `repeat`<T: Shape>(shape: T, count: Int) -> some Collection {
+func `repeat`<T: Shape>(shape: T, count: Int) -> some Collection<T> {
     return Array<T>(repeating: shape, count: count)
 }
 ```
@@ -476,7 +476,7 @@ func `repeat`<T: Shape>(shape: T, count: Int) -> some Collection {
   - test: `opaque-result`
 
   ```swifttest
-  -> func `repeat`<T: Shape>(shape: T, count: Int) -> some Collection {
+  -> func `repeat`<T: Shape>(shape: T, count: Int) -> some Collection<T> {
          return Array<T>(repeating: shape, count: count)
      }
   ```
