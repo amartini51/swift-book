@@ -41,7 +41,8 @@ with powerful features like type inference and pattern matching,
 allowing complex ideas to be expressed in a clear and concise manner.
 As a result, code is easier to read, write, and maintain.
 
-Swift continues to evolve with thoughtful new features and powerful capabilities.
+Swift continues to evolve
+with thoughtful new features and powerful capabilities.
 The goals for Swift are ambitious.
 We can’t wait to see what you create with it.
 
