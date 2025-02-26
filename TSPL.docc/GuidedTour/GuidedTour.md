@@ -1023,11 +1023,14 @@ print(sortedNumbers)
 -->
 
 <!--
-  Called sorted() on a variable rather than a literal to work around an issue in Xcode.  See <rdar://17540974>.
+  Called sorted() on a variable rather than a literal
+  to work around an issue in Xcode.
+  See <rdar://17540974>.
 -->
 
 <!--
-  Omitted sort(foo, <) because it often causes a spurious warning in Xcode.  See <rdar://17047529>.
+  Omitted sort(foo, <) because it often causes a spurious warning in Xcode.
+  See <rdar://17047529>.
 -->
 
 <!--
@@ -1317,7 +1320,8 @@ has three different steps:
 If you don't need to compute the property
 but still need to provide code that's run before and after setting a new value,
 use `willSet` and `didSet`.
-The code you provide is run any time the value changes outside of an initializer.
+The code you provide is run any time the value changes
+outside of an initializer.
 For example, the class below ensures
 that the side length of its triangle
 is always the same as the side length of its square.
