@@ -13,13 +13,15 @@ as described in <doc:CollectionTypes>.
 
 Swift uses variables to store and refer to values by an identifying name.
 Swift also makes extensive use of variables whose values can't be changed.
-These are known as constants, and are used throughout Swift to make code safer and clearer in intent
+These are known as constants,
+and are used throughout Swift to make code safer and clearer in intent
 when you work with values that don't need to change.
 
 In addition to familiar types,
 Swift introduces advanced types such as tuples.
 Tuples enable you to create and pass around groupings of values.
-You can use a tuple to return multiple values from a function as a single compound value.
+You can use a tuple to return multiple values
+from a function as a single compound value.
 
 Swift handles the absence of a value
 using optional types.
@@ -187,7 +189,8 @@ so the code above can be read as:
 “Declare a variable called `welcomeMessage` that's of type `String`.”
 
 The phrase “of type `String`” means “can store any `String` value.”
-Think of it as meaning “the type of thing” (or “the kind of thing”) that can be stored.
+Think of it as meaning “the type of thing” (or “the kind of thing”)
+that can be stored.
 
 The `welcomeMessage` variable can now be set to any string value without error:
 
@@ -206,7 +209,8 @@ welcomeMessage = "Hello"
 -->
 
 You can define multiple related variables of the same type on a single line,
-separated by commas, with a single type annotation after the final variable name:
+separated by commas,
+with a single type annotation after the final variable name:
 
 ```swift
 var red, green, blue: Double
@@ -221,12 +225,14 @@ var red, green, blue: Double
 -->
 
 > Note: It's rare that you need to write type annotations in practice.
-> If you provide an initial value for a constant or variable at the point that it's defined,
-> Swift can almost always infer the type to be used for that constant or variable,
+> If you provide an initial value for a constant or variable
+> at the point that it's defined,
+> Swift can almost always infer the type
+> to be used for that constant or variable,
 > as described in <doc:TheBasics#Type-Safety-and-Type-Inference>.
 > In the `welcomeMessage` example above, no initial value is provided,
-> and so the type of the `welcomeMessage` variable is specified with a type annotation
-> rather than being inferred from an initial value.
+> and so the type of the `welcomeMessage` variable is specified
+> with a type annotation rather than being inferred from an initial value.
 
 ### Naming Constants and Variables
 
@@ -250,7 +256,8 @@ let 🐶🐮 = "dogcow"
 -->
 
 Constant and variable names can't contain
-whitespace characters, mathematical symbols, arrows, private-use Unicode scalar values,
+whitespace characters, mathematical symbols, arrows,
+private-use Unicode scalar values,
 or line- and box-drawing characters.
 Nor can they begin with a number,
 although numbers may be included elsewhere within the name.
@@ -261,11 +268,14 @@ or change it to store values of a different type.
 Nor can you change a constant into a variable
 or a variable into a constant.
 
-> Note: If you need to give a constant or variable the same name as a reserved Swift keyword,
+> Note:
+> If you need to give a constant or variable
+> the same name as a reserved Swift keyword,
 > surround the keyword with backticks (`` ` ``) when using it as a name.
 > However, avoid using keywords as names unless you have absolutely no choice.
 
-You can change the value of an existing variable to another value of a compatible type.
+You can change the value of an existing variable
+to another value of a compatible type.
 In this example, the value of `friendlyWelcome` is changed from
 `"Hello!"` to `"Bonjour!"`:
 
@@ -314,7 +324,8 @@ languageName = "Swift++"
 
 ### Printing Constants and Variables
 
-You can print the current value of a constant or variable with the `print(_:separator:terminator:)` function:
+You can print the current value of a constant or variable
+with the `print(_:separator:terminator:)` function:
 
 ```swift
 print(friendlyWelcome)
@@ -334,7 +345,8 @@ The `print(_:separator:terminator:)` function
 is a global function that prints one or more values
 to an appropriate output.
 In Xcode, for example,
-the `print(_:separator:terminator:)` function prints its output in Xcode's “console” pane.
+the `print(_:separator:terminator:)` function
+prints its output in Xcode's “console” pane.
 The `separator` and `terminator` parameter have default values,
 so you can omit them when you call this function.
 By default, the function terminates the line it prints by adding a line break.
@@ -361,14 +373,17 @@ see <doc:Functions#Default-Parameter-Values>.
 -->
 
 <!--
-  NOTE: this is a deliberately simplistic description of what you can do with print().
+  NOTE: this is a deliberately simplistic description
+  of what you can do with print().
   It will be expanded later on.
 -->
 
 Swift uses *string interpolation* to include the name of a constant or variable
 as a placeholder in a longer string,
-and to prompt Swift to replace it with the current value of that constant or variable.
-Wrap the name in parentheses and escape it with a backslash before the opening parenthesis:
+and to prompt Swift to replace it
+with the current value of that constant or variable.
+Wrap the name in parentheses and escape it
+with a backslash before the opening parenthesis:
 
 ```swift
 print("The current value of friendlyWelcome is \(friendlyWelcome)")
@@ -447,13 +462,15 @@ This is the end of the first multiline comment. */
   ```
 -->
 
-Nested multiline comments enable you to comment out large blocks of code quickly and easily,
+Nested multiline comments
+enable you to comment out large blocks of code quickly and easily,
 even if the code already contains multiline comments.
 
 ## Semicolons
 
 Unlike many other languages,
-Swift doesn't require you to write a semicolon (`;`) after each statement in your code,
+Swift doesn't require you to write a semicolon (`;`)
+after each statement in your code,
 although you can do so if you wish.
 However, semicolons *are* required
 if you want to write multiple separate statements on a single line:
@@ -549,7 +566,8 @@ as described in <doc:AdvancedOperators#Overflow-Operators>.
 
 ### Int
 
-In most cases, you don't need to pick a specific size of integer to use in your code.
+In most cases,
+you don't need to pick a specific size of integer to use in your code.
 Swift provides an additional integer type, `Int`,
 which has the same size as the current platform's native word size:
 
@@ -559,7 +577,8 @@ which has the same size as the current platform's native word size:
 Unless you need to work with a specific size of integer,
 always use `Int` for integer values in your code.
 This aids code consistency and interoperability.
-Even on 32-bit platforms, `Int` can store any value between `-2,147,483,648` and `2,147,483,647`,
+Even on 32-bit platforms,
+`Int` can store any value between `-2,147,483,648` and `2,147,483,647`,
 and is large enough for many integer ranges.
 
 ### UInt
@@ -570,13 +589,16 @@ which has the same size as the current platform's native word size:
 - On a 32-bit platform, `UInt` is the same size as `UInt32`.
 - On a 64-bit platform, `UInt` is the same size as `UInt64`.
 
-> Note: Use `UInt` only when you specifically need
-> an unsigned integer type with the same size as the platform's native word size.
+> Note:
+> Use `UInt` only when you specifically need
+> an unsigned integer type
+> with the same size as the platform's native word size.
 > If this isn't the case, `Int` is preferred,
 > even when the values to be stored are known to be nonnegative.
 > A consistent use of `Int` for integer values aids code interoperability,
 > avoids the need to convert between different number types,
-> and matches integer type inference, as described in <doc:TheBasics#Type-Safety-and-Type-Inference>.
+> and matches integer type inference,
+> as described in <doc:TheBasics#Type-Safety-and-Type-Inference>.
 
 ## Floating-Point Numbers
 
@@ -661,13 +683,15 @@ When building code,
 Swift checks the code for type safety
 and flags any mismatched types as errors.
 
-Type checking helps you avoid errors when you're working with different types of values.
+Type checking helps you avoid errors
+when you're working with different types of values.
 However, this doesn't mean that you have to specify the type of
 every constant and variable that you declare.
 If you don't specify the type of value you need,
 Swift uses *type inference* to work out the appropriate type.
 Type inference enables a compiler to
-deduce the type of a particular expression automatically when it compiles your code,
+deduce the type of a particular expression automatically
+when it compiles your code,
 simply by examining the values you provide.
 
 Because of type inference, Swift requires far fewer type declarations
@@ -781,7 +805,8 @@ let hexadecimalInteger = 0x11     // 17 in hexadecimal notation
 
 Floating-point literals can be decimal (with no prefix),
 or hexadecimal (with a `0x` prefix).
-They must always have a number (or hexadecimal number) on both sides of the decimal point.
+They must always have a number (or hexadecimal number)
+on both sides of the decimal point.
 Decimal floats can also have an optional *exponent*,
 indicated by an uppercase or lowercase `e`;
 hexadecimal floats must have an exponent,
@@ -861,13 +886,15 @@ let justOverOneMillion = 1_000_000.000_000_1
 
 ## Numeric Type Conversion
 
-Use the `Int` type for all general-purpose integer constants and variables in your code,
+Use the `Int` type for all general-purpose
+integer constants and variables in your code,
 even if they're known to be nonnegative.
 Using the default integer type in everyday situations means that
 integer constants and variables are immediately interoperable in your code
 and will match the inferred type for integer literal values.
 
-Use other integer types only when they're specifically needed for the task at hand,
+Use other integer types
+only when they're specifically needed for the task at hand,
 because of explicitly sized data from an external source,
 or for performance, memory usage, or other necessary optimization.
 Using explicitly sized types in these situations
@@ -948,7 +975,8 @@ the addition is allowed.
 The output constant (`twoThousandAndOne`) is inferred to be of type `UInt16`,
 because it's the sum of two `UInt16` values.
 
-`SomeType(ofInitialValue)` is the default way to call the initializer of a Swift type
+`SomeType(ofInitialValue)` is the default way
+to call the initializer of a Swift type
 and pass in an initial value.
 Behind the scenes, `UInt16` has an initializer that accepts a `UInt8` value,
 and so this initializer is used to make a new `UInt16` from an existing `UInt8`.
@@ -960,7 +988,8 @@ is covered in <doc:Extensions>.
 
 ### Integer and Floating-Point Conversion
 
-Conversions between integer and floating-point numeric types must be made explicit:
+Conversions between integer and floating-point numeric types
+must be made explicit:
 
 ```swift
 let three = 3
@@ -981,7 +1010,8 @@ let pi = Double(three) + pointOneFourOneFiveNine
   ```
 -->
 
-Here, the value of the constant `three` is used to create a new value of type `Double`,
+Here, the value of the constant `three`
+is used to create a new value of type `Double`,
 so that both sides of the addition are of the same type.
 Without this conversion in place, the addition would not be allowed.
 
@@ -1003,17 +1033,21 @@ let integerPi = Int(pi)
   ```
 -->
 
-Floating-point values are always truncated when used to initialize a new integer value in this way.
+Floating-point values are always truncated
+when used to initialize a new integer value in this way.
 This means that `4.75` becomes `4`, and `-3.9` becomes `-3`.
 
-> Note: The rules for combining numeric constants and variables are different from
+> Note:
+> The rules for combining numeric constants and variables are different from
 > the rules for numeric literals.
 > The literal value `3` can be added directly to the literal value `0.14159`,
 > because number literals don't have an explicit type in and of themselves.
-> Their type is inferred only at the point that they're evaluated by the compiler.
+> Their type is inferred
+> only at the point that they're evaluated by the compiler.
 
 <!--
-  NOTE: this section on explicit conversions could be included in the Operators section.
+  NOTE: this section on explicit conversions
+  could be included in the Operators section.
   I think it's more appropriate here, however,
   and helps to reinforce the “just use Int” message.
 -->
@@ -1091,7 +1125,8 @@ As with `Int` and `Double` above,
 you don't need to declare constants or variables as `Bool`
 if you set them to `true` or `false` as soon as you create them.
 
-Boolean values are particularly useful when you work with conditional statements
+Boolean values are particularly useful
+when you work with conditional statements
 such as the `if` statement:
 
 ```swift
@@ -1116,9 +1151,11 @@ if turnipsAreDelicious {
   ```
 -->
 
-Conditional statements such as the `if` statement are covered in more detail in <doc:ControlFlow>.
+Conditional statements such as the `if` statement
+are covered in more detail in <doc:ControlFlow>.
 
-Swift's type safety prevents non-Boolean values from being substituted for `Bool`.
+Swift's type safety prevents non-Boolean values
+from being substituted for `Bool`.
 The following example reports a compile-time error:
 
 ```swift
@@ -1177,9 +1214,12 @@ and ensures that the intention of a particular section of code is always clear.
 The values within a tuple can be of any type
 and don't have to be of the same type as each other.
 
-In this example, `(404, "Not Found")` is a tuple that describes an *HTTP status code*.
-An HTTP status code is a special value returned by a web server whenever you request a web page.
-A status code of `404 Not Found` is returned if you request a webpage that doesn't exist.
+In this example,
+`(404, "Not Found")` is a tuple that describes an *HTTP status code*.
+An HTTP status code is a special value
+returned by a web server whenever you request a web page.
+A status code of `404 Not Found` is returned
+if you request a webpage that doesn't exist.
 
 ```swift
 let http404Error = (404, "Not Found")
@@ -1251,7 +1291,8 @@ print("The status code is \(justTheStatusCode)")
 -->
 
 Alternatively,
-access the individual element values in a tuple using index numbers starting at zero:
+access the individual element values in a tuple
+using index numbers starting at zero:
 
 ```swift
 print("The status code is \(http404Error.0)")
@@ -1307,15 +1348,18 @@ print("The status message is \(http200Status.description)")
 -->
 
 Tuples are particularly useful as the return values of functions.
-A function that tries to retrieve a web page might return the `(Int, String)` tuple type
+A function that tries to retrieve a web page
+might return the `(Int, String)` tuple type
 to describe the success or failure of the page retrieval.
 By returning a tuple with two distinct values,
 each of a different type,
 the function provides more useful information about its outcome
 than if it could only return a single value of a single type.
-For more information, see <doc:Functions#Functions-with-Multiple-Return-Values>.
+For more information,
+see <doc:Functions#Functions-with-Multiple-Return-Values>.
 
-> Note: Tuples are useful for simple groups of related values.
+> Note:
+> Tuples are useful for simple groups of related values.
 > They're not suited to the creation of complex data structures.
 > If your data structure is likely to be more complex,
 > model it as a class or structure, rather than as a tuple.
@@ -1460,13 +1504,10 @@ There are several things you can do when a value is missing,
 as described in the following sections:
 
 - Skip the code that operates on the value when it's `nil`.
-
 - Propagate the `nil` value,
   by returning `nil`
   or using the `?.` operator described in <doc:OptionalChaining>.
-
 - Provide a fallback value, using the `??` operator.
-
 - Stop program execution, using the `!` operator.
 
 > Note:
@@ -1522,7 +1563,8 @@ if let actualNumber = Int(possibleNumber) {
 This code can be read as:
 
 “If the optional `Int` returned by `Int(possibleNumber)` contains a value,
-set a new constant called `actualNumber` to the value contained in the optional.”
+set a new constant called `actualNumber`
+to the value contained in the optional.”
 
 If the conversion is successful,
 the `actualNumber` constant becomes available for use within
@@ -1613,7 +1655,8 @@ is considered to be `false`.
 The following `if` statements are equivalent:
 
 ```swift
-if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
+if let firstNumber = Int("4"), let secondNumber = Int("42"),
+        firstNumber < secondNumber && secondNumber < 100 {
     print("\(firstNumber) < \(secondNumber) < 100")
 }
 // Prints "4 < 42 < 100".
@@ -1740,22 +1783,28 @@ Optionals can be checked with an `if` statement to see if a value exists,
 and can be conditionally unwrapped with optional binding
 to access the optional's value if it does exist.
 
-Sometimes it's clear from a program's structure that an optional will *always* have a value,
+Sometimes it's clear from a program's structure
+that an optional will *always* have a value,
 after that value is first set.
 In these cases, it's useful to remove the need
 to check and unwrap the optional's value every time it's accessed,
 because it can be safely assumed to have a value all of the time.
 
 These kinds of optionals are defined as *implicitly unwrapped optionals*.
-You write an implicitly unwrapped optional by placing an exclamation point (`String!`)
-rather than a question mark (`String?`) after the type that you want to make optional.
-Rather than placing an exclamation point after the optional's name when you use it,
+You write an implicitly unwrapped optional
+by placing an exclamation point (`String!`)
+rather than a question mark (`String?`)
+after the type that you want to make optional.
+Rather than placing an exclamation point
+after the optional's name when you use it,
 you place an exclamation point after the optional's type when you declare it.
 
 Implicitly unwrapped optionals are useful when
-an optional's value is confirmed to exist immediately after the optional is first defined
+an optional's value is confirmed to exist
+immediately after the optional is first defined
 and can definitely be assumed to exist at every point thereafter.
-The primary use of implicitly unwrapped optionals in Swift is during class initialization,
+The primary use of implicitly unwrapped optionals in Swift
+is during class initialization,
 as described in <doc:AutomaticReferenceCounting#Unowned-References-and-Implicitly-Unwrapped-Optional-Properties>.
 
 Don't use an implicitly unwrapped optional when there's a possibility of
@@ -1819,7 +1868,8 @@ let optionalString = assumedString
   ```
 -->
 
-If an implicitly unwrapped optional is `nil` and you try to access its wrapped value,
+If an implicitly unwrapped optional is `nil`
+and you try to access its wrapped value,
 you'll trigger a runtime error.
 The result is exactly the same as if you write an exclamation point
 to force unwrap a normal optional that doesn't contain a value.
@@ -2045,9 +2095,11 @@ any errors that are thrown will be propagated
 to the provided `catch` clauses.
 
 If no error is thrown, the `eatASandwich()` function is called.
-If an error is thrown and it matches the `SandwichError.outOfCleanDishes` case,
+If an error is thrown
+and it matches the `SandwichError.outOfCleanDishes` case,
 then the `washDishes()` function will be called.
-If an error is thrown and it matches the `SandwichError.missingIngredients` case,
+If an error is thrown
+and it matches the `SandwichError.missingIngredients` case,
 then the `buyGroceries(_:)` function is called
 with the associated `[String]` value captured by the `catch` pattern.
 
@@ -2249,7 +2301,8 @@ for example, if the default case of a switch was taken,
 but all valid input data should have been handled
 by one of the switch's other cases.
 
-> Note: If you compile in unchecked mode (`-Ounchecked`),
+> Note:
+> If you compile in unchecked mode (`-Ounchecked`),
 > preconditions aren't checked.
 > The compiler assumes that preconditions are always true,
 > and it optimizes your code accordingly.
