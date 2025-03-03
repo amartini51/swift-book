@@ -59,15 +59,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "If you have written code in C or Objective-C,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "this syntax looks familiar to you —",
+              "text" : "This syntax should look familiar if you know another language —",
               "type" : "text"
             },
             {
@@ -91,7 +83,7 @@
               "type" : "text"
             },
             {
-              "text" : "input\/output or string handling.",
+              "text" : "outputting text or handling strings.",
               "type" : "text"
             },
             {
@@ -1761,7 +1753,7 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "when the loop condition is already true.",
+                  "text" : "when the loop condition is already false.",
                   "type" : "text"
                 }
               ],
@@ -4340,6 +4332,120 @@
           "type" : "codeListing"
         },
         {
+          "inlineContent" : [
+            {
+              "text" : "Use task groups to structure concurrent code.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let userIDs = await withTaskGroup(of: Int.self) { group in",
+            "    for server in [\"primary\", \"secondary\", \"development\"] {",
+            "        group.addTask {",
+            "            return await fetchUserID(from: server)",
+            "        }",
+            "    }",
+            "",
+            "    var results: [Int] = []",
+            "    for await result in group {",
+            "        results.append(result)",
+            "    }",
+            "    return results",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Actors are similar to classes,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "except they ensure that different asynchronous functions",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "can safely interact with an instance of the same actor at the same time.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "actor ServerConnection {",
+            "    var server: String = \"primary\"",
+            "    private var activeUsers: [Int] = []",
+            "    func connect() async -> Int {",
+            "        let userID = await fetchUserID(from: server)",
+            "        \/\/ ... communicate with server ...",
+            "        activeUsers.append(userID)",
+            "        return userID",
+            "    }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you call a method on an actor or access one of its properties,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you mark that code with ",
+              "type" : "text"
+            },
+            {
+              "code" : "await",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to indicate that it might have to wait for other code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that’s already running on the actor to finish.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let server = ServerConnection()",
+            "let userID = await server.connect()"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
           "anchor" : "Protocols-and-Extensions",
           "level" : 2,
           "text" : "Protocols and Extensions",
@@ -5308,7 +5414,9 @@
             "    let result = fridgeContent.contains(food)",
             "    return result",
             "}",
-            "fridgeContains(\"banana\")",
+            "if fridgeContains(\"banana\") {",
+            "    print(\"Found a banana\")",
+            "}",
             "print(fridgeIsOpen)",
             "\/\/ Prints \"false\""
           ],
@@ -5526,49 +5634,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -5591,21 +5656,9 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

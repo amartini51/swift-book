@@ -8776,7 +8776,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " protocol uses in the standard library.",
+              "text" : " protocol uses in the Swift standard library.",
               "type" : "text"
             },
             {
@@ -9133,7 +9133,7 @@
                       "type" : "text"
                     },
                     {
-                      "text" : "from the standard library.",
+                      "text" : "from the Swift standard library.",
                       "type" : "text"
                     }
                   ],
@@ -9274,49 +9274,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -9339,7 +9296,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -9435,18 +9392,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/hashable#2849490"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "stackPoppedOneString": {
   "alt" : null,
   "identifier" : "stackPoppedOneString",
@@ -9457,14 +9402,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/stackPoppedOneString@2x.png"
+      "url" : "\/images\/org.swift.tspl\/stackPoppedOneString@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/stackPoppedOneString~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/stackPoppedOneString~dark@2x.png"
     }
   ]
 },
@@ -9478,14 +9423,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/stackPushPop@2x.png"
+      "url" : "\/images\/org.swift.tspl\/stackPushPop@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/stackPushPop~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/stackPushPop~dark@2x.png"
     }
   ]
 },
@@ -9499,14 +9444,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/stackPushedFourStrings@2x.png"
+      "url" : "\/images\/org.swift.tspl\/stackPushedFourStrings@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/stackPushedFourStrings~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/stackPushedFourStrings~dark@2x.png"
     }
   ]
 }

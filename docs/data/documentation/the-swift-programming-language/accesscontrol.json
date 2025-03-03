@@ -180,15 +180,23 @@
           "type" : "aside"
         },
         {
-          "anchor" : "Modules-and-Source-Files",
+          "anchor" : "Modules-Source-Files-and-Packages",
           "level" : 2,
-          "text" : "Modules and Source Files",
+          "text" : "Modules, Source Files, and Packages",
           "type" : "heading"
         },
         {
           "inlineContent" : [
             {
-              "text" : "Swift’s access control model is based on the concept of modules and source files.",
+              "text" : "Swift’s access control model is based on the concept of",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "modules, source files, and packages.",
               "type" : "text"
             }
           ],
@@ -344,6 +352,109 @@
           "type" : "paragraph"
         },
         {
+          "inlineContent" : [
+            {
+              "text" : "A ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "package",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " is a group of modules that you develop as a unit.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You define the modules that form a package",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as part of configuring the build system you’re using,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "not as part of your Swift source code.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, if you use Swift Package Manager to build your code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you define a package in your ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " file",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using APIs from the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/packagedescription",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " module,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and if you use Xcode, you specify the package name",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in the Package Access Identifier build setting.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Access-Levels",
           "level" : 2,
           "text" : "Access Levels",
@@ -352,7 +463,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift provides five different ",
+              "text" : "Swift provides six different ",
               "type" : "text"
             },
             {
@@ -381,7 +492,15 @@
               "type" : "text"
             },
             {
-              "text" : "and also relative to the module that source file belongs to.",
+              "text" : "the module that source file belongs to,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the package that the module belongs to.",
               "type" : "text"
             }
           ],
@@ -445,6 +564,64 @@
                     },
                     {
                       "text" : "The difference between open and public access is described below.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "Package access",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "enables entities to be used within",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "any source files from their defining package",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "but not in any source file outside of that package.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "You typically use package access",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "within an app or framework that’s structured into multiple modules.",
                       "type" : "text"
                     }
                   ],
@@ -1194,11 +1371,13 @@
         },
         {
           "code" : [
+            "open class SomeOpenClass {}",
             "public class SomePublicClass {}",
             "internal class SomeInternalClass {}",
             "fileprivate class SomeFilePrivateClass {}",
             "private class SomePrivateClass {}",
             "",
+            "open var someOpenVariable = 0",
             "public var somePublicVariable = 0",
             "internal let someInternalConstant = 0",
             "fileprivate func someFilePrivateFunction() {}",
@@ -1476,25 +1655,25 @@
         },
         {
           "code" : [
-            "public class SomePublicClass {                  \/\/ explicitly public class",
+            "public class SomePublicClass {                   \/\/ explicitly public class",
             "    public var somePublicProperty = 0            \/\/ explicitly public class member",
             "    var someInternalProperty = 0                 \/\/ implicitly internal class member",
             "    fileprivate func someFilePrivateMethod() {}  \/\/ explicitly file-private class member",
             "    private func somePrivateMethod() {}          \/\/ explicitly private class member",
             "}",
             "",
-            "class SomeInternalClass {                       \/\/ implicitly internal class",
+            "class SomeInternalClass {                        \/\/ implicitly internal class",
             "    var someInternalProperty = 0                 \/\/ implicitly internal class member",
             "    fileprivate func someFilePrivateMethod() {}  \/\/ explicitly file-private class member",
             "    private func somePrivateMethod() {}          \/\/ explicitly private class member",
             "}",
             "",
-            "fileprivate class SomeFilePrivateClass {        \/\/ explicitly file-private class",
+            "fileprivate class SomeFilePrivateClass {         \/\/ explicitly file-private class",
             "    func someFilePrivateMethod() {}              \/\/ implicitly file-private class member",
             "    private func somePrivateMethod() {}          \/\/ explicitly private class member",
             "}",
             "",
-            "private class SomePrivateClass {                \/\/ explicitly private class",
+            "private class SomePrivateClass {                 \/\/ explicitly private class",
             "    func somePrivateMethod() {}                  \/\/ implicitly private class member",
             "}"
           ],
@@ -2594,11 +2773,19 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ", or ",
+              "text" : ", ",
               "type" : "text"
             },
             {
               "code" : "internal(set)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", or ",
+              "type" : "text"
+            },
+            {
+              "code" : "package(set)",
               "type" : "codeVoice"
             },
             {
@@ -2681,7 +2868,7 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : ", and ",
+                  "text" : ", ",
                   "type" : "text"
                 },
                 {
@@ -2689,7 +2876,19 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " to change the access level",
+                  "text" : ", and ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "package(set)",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "to change the access level",
                   "type" : "text"
                 },
                 {
@@ -4362,49 +4561,6 @@
           "name" : "Note",
           "style" : "note",
           "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -4427,7 +4583,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -4481,17 +4637,17 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/initialization#Required-Initializers"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
+"https://developer.apple.com/documentation/packagedescription": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/packagedescription",
+  "title" : "PackageDescription",
   "titleInlineContent" : [
     {
-      "text" : "Apple’s beta software",
+      "text" : "PackageDescription",
       "type" : "text"
     }
   ],
   "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
+  "url" : "https:\/\/developer.apple.com\/documentation\/packagedescription"
 }
 }
 }

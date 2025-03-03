@@ -26,32 +26,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift is a programming language for iOS, macOS, watchOS, and tvOS app development.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "If you have experience developing in C or Objective-C,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "many parts of Swift will be familiar to you.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Swift provides its own versions of all fundamental C and Objective-C types,",
+              "text" : "Swift provides many fundamental data types,",
               "type" : "text"
             },
             {
@@ -67,19 +42,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " for integers, ",
+              "text" : " for integers,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
               "type" : "text"
             },
             {
               "code" : "Double",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " and ",
-              "type" : "text"
-            },
-            {
-              "code" : "Float",
               "type" : "codeVoice"
             },
             {
@@ -95,7 +66,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " for Boolean values, and ",
+              "text" : " for Boolean values,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
               "type" : "text"
             },
             {
@@ -103,7 +82,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " for textual data.",
+              "text" : " for text.",
               "type" : "text"
             },
             {
@@ -165,7 +144,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Like C, Swift uses variables to store and refer to values by an identifying name.",
+              "text" : "Swift uses variables to store and refer to values by an identifying name.",
               "type" : "text"
             },
             {
@@ -181,15 +160,7 @@
               "type" : "text"
             },
             {
-              "text" : "These are known as constants, and are much more powerful than constants in C.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Constants are used throughout Swift to make code safer and clearer in intent",
+              "text" : "These are known as constants, and are used throughout Swift to make code safer and clearer in intent",
               "type" : "text"
             },
             {
@@ -214,7 +185,7 @@
               "type" : "text"
             },
             {
-              "text" : "Swift introduces advanced types not found in Objective-C, such as tuples.",
+              "text" : "Swift introduces advanced types such as tuples.",
               "type" : "text"
             },
             {
@@ -716,6 +687,234 @@
         {
           "inlineContent" : [
             {
+              "text" : "If a stored value in your code won’t change,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "always declare it as a constant with the ",
+              "type" : "text"
+            },
+            {
+              "code" : "let",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " keyword.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Use variables only for storing values that change.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you declare a constant or a variable,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can give it a value as part of that declaration,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like the examples above.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Alternatively,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can assign its initial value later in the program,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as long as it’s guaranteed to have a value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "before the first time you read from it.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var environment = \"development\"",
+            "let maximumNumberOfLoginAttempts: Int",
+            "\/\/ maximumNumberOfLoginAttempts has no value yet.",
+            "",
+            "if environment == \"development\" {",
+            "    maximumNumberOfLoginAttempts = 100",
+            "} else {",
+            "    maximumNumberOfLoginAttempts = 10",
+            "}",
+            "\/\/ Now maximumNumberOfLoginAttempts has a value, and can be read."
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the maximum number of login attempts is constant,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and its value depends on the environment.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In the development environment,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "it has a value of 100;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in any other environment, its value is 10.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Both branches of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "initialize ",
+              "type" : "text"
+            },
+            {
+              "code" : "maximumNumberOfLoginAttempts",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " with some value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "guaranteeing that the constant always gets a value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For information about how Swift checks your code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when you set an initial value this way,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Constant-Declaration",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
               "text" : "You can declare multiple constants or multiple variables on a single line,",
               "type" : "text"
             },
@@ -736,46 +935,6 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "If a stored value in your code won’t change,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "always declare it as a constant with the ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "let",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " keyword.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "Use variables only for storing values that need to be able to change.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
         },
         {
           "anchor" : "Type-Annotations",
@@ -5927,7 +6086,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " value or a ",
+              "text" : " or ",
               "type" : "text"
             },
             {
@@ -6001,7 +6160,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " for you:",
+              "text" : ":",
               "type" : "text"
             }
           ],
@@ -6083,7 +6242,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "If an optional has a value, it’s considered to be “not equal to” ",
+              "text" : "If an optional has a value, it’s considered as “not equal to” ",
               "type" : "text"
             },
             {
@@ -6153,7 +6312,7 @@
               "type" : "text"
             },
             {
-              "text" : "A constant or variable that’s declared as a non-optional value,",
+              "text" : "A constant or variable that’s declared as a non-optional value",
               "type" : "text"
             },
             {
@@ -6218,7 +6377,7 @@
               "type" : "text"
             },
             {
-              "text" : "and makes it easier to write correct code that handle missing values.",
+              "text" : "and makes it easier to write code that handle missing values.",
               "type" : "text"
             },
             {
@@ -6323,7 +6482,7 @@
               "type" : "text"
             },
             {
-              "text" : "which are described in more detail in the following sections:",
+              "text" : "as described in the following sections:",
               "type" : "text"
             }
           ],
@@ -6833,20 +6992,7 @@
               "type" : "text"
             },
             {
-              "text" : "It has already been initialized with the value contained ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "within",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " the optional,",
+              "text" : "It has already been initialized with the value contained within the optional,",
               "type" : "text"
             },
             {
@@ -6876,6 +7022,10 @@
             {
               "code" : "Int?",
               "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
             },
             {
               "text" : " ",
@@ -7033,23 +7183,7 @@
               "type" : "text"
             },
             {
-              "text" : "Before the beginning of the ",
-              "type" : "text"
-            },
-            {
-              "code" : "if",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " statement and after its end,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "writing ",
+              "text" : "Writing ",
               "type" : "text"
             },
             {
@@ -7057,7 +7191,23 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " refers to the original optional integer constant.",
+              "text" : " before or after the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "refers to the original optional integer constant.",
               "type" : "text"
             }
           ],
@@ -7475,7 +7625,7 @@
               "type" : "text"
             },
             {
-              "text" : "If the optional on the left side of the ",
+              "text" : "If the optional on the left of the ",
               "type" : "text"
             },
             {
@@ -7507,7 +7657,7 @@
               "type" : "text"
             },
             {
-              "text" : "Otherwise, the value on the right side of ",
+              "text" : "Otherwise, the value on the right of ",
               "type" : "text"
             },
             {
@@ -7622,7 +7772,7 @@
               "type" : "text"
             },
             {
-              "text" : "such a programmer error or corrupted state,",
+              "text" : "such as a programmer error or corrupted state,",
               "type" : "text"
             },
             {
@@ -7800,7 +7950,7 @@
               "type" : "text"
             },
             {
-              "text" : "lets your code check that the requirement is true at run time.",
+              "text" : "lets your code check that the requirement is true at runtime.",
               "type" : "text"
             }
           ],
@@ -7834,7 +7984,7 @@
               "type" : "reference"
             },
             {
-              "text" : " below.",
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -9199,7 +9349,7 @@
               "type" : "text"
             },
             {
-              "text" : "Trying to recover from an invalid state isn’t possible —",
+              "text" : "Recovering from an invalid state is impossible.",
               "type" : "text"
             },
             {
@@ -9207,7 +9357,7 @@
               "type" : "text"
             },
             {
-              "text" : "because the assertion failed,",
+              "text" : "When an assertion fails,",
               "type" : "text"
             },
             {
@@ -9215,7 +9365,7 @@
               "type" : "text"
             },
             {
-              "text" : "you know that at least one piece of the program’s data is invalid,",
+              "text" : "at least one piece of the program’s data is invalid —",
               "type" : "text"
             },
             {
@@ -9231,7 +9381,7 @@
               "type" : "text"
             },
             {
-              "text" : "or what additional state is also invalid.",
+              "text" : "or whether an additional state is also invalid.",
               "type" : "text"
             }
           ],
@@ -10008,49 +10158,6 @@
           "name" : "Note",
           "style" : "note",
           "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -10073,7 +10180,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -10162,6 +10269,16 @@
   "title" : "Early Exit",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/controlflow#Early-Exit"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Constant-Declaration": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Constant-Declaration",
+  "kind" : "section",
+  "title" : "Constant Declaration",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/declarations#Constant-Declaration"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling": {
   "abstract" : [
@@ -10334,18 +10451,6 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/fatalerror(_:file:line:)"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

@@ -362,7 +362,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function()",
               "isActive" : true,
               "type" : "reference"
             },
@@ -683,20 +683,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " ",
+              "text" : " calls an ",
               "type" : "text"
             },
             {
-              "text" : "calls the ",
-              "type" : "text"
+              "code" : "@OptionSet",
+              "type" : "codeVoice"
             },
             {
-              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.macro",
-              "isActive" : true,
-              "type" : "reference"
-            },
-            {
-              "text" : " macro from the Swift standard library.",
+              "text" : " macro.",
               "type" : "text"
             },
             {
@@ -724,7 +719,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.protocol",
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset",
               "isActive" : true,
               "type" : "reference"
             },
@@ -1227,7 +1222,7 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "there isn’t anywhere you could apply a non-public macro.",
+                  "text" : "there isn’t anywhere you could apply a nonpublic macro.",
                   "type" : "text"
                 }
               ],
@@ -1327,7 +1322,7 @@
         {
           "code" : [
             "@attached(member)",
-            "@attached(conformance)",
+            "@attached(extension, conformances: OptionSet)",
             "public macro OptionSet<RawType>() =",
             "        #externalMacro(module: \"SwiftMacros\", type: \"OptionSetMacro\")"
           ],
@@ -1437,11 +1432,19 @@
               "type" : "text"
             },
             {
-              "code" : "@attached(conformance)",
+              "code" : "@attached(extension, conformances: OptionSet)",
               "type" : "codeVoice"
             },
             {
-              "text" : ", tells you that ",
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "tells you that ",
               "type" : "text"
             },
             {
@@ -1453,7 +1456,15 @@
               "type" : "text"
             },
             {
-              "text" : "adds one or more protocol conformances.",
+              "text" : "adds conformance to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "OptionSet",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
               "type" : "text"
             },
             {
@@ -1643,7 +1654,7 @@
           "code" : [
             "@attached(member, names: named(RawValue), named(rawValue),",
             "        named(`init`), arbitrary)",
-            "@attached(conformance)",
+            "@attached(extension, conformances: OptionSet)",
             "public macro OptionSet<RawType>() =",
             "        #externalMacro(module: \"SwiftMacros\", type: \"OptionSetMacro\")"
           ],
@@ -1673,7 +1684,7 @@
               "type" : "text"
             },
             {
-              "code" : "named:",
+              "code" : "names:",
               "type" : "codeVoice"
             },
             {
@@ -2155,7 +2166,7 @@
               "type" : "text"
             },
             {
-              "text" : "known an as ",
+              "text" : "known as an ",
               "type" : "text"
             },
             {
@@ -2744,7 +2755,7 @@
         },
         {
           "code" : [
-            "let magicNumber = 1145258561"
+            "let magicNumber = 1145258561 as UInt32"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -2922,7 +2933,125 @@
               "type" : "text"
             },
             {
-              "text" : "add a target for the macro implementation",
+              "text" : "edit the beginning of your ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " file as follows:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Set a Swift tools version of 5.9 or later in the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "swift-tools-version",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " comment.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Import the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "CompilerPluginSupport",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " module.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Include macOS 10.15 as a minimum deployment target in the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "platforms",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " list.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The code below shows the beginning of an example ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " file.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ swift-tools-version: 5.9",
+            "",
+            "import PackageDescription",
+            "import CompilerPluginSupport",
+            "",
+            "let package = Package(",
+            "    name: \"MyPackage\",",
+            "    platforms: [ .iOS(.v17), .macOS(.v13)],",
+            "    \/\/ ...",
+            ")"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Next, add a target for the macro implementation",
               "type" : "text"
             },
             {
@@ -2930,7 +3059,23 @@
               "type" : "text"
             },
             {
-              "text" : "and a target for the macro library.",
+              "text" : "and a target for the macro library",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to your existing ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " file.",
               "type" : "text"
             },
             {
@@ -2946,15 +3091,7 @@
               "type" : "text"
             },
             {
-              "text" : "you can add something like the following to your ",
-              "type" : "text"
-            },
-            {
-              "code" : "Package.swift",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " file,",
+              "text" : "you can add something like the following,",
               "type" : "text"
             },
             {
@@ -3039,7 +3176,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "http:\/\/github.com\/apple\/swift-syntax\/",
+              "identifier" : "https:\/\/github.com\/swiftlang\/swift-syntax",
               "isActive" : true,
               "type" : "reference"
             },
@@ -3117,36 +3254,11 @@
         {
           "code" : [
             "dependencies: [",
-            "    .package(url: \"https:\/\/github.com\/apple\/swift-syntax.git\", from: \"some-tag\"),",
+            "    .package(url: \"https:\/\/github.com\/swiftlang\/swift-syntax\", from: \"509.0.0\")",
             "],"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Replace the ",
-              "type" : "text"
-            },
-            {
-              "code" : "some-tag",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " placeholder in the code above",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "with the Git tag for the version of SwiftSyntax you want to use.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
         },
         {
           "inlineContent" : [
@@ -3159,7 +3271,7 @@
               "type" : "text"
             },
             {
-              "text" : "there’s a corresponding protocol from SwiftSystem",
+              "text" : "there’s a corresponding protocol from SwiftSyntax",
               "type" : "text"
             },
             {
@@ -3207,6 +3319,9 @@
         },
         {
           "code" : [
+            "import SwiftSyntax",
+            "import SwiftSyntaxMacros",
+            "",
             "public struct FourCharacterCode: ExpressionMacro {",
             "    public static func expansion(",
             "        of node: some FreestandingMacroExpansionSyntax,",
@@ -3225,7 +3340,7 @@
             "            throw CustomError.message(\"Invalid four-character code\")",
             "        }",
             "",
-            "        return \"\\(raw: result)\"",
+            "        return \"\\(raw: result) as UInt32\"",
             "    }",
             "}",
             "",
@@ -3238,9 +3353,46 @@
             "        guard let asciiValue = character.asciiValue else { return nil }",
             "        result += UInt32(asciiValue)",
             "    }",
-            "    return result.bigEndian",
+            "    return result",
             "}",
             "enum CustomError: Error { case message(String) }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you’re adding this macro to an existing Swift Package Manager project,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "add a type that acts as the entry point for the macro target",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and lists the macros that the target defines:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "import SwiftCompilerPlugin",
+            "",
+            "@main",
+            "struct MyProjectMacros: CompilerPlugin {",
+            "    var providingMacros: [Macro.Type] = [FourCharacterCode.self]",
+            "}"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -3320,7 +3472,7 @@
               "type" : "text"
             },
             {
-              "text" : "a ",
+              "text" : "an ",
               "type" : "text"
             },
             {
@@ -3336,7 +3488,7 @@
               "type" : "text"
             },
             {
-              "text" : "For the list of macro roles and their corresponding SwiftSystem protocols,",
+              "text" : "For the list of macro roles and their corresponding SwiftSyntax protocols,",
               "type" : "text"
             },
             {
@@ -3373,6 +3525,10 @@
               "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes",
               "isActive" : true,
               "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -3460,7 +3616,7 @@
               "type" : "text"
             },
             {
-              "text" : "and calculates the corresponding integer literal value.",
+              "text" : "and calculates the corresponding 32-bit unsigned integer literal value.",
               "type" : "text"
             }
           ],
@@ -3529,7 +3685,7 @@
               "type" : "text"
             },
             {
-              "code" : "FourCharacterCode(for:)",
+              "code" : "fourCharacterCode(for:)",
               "type" : "codeVoice"
             },
             {
@@ -3806,13 +3962,13 @@
             "let context = BasicMacroExpansionContext(sourceFiles: [source: file])",
             "",
             "let transformedSF = source.expand(",
-            "    macros:[\"fourCharacterCode\": FourCC.self],",
+            "    macros:[\"fourCharacterCode\": FourCharacterCode.self],",
             "    in: context",
             ")",
             "",
             "let expectedDescription =",
             "    \"\"\"",
-            "    let abcd = 1145258561",
+            "    let abcd = 1145258561 as UInt32",
             "    \"\"\"",
             "",
             "precondition(transformedSF.description == expectedDescription)"
@@ -3858,7 +4014,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -3906,18 +4062,6 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/macros#Implementing-a-Macro"
 },
-"http://github.com/apple/swift-syntax/": {
-  "identifier" : "http:\/\/github.com\/apple\/swift-syntax\/",
-  "title" : "SwiftSyntax",
-  "titleInlineContent" : [
-    {
-      "text" : "SwiftSyntax",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "http:\/\/github.com\/apple\/swift-syntax\/"
-},
 "https://developer.apple.com/documentation/swift/externalmacro(module:type:)": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/externalmacro(module:type:)",
   "title" : "externalMacro(module:type:)",
@@ -3930,32 +4074,20 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/externalmacro(module:type:)"
 },
-"https://developer.apple.com/documentation/swift/function": {
-  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function",
-  "title" : "function",
+"https://developer.apple.com/documentation/swift/function()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function()",
+  "title" : "function()",
   "titleInlineContent" : [
     {
-      "code" : "function",
+      "code" : "function()",
       "type" : "codeVoice"
     }
   ],
   "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/function"
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/function()"
 },
-"https://developer.apple.com/documentation/swift/optionset-swift.macro": {
-  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.macro",
-  "title" : "@OptionSet",
-  "titleInlineContent" : [
-    {
-      "code" : "@OptionSet",
-      "type" : "codeVoice"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.macro"
-},
-"https://developer.apple.com/documentation/swift/optionset-swift.protocol": {
-  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.protocol",
+"https://developer.apple.com/documentation/swift/optionset": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset",
   "title" : "OptionSet",
   "titleInlineContent" : [
     {
@@ -3964,7 +4096,7 @@
     }
   ],
   "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset-swift.protocol"
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/optionset"
 },
 "https://developer.apple.com/documentation/swift/warning(_:)": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
@@ -3978,6 +4110,18 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)"
 },
+"https://github.com/swiftlang/swift-syntax": {
+  "identifier" : "https:\/\/github.com\/swiftlang\/swift-syntax",
+  "title" : "SwiftSyntax",
+  "titleInlineContent" : [
+    {
+      "text" : "SwiftSyntax",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/swiftlang\/swift-syntax"
+},
 "macro-ast-input": {
   "alt" : "A tree diagram, with a macro call as the root element.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.",
   "identifier" : "macro-ast-input",
@@ -3988,14 +4132,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/macro-ast-input@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-input@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/macro-ast-input~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-input~dark@2x.png"
     }
   ]
 },
@@ -4009,19 +4153,19 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/macro-ast-original@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-original@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/macro-ast-original~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-original~dark@2x.png"
     }
   ]
 },
 "macro-ast-output": {
-  "alt" : "A tree diagram with a sigle node, the integer literal 1145258561.",
+  "alt" : "A tree diagram with the integer literal 1145258561 of type UInt32.",
   "identifier" : "macro-ast-output",
   "type" : "image",
   "variants" : [
@@ -4030,19 +4174,19 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/macro-ast-output@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-output@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/macro-ast-output~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-output~dark@2x.png"
     }
   ]
 },
 "macro-ast-result": {
-  "alt" : "A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant’s value is the integer literal 1145258561",
+  "alt" : "A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant’s value is the integer literal 1145258561 of type UInt32.",
   "identifier" : "macro-ast-result",
   "type" : "image",
   "variants" : [
@@ -4051,14 +4195,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/macro-ast-result@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-result@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/macro-ast-result~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-ast-result~dark@2x.png"
     }
   ]
 },
@@ -4072,14 +4216,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/macro-expansion@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-expansion@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/macro-expansion~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-expansion~dark@2x.png"
     }
   ]
 },
@@ -4093,14 +4237,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/macro-expansion-full@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-expansion-full@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/macro-expansion-full~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/macro-expansion-full~dark@2x.png"
     }
   ]
 }

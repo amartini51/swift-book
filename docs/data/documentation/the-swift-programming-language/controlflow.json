@@ -3401,7 +3401,7 @@
               "type" : "text"
             },
             {
-              "text" : "and it prints a response for any temperatures that are neither too warm nor too cold.",
+              "text" : "and it prints a response for any temperatures that aren’t too warm or too cold.",
               "type" : "text"
             }
           ],
@@ -3447,7 +3447,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Because the temperature is neither too cold nor too warm to trigger the ",
+              "text" : "Because the temperature isn’t cold enough to trigger the ",
               "type" : "text"
             },
             {
@@ -3455,7 +3455,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " or ",
+              "text" : " condition",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or warm enough to trigger the ",
               "type" : "text"
             },
             {
@@ -3463,7 +3471,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " conditions,",
+              "text" : " condition,",
               "type" : "text"
             },
             {
@@ -10723,11 +10731,19 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ", and ",
+              "text" : ", ",
               "type" : "text"
             },
             {
               "code" : "tvOS",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", and ",
+              "type" : "text"
+            },
+            {
+              "code" : "visionOS",
               "type" : "codeVoice"
             },
             {
@@ -10992,49 +11008,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -11060,14 +11033,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/coordinateGraphComplex@2x.png"
+      "url" : "\/images\/org.swift.tspl\/coordinateGraphComplex@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/coordinateGraphComplex~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/coordinateGraphComplex~dark@2x.png"
     }
   ]
 },
@@ -11081,14 +11054,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/coordinateGraphMedium@2x.png"
+      "url" : "\/images\/org.swift.tspl\/coordinateGraphMedium@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/coordinateGraphMedium~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/coordinateGraphMedium~dark@2x.png"
     }
   ]
 },
@@ -11102,14 +11075,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/coordinateGraphSimple@2x.png"
+      "url" : "\/images\/org.swift.tspl\/coordinateGraphSimple@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/coordinateGraphSimple~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/coordinateGraphSimple~dark@2x.png"
     }
   ]
 },
@@ -11120,7 +11093,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -11258,18 +11231,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/sequence"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "snakesAndLadders": {
   "alt" : null,
   "identifier" : "snakesAndLadders",
@@ -11280,14 +11241,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/snakesAndLadders@2x.png"
+      "url" : "\/images\/org.swift.tspl\/snakesAndLadders@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/snakesAndLadders~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/snakesAndLadders~dark@2x.png"
     }
   ]
 }

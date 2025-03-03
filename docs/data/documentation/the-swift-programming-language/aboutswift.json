@@ -26,7 +26,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift is a fantastic way to write software,",
+              "text" : "Swift is a fantastic way to write software",
               "type" : "text"
             },
             {
@@ -34,7 +34,7 @@
               "type" : "text"
             },
             {
-              "text" : "whether it’s for phones, desktops, servers,",
+              "text" : "for phones, tablets, desktops, servers,",
               "type" : "text"
             },
             {
@@ -50,7 +50,7 @@
               "type" : "text"
             },
             {
-              "text" : "It’s a safe, fast, and interactive programming language",
+              "text" : "It’s a safe and fast programming language",
               "type" : "text"
             },
             {
@@ -66,7 +66,16 @@
               "type" : "text"
             },
             {
-              "text" : "with wisdom from the wider Apple engineering culture",
+              "text" : "with wisdom from a diverse open source community.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Swift is friendly to new programmers,",
               "type" : "text"
             },
             {
@@ -74,7 +83,31 @@
               "type" : "text"
             },
             {
-              "text" : "and the diverse contributions from its open-source community.",
+              "text" : "without sacrificing the power and flexibility",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that experienced programmers need.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It’s an industrial-quality programming language",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that’s as expressive and enjoyable as a scripting language.",
               "type" : "text"
             },
             {
@@ -99,55 +132,6 @@
             },
             {
               "text" : "without compromising on either.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Swift is friendly to new programmers.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "It’s an industrial-quality programming language",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "that’s as expressive and enjoyable as a scripting language.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Writing Swift code in a playground",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "lets you experiment with code and see the results immediately,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "without the overhead of building and running an app.",
               "type" : "text"
             }
           ],
@@ -313,7 +297,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift combines powerful type inference and pattern matching with",
+              "text" : "Swift combines a modern, lightweight syntax",
               "type" : "text"
             },
             {
@@ -321,7 +305,15 @@
               "type" : "text"
             },
             {
-              "text" : "a modern, lightweight syntax,",
+              "text" : "that’s familiar for developers coming from other popular languages",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "with powerful features like type inference and pattern matching,",
               "type" : "text"
             },
             {
@@ -337,15 +329,7 @@
               "type" : "text"
             },
             {
-              "text" : "As a result, code is not just easier to write,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "but easier to read and maintain as well.",
+              "text" : "As a result, code is easier to read, write, and maintain.",
               "type" : "text"
             }
           ],
@@ -354,7 +338,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift has been years in the making,",
+              "text" : "Swift continues to evolve with thoughtful new features and powerful capabilities.",
               "type" : "text"
             },
             {
@@ -362,15 +346,7 @@
               "type" : "text"
             },
             {
-              "text" : "and it continues to evolve with new features and capabilities.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Our goals for Swift are ambitious.",
+              "text" : "The goals for Swift are ambitious.",
               "type" : "text"
             },
             {
@@ -383,49 +359,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -448,21 +381,9 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

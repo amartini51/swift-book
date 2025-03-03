@@ -12,7 +12,7 @@
   },
   "kind" : "article",
   "metadata" : {
-    "title" : "The Swift Programming Language (5.9 beta)"
+    "title" : "The Swift Programming Language (6)"
   },
   "schemaVersion" : {
     "major" : 0,
@@ -24,6 +24,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Welcome-to-Swift",
       "identifiers" : [
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/AboutSwift",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Compatibility",
@@ -32,6 +33,7 @@
       "title" : "Welcome to Swift"
     },
     {
+      "anchor" : "Language-Guide",
       "identifiers" : [
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/BasicOperators",
@@ -66,6 +68,7 @@
       "title" : "Language Guide"
     },
     {
+      "anchor" : "Language-Reference",
       "identifiers" : [
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/AboutTheLanguageReference",
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/LexicalStructure",
@@ -81,6 +84,7 @@
       "title" : "Language Reference"
     },
     {
+      "anchor" : "Revision-History",
       "identifiers" : [
         "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/RevisionHistory"
       ],
@@ -519,7 +523,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
   "kind" : "article",
   "role" : "article",
-  "title" : "Opaque and Boxed Types",
+  "title" : "Opaque and Boxed Protocol Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
 },

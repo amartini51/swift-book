@@ -6644,15 +6644,7 @@
               "type" : "text"
             },
             {
-              "text" : "neither the ",
-              "type" : "text"
-            },
-            {
-              "code" : "HTMLElement",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instance nor its closure are deallocated,",
+              "text" : "the strong reference cycle prevents deallocating",
               "type" : "text"
             },
             {
@@ -6660,7 +6652,15 @@
               "type" : "text"
             },
             {
-              "text" : "because of the strong reference cycle:",
+              "text" : "both the ",
+              "type" : "text"
+            },
+            {
+              "code" : "HTMLElement",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instance and its closure:",
               "type" : "text"
             }
           ],
@@ -7463,49 +7463,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -7531,14 +7488,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/closureReferenceCycle01@2x.png"
+      "url" : "\/images\/org.swift.tspl\/closureReferenceCycle01@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/closureReferenceCycle01~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/closureReferenceCycle01~dark@2x.png"
     }
   ]
 },
@@ -7552,14 +7509,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/closureReferenceCycle02@2x.png"
+      "url" : "\/images\/org.swift.tspl\/closureReferenceCycle02@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/closureReferenceCycle02~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/closureReferenceCycle02~dark@2x.png"
     }
   ]
 },
@@ -7570,7 +7527,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -7646,18 +7603,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/library\/content\/releasenotes\/ObjectiveC\/RN-TransitioningToARC\/Introduction\/Introduction.html"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "referenceCycle01": {
   "alt" : null,
   "identifier" : "referenceCycle01",
@@ -7668,14 +7613,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/referenceCycle01@2x.png"
+      "url" : "\/images\/org.swift.tspl\/referenceCycle01@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/referenceCycle01~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/referenceCycle01~dark@2x.png"
     }
   ]
 },
@@ -7689,14 +7634,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/referenceCycle02@2x.png"
+      "url" : "\/images\/org.swift.tspl\/referenceCycle02@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/referenceCycle02~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/referenceCycle02~dark@2x.png"
     }
   ]
 },
@@ -7710,14 +7655,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/referenceCycle03@2x.png"
+      "url" : "\/images\/org.swift.tspl\/referenceCycle03@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/referenceCycle03~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/referenceCycle03~dark@2x.png"
     }
   ]
 },
@@ -7731,14 +7676,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/unownedOptionalReference@2x.png"
+      "url" : "\/images\/org.swift.tspl\/unownedOptionalReference@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/unownedOptionalReference~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/unownedOptionalReference~dark@2x.png"
     }
   ]
 },
@@ -7752,14 +7697,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/unownedReference01@2x.png"
+      "url" : "\/images\/org.swift.tspl\/unownedReference01@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/unownedReference01~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/unownedReference01~dark@2x.png"
     }
   ]
 },
@@ -7773,14 +7718,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/unownedReference02@2x.png"
+      "url" : "\/images\/org.swift.tspl\/unownedReference02@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/unownedReference02~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/unownedReference02~dark@2x.png"
     }
   ]
 },
@@ -7794,14 +7739,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/weakReference01@2x.png"
+      "url" : "\/images\/org.swift.tspl\/weakReference01@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/weakReference01~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/weakReference01~dark@2x.png"
     }
   ]
 },
@@ -7815,14 +7760,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/weakReference02@2x.png"
+      "url" : "\/images\/org.swift.tspl\/weakReference02@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/weakReference02~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/weakReference02~dark@2x.png"
     }
   ]
 },
@@ -7836,14 +7781,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/weakReference03@2x.png"
+      "url" : "\/images\/org.swift.tspl\/weakReference03@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/weakReference03~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/weakReference03~dark@2x.png"
     }
   ]
 }

@@ -2017,7 +2017,7 @@
               "type" : "text"
             },
             {
-              "text" : "Here’s an another version of the ",
+              "text" : "Here’s another version of the ",
               "type" : "text"
             },
             {
@@ -7372,49 +7372,6 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -7440,14 +7397,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/computedProperties@2x.png"
+      "url" : "\/images\/org.swift.tspl\/computedProperties@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/computedProperties~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/computedProperties~dark@2x.png"
     }
   ]
 },
@@ -7458,7 +7415,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -7570,18 +7527,6 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/properties#Lazy-Stored-Properties"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "staticPropertiesVUMeter": {
   "alt" : null,
   "identifier" : "staticPropertiesVUMeter",
@@ -7592,14 +7537,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/staticPropertiesVUMeter@2x.png"
+      "url" : "\/images\/org.swift.tspl\/staticPropertiesVUMeter@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/staticPropertiesVUMeter~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/staticPropertiesVUMeter~dark@2x.png"
     }
   ]
 }

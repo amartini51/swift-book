@@ -28,7 +28,488 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "2023-06-05",
+                  "text" : "2024-09-23",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated for Swift 6.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#preconcurrency",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about migrating to strict concurrency checking.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-the-Error-Type",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about throwing errors of a specific type.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Expressions#Macro-Expansion-Expression",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "now that any macro can be used as a default value for a parameter.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information about package-level access",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/AccessControl",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " chapter.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "2024-03-05",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated for Swift 5.10.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information about nested protocols",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Delegation",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added deprecation information",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "in the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#UIApplicationMain",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#NSApplicationMain",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " sections.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "2023-12-11",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated for Swift 5.9.2.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information about the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "borrowing",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " and ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "consuming",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " modifiers",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Parameter-Modifiers",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information in ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Declaring-Constants-and-Variables",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "about setting a constant’s value after its declaration.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added more information about tasks, task groups, and task cancellation",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " chapter.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information in the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Macros",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " chapter",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "about implementing macros in an existing Swift package.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#attached",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "now that extension macros have replaced conformance macros.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#backDeployed",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about back deployment.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "2023-09-18",
                   "type" : "text"
                 }
               ],
@@ -150,6 +631,50 @@
                 {
                   "inlineContent" : [
                     {
+                      "text" : "Expanded the discussion of optionals in ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added an example of concurrency to ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/GuidedTour",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
                       "text" : "Added information about boxed protocol types",
                       "type" : "text"
                     },
@@ -180,24 +705,7 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "Updated the ",
-                      "type" : "text"
-                    },
-                    {
-                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#Result-Building-Methods",
-                      "isActive" : true,
-                      "type" : "reference"
-                    },
-                    {
-                      "text" : " section",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "with information about the ",
+                      "text" : "Added information about the ",
                       "type" : "text"
                     },
                     {
@@ -217,7 +725,76 @@
                       "type" : "codeVoice"
                     },
                     {
-                      "text" : " methods.",
+                      "text" : " methods",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#Result-Transformations",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added visionOS to the lists of platforms in",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#available",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Statements#Conditional-Compilation-Block",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Formatted the formal grammar to use blank lines for grouping.",
                       "type" : "text"
                     }
                   ],
@@ -11684,49 +12261,6 @@
             }
           ],
           "type" : "unorderedList"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -11749,7 +12283,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -11915,15 +12449,25 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/attributes#Declaration-Attributes"
 },
-"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#Result-Building-Methods": {
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#NSApplicationMain": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#Result-Building-Methods",
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#NSApplicationMain",
   "kind" : "section",
-  "title" : "Result-Building Methods",
+  "title" : "NSApplicationMain",
   "type" : "topic",
-  "url" : "\/documentation\/the-swift-programming-language\/attributes#Result-Building-Methods"
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#NSApplicationMain"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#Result-Transformations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#Result-Transformations",
+  "kind" : "section",
+  "title" : "Result Transformations",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#Result-Transformations"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#Sendable": {
   "abstract" : [
@@ -11944,6 +12488,46 @@
   "title" : "Type Attributes",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/attributes#Type-Attributes"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#UIApplicationMain": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#UIApplicationMain",
+  "kind" : "section",
+  "title" : "UIApplicationMain",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#UIApplicationMain"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#attached": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#attached",
+  "kind" : "section",
+  "title" : "attached",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#attached"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#available": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#available",
+  "kind" : "section",
+  "title" : "available",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#available"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#backDeployed": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#backDeployed",
+  "kind" : "section",
+  "title" : "backDeployed",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#backDeployed"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#dynamicCallable": {
   "abstract" : [
@@ -11984,6 +12568,16 @@
   "title" : "main",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/attributes#main"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#preconcurrency": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#preconcurrency",
+  "kind" : "section",
+  "title" : "preconcurrency",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#preconcurrency"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#resultBuilder": {
   "abstract" : [
@@ -12471,6 +13065,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/declarations#Methods-with-Special-Names"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Parameter-Modifiers": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Parameter-Modifiers",
+  "kind" : "section",
+  "title" : "Parameter Modifiers",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/declarations#Parameter-Modifiers"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Precedence-Group-Declaration": {
   "abstract" : [
 
@@ -12649,6 +13253,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/errorhandling#Representing-and-Throwing-Errors"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling#Specifying-the-Error-Type": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-the-Error-Type",
+  "kind" : "section",
+  "title" : "Specifying the Error Type",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/errorhandling#Specifying-the-Error-Type"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Expressions": {
   "abstract" : [
     {
@@ -12762,6 +13376,16 @@
   "title" : "Literal Expression",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/expressions#Literal-Expression"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Expressions#Macro-Expansion-Expression": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Expressions#Macro-Expansion-Expression",
+  "kind" : "section",
+  "title" : "Macro-Expansion Expression",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/expressions#Macro-Expansion-Expression"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Expressions#Optional-Chaining-Expression": {
   "abstract" : [
@@ -13199,7 +13823,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
   "kind" : "article",
   "role" : "article",
-  "title" : "Opaque and Boxed Types",
+  "title" : "Opaque and Boxed Protocol Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
 },
@@ -13374,6 +13998,16 @@
   "title" : "Conditionally Conforming to a Protocol",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/protocols#Conditionally-Conforming-to-a-Protocol"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Delegation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Delegation",
+  "kind" : "section",
+  "title" : "Delegation",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/protocols#Delegation"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Failable-Initializer-Requirements": {
   "abstract" : [
@@ -13727,6 +14361,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/thebasics#Debugging-with-Assertions"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TheBasics#Declaring-Constants-and-Variables": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Declaring-Constants-and-Variables",
+  "kind" : "section",
+  "title" : "Declaring Constants and Variables",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/thebasics#Declaring-Constants-and-Variables"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TheBasics#Implicitly-Unwrapped-Optionals": {
   "abstract" : [
 
@@ -13850,18 +14494,6 @@
   "title" : "Self Type",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/types#Self-Type"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

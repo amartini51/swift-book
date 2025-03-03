@@ -9880,7 +9880,7 @@
               "type" : "text"
             },
             {
-              "text" : "However, because it’s called with a string constant,",
+              "text" : "However, because it’s called with a string literal,",
               "type" : "text"
             },
             {
@@ -10757,49 +10757,6 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -10825,14 +10782,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/chessBoard@2x.png"
+      "url" : "\/images\/org.swift.tspl\/chessBoard@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/chessBoard~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/chessBoard~dark@2x.png"
     }
   ]
 },
@@ -10843,7 +10800,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -10959,18 +10916,6 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/initialization#Two-Phase-Initialization"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "initializerDelegation01": {
   "alt" : null,
   "identifier" : "initializerDelegation01",
@@ -10981,14 +10926,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/initializerDelegation01@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializerDelegation01@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/initializerDelegation01~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializerDelegation01~dark@2x.png"
     }
   ]
 },
@@ -11002,14 +10947,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/initializerDelegation02@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializerDelegation02@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/initializerDelegation02~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializerDelegation02~dark@2x.png"
     }
   ]
 },
@@ -11023,14 +10968,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/initializersExample01@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializersExample01@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/initializersExample01~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializersExample01~dark@2x.png"
     }
   ]
 },
@@ -11044,14 +10989,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/initializersExample02@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializersExample02@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/initializersExample02~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializersExample02~dark@2x.png"
     }
   ]
 },
@@ -11065,14 +11010,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/initializersExample03@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializersExample03@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/initializersExample03~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/initializersExample03~dark@2x.png"
     }
   ]
 },
@@ -11086,14 +11031,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/twoPhaseInitialization01@2x.png"
+      "url" : "\/images\/org.swift.tspl\/twoPhaseInitialization01@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/twoPhaseInitialization01~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/twoPhaseInitialization01~dark@2x.png"
     }
   ]
 },
@@ -11107,14 +11052,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/twoPhaseInitialization02@2x.png"
+      "url" : "\/images\/org.swift.tspl\/twoPhaseInitialization02@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/twoPhaseInitialization02~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/twoPhaseInitialization02~dark@2x.png"
     }
   ]
 }

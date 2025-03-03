@@ -242,12 +242,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -291,12 +294,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -340,12 +346,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -389,12 +398,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -438,12 +450,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -487,12 +502,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -536,12 +554,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -585,12 +606,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -612,12 +636,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -854,12 +881,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -881,12 +911,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1773,12 +1806,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1892,12 +1928,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -2582,12 +2621,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -2609,12 +2651,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -3022,12 +3067,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4374,7 +4422,7 @@
               "type" : "text"
             },
             {
-              "text" : "code in the standard library,",
+              "text" : "code in the Swift standard library,",
               "type" : "text"
             },
             {
@@ -4537,7 +4585,7 @@
               "type" : "text"
             },
             {
-              "text" : "the standard library’s ",
+              "text" : "the Swift standard library’s ",
               "type" : "text"
             },
             {
@@ -4821,12 +4869,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4870,12 +4921,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4910,12 +4964,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4950,12 +5007,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5052,12 +5112,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5162,12 +5225,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5264,12 +5330,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5375,12 +5444,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5437,12 +5509,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5486,12 +5561,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5548,12 +5626,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5851,12 +5932,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5891,12 +5975,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5931,12 +6018,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6011,12 +6101,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6160,12 +6253,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6187,12 +6283,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6214,12 +6313,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6241,12 +6343,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -7712,6 +7817,59 @@
             {
               "text" : " protocol.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement or function that contains the ",
+              "type" : "text"
+            },
+            {
+              "code" : "throw",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "declares the type of errors it throws,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the value of the ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "expression",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " must be an instance of that type.",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -8420,6 +8578,413 @@
         {
           "inlineContent" : [
             {
+              "text" : "A ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement can optionally specify the type of error it throws,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which has the following form:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "do throws(<#type#>) {",
+            "    try <#expression#>",
+            "} catch <#pattern> {",
+            "    <#statements#>",
+            "} catch {",
+            "    <#statements#>",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement includes a ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " block can throw errors of only the specified ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "type",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "type",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " must be",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a concrete type that conforms to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "an opaque type that conforms to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or the boxed protocol type ",
+              "type" : "text"
+            },
+            {
+              "code" : "any Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement doesn’t specify the type of error it throws,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift infers the error type as follows:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "If every ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "throws",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " statement and ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "try",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " expression in the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "do",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " code block",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "is nested inside of an exhaustive error-handling mechanism,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "then Swift infers that the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "do",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " statement is nonthrowing.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "If the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "do",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " code block contains code that throws",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "errors of only a single type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "outside of exhaustive error handling,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "other than throwing ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Never",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "then Swift infers that the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "do",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " statement throws that concrete error type.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "If the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "do",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " code block contains code that throws",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "errors of more than a single type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "outside of exhaustive error handling,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "then Swift infers that the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "do",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " statement throws ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "any Error",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For more information about working with errors that have explicit types,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-the-Error-Type",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
               "text" : "If any statement in the ",
               "type" : "text"
             },
@@ -8850,6 +9415,28 @@
                 {
                   "inlineContent" : [
                     {
+                      "text" : "throws-clause",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
                       "text" : "code-block",
                       "type" : "text"
                     }
@@ -8877,12 +9464,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8926,12 +9516,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8988,12 +9581,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9054,12 +9650,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9193,12 +9792,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9220,12 +9822,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9551,6 +10156,14 @@
                     },
                     {
                       "code" : "tvOS",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ", ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "visionOS",
                       "type" : "codeVoice"
                     },
                     {
@@ -10524,12 +11137,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10573,12 +11189,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10635,12 +11254,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10684,12 +11306,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10711,12 +11336,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10738,12 +11366,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10765,12 +11396,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10819,12 +11453,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10846,12 +11483,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10873,12 +11513,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10926,12 +11569,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -10966,12 +11612,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11019,12 +11668,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11138,12 +11790,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11204,12 +11859,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11348,12 +12006,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11492,12 +12153,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11558,12 +12222,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11698,6 +12365,19 @@
                 {
                   "inlineContent" : [
                     {
+                      "code" : "visionOS",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
                       "code" : "Linux",
                       "type" : "codeVoice"
                     }
@@ -11716,12 +12396,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11782,12 +12465,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11831,12 +12517,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11893,12 +12582,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12372,12 +13064,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12425,12 +13120,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12441,14 +13139,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → A decimal integer greater than zero",
+                  "text" : " → A decimal integer greater than zero ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12532,7 +13229,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/warning(_:)",
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
               "isActive" : true,
               "type" : "reference"
             },
@@ -12541,7 +13238,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/error(_:)",
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)",
               "isActive" : true,
               "type" : "reference"
             },
@@ -12708,11 +13405,19 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ", and ",
+              "text" : ", ",
               "type" : "text"
             },
             {
               "code" : "tvOS",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "visionOS",
               "type" : "codeVoice"
             },
             {
@@ -12960,12 +13665,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13026,12 +13734,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13092,12 +13803,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13132,12 +13846,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13199,12 +13916,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13239,12 +13959,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13279,12 +14002,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13319,12 +14045,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13359,12 +14088,58 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "platform-name",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "visionOS",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "visionOSApplicationExtension",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13386,12 +14161,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13439,12 +14217,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13526,49 +14307,6 @@
           "name" : "Grammar of an availability condition",
           "style" : "note",
           "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -13591,7 +14329,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -13723,6 +14461,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/errorhandling#Propagating-Errors-Using-Throwing-Functions"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling#Specifying-the-Error-Type": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-the-Error-Type",
+  "kind" : "section",
+  "title" : "Specifying the Error Type",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/errorhandling#Specifying-the-Error-Type"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Expressions#Explicit-Member-Expression": {
   "abstract" : [
 
@@ -13807,8 +14555,8 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/thebasics#Optional-Binding"
 },
-"http://developer.apple.com/documentation/swift/documentation/swift/error(_:)": {
-  "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/error(_:)",
+"https://developer.apple.com/documentation/swift/error(_:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)",
   "title" : "error(_:)",
   "titleInlineContent" : [
     {
@@ -13817,19 +14565,7 @@
     }
   ],
   "type" : "link",
-  "url" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/error(_:)"
-},
-"http://developer.apple.com/documentation/swift/documentation/swift/warning(_:)": {
-  "identifier" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/warning(_:)",
-  "title" : "warning(_:)",
-  "titleInlineContent" : [
-    {
-      "code" : "warning(_:)",
-      "type" : "codeVoice"
-    }
-  ],
-  "type" : "link",
-  "url" : "http:\/\/developer.apple.com\/documentation\/swift\/documentation\/swift\/warning(_:)"
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)"
 },
 "https://developer.apple.com/documentation/swift/iteratorprotocol": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/iteratorprotocol",
@@ -13867,17 +14603,17 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/sequence"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
+"https://developer.apple.com/documentation/swift/warning(_:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
+  "title" : "warning(_:)",
   "titleInlineContent" : [
     {
-      "text" : "Apple’s beta software",
-      "type" : "text"
+      "code" : "warning(_:)",
+      "type" : "codeVoice"
     }
   ],
   "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)"
 }
 }
 }

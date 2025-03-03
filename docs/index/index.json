@@ -1,4 +1,7 @@
 {
+  "includedArchiveIdentifiers" : [
+    "org.swift.tspl"
+  ],
   "interfaceLanguages" : {
     "swift" : [
       {
@@ -148,7 +151,7 @@
           },
           {
             "path" : "\/documentation\/the-swift-programming-language\/opaquetypes",
-            "title" : "Opaque and Boxed Types",
+            "title" : "Opaque and Boxed Protocol Types",
             "type" : "article"
           },
           {
@@ -236,7 +239,7 @@
           }
         ],
         "path" : "\/documentation\/the-swift-programming-language",
-        "title" : "The Swift Programming Language (5.9 beta)",
+        "title" : "The Swift Programming Language (6)",
         "type" : "article"
       }
     ]
@@ -244,6 +247,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 1
+    "patch" : 2
   }
 }

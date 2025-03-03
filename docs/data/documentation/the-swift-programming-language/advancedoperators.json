@@ -1394,7 +1394,7 @@
               "type" : "text"
             },
             {
-              "text" : "Blue numbers are shifted,",
+              "text" : "Green numbers are shifted,",
               "type" : "text"
             },
             {
@@ -1410,7 +1410,7 @@
               "type" : "text"
             },
             {
-              "text" : "and orange zeros are inserted:",
+              "text" : "and pink zeros are inserted:",
               "type" : "text"
             }
           ],
@@ -5071,7 +5071,7 @@
               "type" : "text"
             },
             {
-              "text" : "and use the standard library’s default implementation of the ",
+              "text" : "and use the Swift standard library’s default implementation of the ",
               "type" : "text"
             },
             {
@@ -5151,7 +5151,7 @@
               "type" : "text"
             },
             {
-              "text" : "you add conformance to the standard library’s ",
+              "text" : "you add conformance to the Swift standard library’s ",
               "type" : "text"
             },
             {
@@ -7024,49 +7024,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -7092,14 +7049,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitshiftSigned@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSigned@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitshiftSigned~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSigned~dark@2x.png"
     }
   ]
 },
@@ -7113,14 +7070,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitshiftSignedAddition@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedAddition@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitshiftSignedAddition~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedAddition~dark@2x.png"
     }
   ]
 },
@@ -7134,14 +7091,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitshiftSignedFour@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedFour@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitshiftSignedFour~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedFour~dark@2x.png"
     }
   ]
 },
@@ -7155,14 +7112,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitshiftSignedMinusFour@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedMinusFour@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitshiftSignedMinusFour~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedMinusFour~dark@2x.png"
     }
   ]
 },
@@ -7176,14 +7133,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitshiftSignedMinusFourValue@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedMinusFourValue@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitshiftSignedMinusFourValue~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftSignedMinusFourValue~dark@2x.png"
     }
   ]
 },
@@ -7197,14 +7154,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitshiftUnsigned@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftUnsigned@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitshiftUnsigned~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitshiftUnsigned~dark@2x.png"
     }
   ]
 },
@@ -7218,14 +7175,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitwiseAND@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseAND@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitwiseAND~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseAND~dark@2x.png"
     }
   ]
 },
@@ -7239,14 +7196,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitwiseNOT@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseNOT@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitwiseNOT~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseNOT~dark@2x.png"
     }
   ]
 },
@@ -7260,14 +7217,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitwiseOR@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseOR@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitwiseOR~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseOR~dark@2x.png"
     }
   ]
 },
@@ -7281,14 +7238,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/bitwiseXOR@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseXOR@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/bitwiseXOR~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/bitwiseXOR~dark@2x.png"
     }
   ]
 },
@@ -7299,7 +7256,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -7389,18 +7346,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/operator_declarations"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "overflowAddition": {
   "alt" : null,
   "identifier" : "overflowAddition",
@@ -7411,14 +7356,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/overflowAddition@2x.png"
+      "url" : "\/images\/org.swift.tspl\/overflowAddition@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/overflowAddition~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/overflowAddition~dark@2x.png"
     }
   ]
 },
@@ -7432,14 +7377,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/overflowSignedSubtraction@2x.png"
+      "url" : "\/images\/org.swift.tspl\/overflowSignedSubtraction@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/overflowSignedSubtraction~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/overflowSignedSubtraction~dark@2x.png"
     }
   ]
 },
@@ -7453,14 +7398,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/overflowUnsignedSubtraction@2x.png"
+      "url" : "\/images\/org.swift.tspl\/overflowUnsignedSubtraction@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/overflowUnsignedSubtraction~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/overflowUnsignedSubtraction~dark@2x.png"
     }
   ]
 },
@@ -7474,14 +7419,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/vectorAddition@2x.png"
+      "url" : "\/images\/org.swift.tspl\/vectorAddition@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/vectorAddition~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/vectorAddition~dark@2x.png"
     }
   ]
 }

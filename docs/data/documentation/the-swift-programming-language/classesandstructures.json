@@ -1734,7 +1734,7 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "Collections defined by the standard library",
+                  "text" : "Collections defined by the Swift standard library",
                   "type" : "text"
                 },
                 {
@@ -3467,7 +3467,7 @@
               "type" : "text"
             },
             {
-              "text" : "The standard library provides pointer and buffer types",
+              "text" : "The Swift standard library provides pointer and buffer types",
               "type" : "text"
             },
             {
@@ -3497,49 +3497,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -3562,7 +3519,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -3754,18 +3711,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/manual_memory_management"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "sharedStateClass": {
   "alt" : null,
   "identifier" : "sharedStateClass",
@@ -3776,14 +3721,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/sharedStateClass@2x.png"
+      "url" : "\/images\/org.swift.tspl\/sharedStateClass@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/sharedStateClass~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/sharedStateClass~dark@2x.png"
     }
   ]
 },
@@ -3797,14 +3742,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/sharedStateStruct@2x.png"
+      "url" : "\/images\/org.swift.tspl\/sharedStateStruct@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/sharedStateStruct~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/sharedStateStruct~dark@2x.png"
     }
   ]
 }

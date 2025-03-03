@@ -529,7 +529,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "You can create an empty array of a certain type",
+              "text" : "You can create an empty array in Swift using two approaches.",
               "type" : "text"
             },
             {
@@ -537,54 +537,7 @@
               "type" : "text"
             },
             {
-              "text" : "using initializer syntax:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "var someInts: [Int] = []",
-            "print(\"someInts is of type [Int] with \\(someInts.count) items.\")",
-            "\/\/ Prints \"someInts is of type [Int] with 0 items.\""
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Note that the type of the ",
-              "type" : "text"
-            },
-            {
-              "code" : "someInts",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " variable is inferred to be ",
-              "type" : "text"
-            },
-            {
-              "code" : "[Int]",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "from the type of the initializer.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Alternatively, if the context already provides type information,",
+              "text" : "If the context already provides type information,",
               "type" : "text"
             },
             {
@@ -600,7 +553,7 @@
               "type" : "text"
             },
             {
-              "text" : "you can create an empty array with an empty array literal,",
+              "text" : "you can use an empty array literal,",
               "type" : "text"
             },
             {
@@ -621,6 +574,123 @@
             },
             {
               "text" : "(an empty pair of square brackets):",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var someInts: [Int] = []",
+            "print(\"someInts is of type [Int] with \\(someInts.count) items.\")",
+            "\/\/ Prints \"someInts is of type [Int] with 0 items.\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Alternatively, you can create an empty array of a certain type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using explicit initializer syntax,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "by writing the element type in square brackets",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "followed by parentheses —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example, ",
+              "type" : "text"
+            },
+            {
+              "code" : "[Int]()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in the following:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var someInts = [Int]()",
+            "print(\"someInts is of type [Int] with \\(someInts.count) items.\")",
+            "\/\/ Prints \"someInts is of type [Int] with 0 items.\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Both approaches produce the same result.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "an empty array literal is shorter and usually easier to read.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In both cases, you can use the empty array literal (",
+              "type" : "text"
+            },
+            {
+              "code" : "[]",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") to",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "reassign an empty array to an existing variable:",
               "type" : "text"
             }
           ],
@@ -5777,49 +5847,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -5843,9 +5870,16 @@
     {
       "traits" : [
         "2x",
+        "light"
+      ],
+      "url" : "\/images\/org.swift.tspl\/CollectionTypes_intro@2x.png"
+    },
+    {
+      "traits" : [
+        "2x",
         "dark"
       ],
-      "url" : "\/images\/CollectionTypes_intro~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/CollectionTypes_intro~dark@2x.png"
     }
   ]
 },
@@ -5856,7 +5890,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -5960,18 +5994,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/set#2845530"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "setEulerDiagram": {
   "alt" : null,
   "identifier" : "setEulerDiagram",
@@ -5982,14 +6004,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/setEulerDiagram@2x.png"
+      "url" : "\/images\/org.swift.tspl\/setEulerDiagram@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/setEulerDiagram~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/setEulerDiagram~dark@2x.png"
     }
   ]
 },
@@ -6003,14 +6025,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/setVennDiagram@2x.png"
+      "url" : "\/images\/org.swift.tspl\/setVennDiagram@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/setVennDiagram~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/setVennDiagram~dark@2x.png"
     }
   ]
 }

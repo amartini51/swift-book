@@ -2676,7 +2676,23 @@
         {
           "inlineContent" : [
             {
-              "text" : "The example below defines two protocols for use with dice-based board games:",
+              "text" : "The example below defines a dice game",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and a nested protocol for a delegate",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that tracks the game’s progress:",
               "type" : "text"
             }
           ],
@@ -2684,14 +2700,40 @@
         },
         {
           "code" : [
-            "protocol DiceGame {",
-            "    var dice: Dice { get }",
-            "    func play()",
-            "}",
-            "protocol DiceGameDelegate: AnyObject {",
-            "    func gameDidStart(_ game: DiceGame)",
-            "    func game(_ game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int)",
-            "    func gameDidEnd(_ game: DiceGame)",
+            "class DiceGame {",
+            "    let sides: Int",
+            "    let generator = LinearCongruentialGenerator()",
+            "    weak var delegate: Delegate?",
+            "",
+            "    init(sides: Int) {",
+            "        self.sides = sides",
+            "    }",
+            "",
+            "    func roll() -> Int {",
+            "        return Int(generator.random() * Double(sides)) + 1",
+            "    }",
+            "",
+            "    func play(rounds: Int) {",
+            "        delegate?.gameDidStart(self)",
+            "        for round in 1...rounds {",
+            "            let player1 = roll()",
+            "            let player2 = roll()",
+            "            if player1 == player2 {",
+            "                delegate?.game(self, didEndRound: round, winner: nil)",
+            "            } else if player1 > player2 {",
+            "                delegate?.game(self, didEndRound: round, winner: 1)",
+            "            } else {",
+            "                delegate?.game(self, didEndRound: round, winner: 2)",
+            "            }",
+            "        }",
+            "        delegate?.gameDidEnd(self)",
+            "    }",
+            "",
+            "    protocol Delegate: AnyObject {",
+            "        func gameDidStart(_ game: DiceGame)",
+            "        func game(_ game: DiceGame, didEndRound round: Int, winner: Int?)",
+            "        func gameDidEnd(_ game: DiceGame)",
+            "    }",
             "}"
           ],
           "syntax" : "swift",
@@ -2708,7 +2750,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " protocol is a protocol that can be adopted",
+              "text" : " class implements a game where",
               "type" : "text"
             },
             {
@@ -2716,7 +2758,39 @@
               "type" : "text"
             },
             {
-              "text" : "by any game that involves dice.",
+              "text" : "each player takes a turn rolling dice,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the player who rolls the highest number wins the round.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It uses a linear congruential generator",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "from the example earlier in the chapter,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to generate random numbers for dice rolls.",
               "type" : "text"
             }
           ],
@@ -2729,7 +2803,7 @@
               "type" : "text"
             },
             {
-              "code" : "DiceGameDelegate",
+              "code" : "DiceGame.Delegate",
               "type" : "codeVoice"
             },
             {
@@ -2741,7 +2815,39 @@
               "type" : "text"
             },
             {
-              "text" : "to track the progress of a ",
+              "text" : "to track the progress of a dice game.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because the ",
+              "type" : "text"
+            },
+            {
+              "code" : "DiceGame.Delegate",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is always used in the context of a dice game,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "it’s nested inside of the ",
               "type" : "text"
             },
             {
@@ -2749,13 +2855,55 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ".",
+              "text" : " class.",
               "type" : "text"
             },
             {
               "text" : " ",
               "type" : "text"
             },
+            {
+              "text" : "Protocols can be nested",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "inside of type declarations like structures and classes,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as long as the outer declaration isn’t generic.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For information about nesting types, see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/NestedTypes",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "To prevent strong reference cycles,",
               "type" : "text"
@@ -2810,11 +2958,11 @@
               "type" : "text"
             },
             {
-              "code" : "SnakesAndLadders",
+              "code" : "DiceGame",
               "type" : "codeVoice"
             },
             {
-              "text" : " class later in this chapter",
+              "text" : " class",
               "type" : "text"
             },
             {
@@ -2872,446 +3020,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Here’s a version of the ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Snakes and Ladders",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " game originally introduced in ",
-              "type" : "text"
-            },
-            {
-              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow",
-              "isActive" : true,
-              "type" : "reference"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "This version is adapted to use a ",
-              "type" : "text"
-            },
-            {
-              "code" : "Dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " instance for its dice-rolls;",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to adopt the ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGame",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol;",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and to notify a ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGameDelegate",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " about its progress:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "class SnakesAndLadders: DiceGame {",
-            "    let finalSquare = 25",
-            "    let dice = Dice(sides: 6, generator: LinearCongruentialGenerator())",
-            "    var square = 0",
-            "    var board: [Int]",
-            "    init() {",
-            "        board = Array(repeating: 0, count: finalSquare + 1)",
-            "        board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02",
-            "        board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08",
-            "    }",
-            "    weak var delegate: DiceGameDelegate?",
-            "    func play() {",
-            "        square = 0",
-            "        delegate?.gameDidStart(self)",
-            "        gameLoop: while square != finalSquare {",
-            "            let diceRoll = dice.roll()",
-            "            delegate?.game(self, didStartNewTurnWithDiceRoll: diceRoll)",
-            "            switch square + diceRoll {",
-            "            case finalSquare:",
-            "                break gameLoop",
-            "            case let newSquare where newSquare > finalSquare:",
-            "                continue gameLoop",
-            "            default:",
-            "                square += diceRoll",
-            "                square += board[square]",
-            "            }",
-            "        }",
-            "        delegate?.gameDidEnd(self)",
-            "    }",
-            "}"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "For a description of the ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Snakes and Ladders",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " gameplay,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "see ",
-              "type" : "text"
-            },
-            {
-              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Break",
-              "isActive" : true,
-              "type" : "reference"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "This version of the game is wrapped up as a class called ",
-              "type" : "text"
-            },
-            {
-              "code" : "SnakesAndLadders",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which adopts the ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGame",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "It provides a gettable ",
-              "type" : "text"
-            },
-            {
-              "code" : "dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property and a ",
-              "type" : "text"
-            },
-            {
-              "code" : "play()",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " method",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "in order to conform to the protocol.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "(The ",
-              "type" : "text"
-            },
-            {
-              "code" : "dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property is declared as a constant property",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "because it doesn’t need to change after initialization,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and the protocol only requires that it must be gettable.)",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Snakes and Ladders",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " game board setup takes place within",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the class’s ",
-              "type" : "text"
-            },
-            {
-              "code" : "init()",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " initializer.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "All game logic is moved into the protocol’s ",
-              "type" : "text"
-            },
-            {
-              "code" : "play",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " method,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which uses the protocol’s required ",
-              "type" : "text"
-            },
-            {
-              "code" : "dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property to provide its dice roll values.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Note that the ",
-              "type" : "text"
-            },
-            {
-              "code" : "delegate",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property is defined as an ",
-              "type" : "text"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "optional",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGameDelegate",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "because a delegate isn’t required in order to play the game.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Because it’s of an optional type,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the ",
-              "type" : "text"
-            },
-            {
-              "code" : "delegate",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property is automatically set to an initial value of ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Thereafter, the game instantiator has the option to set the property to a suitable delegate.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Because the ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGameDelegate",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol is class-only, you can declare the",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "delegate to be ",
-              "type" : "text"
-            },
-            {
-              "code" : "weak",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " to prevent reference cycles.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "code" : "DiceGameDelegate",
+              "code" : "DiceGame.Delegate",
               "type" : "codeVoice"
             },
             {
@@ -3323,7 +3032,7 @@
               "type" : "text"
             },
             {
-              "text" : "These three methods have been incorporated into the game logic within",
+              "text" : "These three methods are incorporated into the game logic",
               "type" : "text"
             },
             {
@@ -3331,15 +3040,31 @@
               "type" : "text"
             },
             {
-              "text" : "the ",
+              "text" : "in the ",
               "type" : "text"
             },
             {
-              "code" : "play()",
+              "code" : "play(rounds:)",
               "type" : "codeVoice"
             },
             {
-              "text" : " method above, and are called when",
+              "text" : " method above.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "DiceGame",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " class calls its delegate methods when",
               "type" : "text"
             },
             {
@@ -3381,7 +3106,7 @@
               "type" : "text"
             },
             {
-              "code" : "DiceGameDelegate",
+              "code" : "DiceGame.Delegate",
               "type" : "codeVoice"
             },
             {
@@ -3397,11 +3122,28 @@
               "type" : "text"
             },
             {
-              "code" : "play()",
+              "code" : "play(rounds:)",
               "type" : "codeVoice"
             },
             {
-              "text" : " method uses optional chaining each time it calls a method on the delegate.",
+              "text" : " method uses optional chaining each time it calls a method on the delegate,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as discussed in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OptionalChaining",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
               "type" : "text"
             },
             {
@@ -3425,7 +3167,7 @@
               "type" : "text"
             },
             {
-              "text" : "these delegate calls fail gracefully and without error.",
+              "text" : "these delegate calls are ignored.",
               "type" : "text"
             },
             {
@@ -3461,7 +3203,7 @@
               "type" : "text"
             },
             {
-              "code" : "SnakesAndLadders",
+              "code" : "DiceGame",
               "type" : "codeVoice"
             },
             {
@@ -3494,7 +3236,7 @@
               "type" : "text"
             },
             {
-              "code" : "DiceGameDelegate",
+              "code" : "DiceGame.Delegate",
               "type" : "codeVoice"
             },
             {
@@ -3506,21 +3248,33 @@
         },
         {
           "code" : [
-            "class DiceGameTracker: DiceGameDelegate {",
-            "    var numberOfTurns = 0",
+            "class DiceGameTracker: DiceGame.Delegate {",
+            "    var playerScore1 = 0",
+            "    var playerScore2 = 0",
             "    func gameDidStart(_ game: DiceGame) {",
-            "        numberOfTurns = 0",
-            "        if game is SnakesAndLadders {",
-            "            print(\"Started a new game of Snakes and Ladders\")",
-            "        }",
-            "        print(\"The game is using a \\(game.dice.sides)-sided dice\")",
+            "        print(\"Started a new game\")",
+            "        playerScore1 = 0",
+            "        playerScore2 = 0",
             "    }",
-            "    func game(_ game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int) {",
-            "        numberOfTurns += 1",
-            "        print(\"Rolled a \\(diceRoll)\")",
+            "    func game(_ game: DiceGame, didEndRound round: Int, winner: Int?) {",
+            "        switch winner {",
+            "            case 1:",
+            "                playerScore1 += 1",
+            "                print(\"Player 1 won round \\(round)\")",
+            "            case 2: playerScore2 += 1",
+            "                print(\"Player 2 won round \\(round)\")",
+            "            default:",
+            "                print(\"The round was a draw\")",
+            "        }",
             "    }",
             "    func gameDidEnd(_ game: DiceGame) {",
-            "        print(\"The game lasted for \\(numberOfTurns) turns\")",
+            "        if playerScore1 == playerScore2 {",
+            "            print(\"The game ended in a draw.\")",
+            "        } else if playerScore1 > playerScore2 {",
+            "            print(\"Player 1 won!\")",
+            "        } else {",
+            "            print(\"Player 2 won!\")",
+            "        }",
             "    }",
             "}"
           ],
@@ -3530,124 +3284,15 @@
         {
           "inlineContent" : [
             {
-              "code" : "DiceGameTracker",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " implements all three methods required by ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGameDelegate",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "It uses these methods to keep track of the number of turns a game has taken.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "It resets a ",
-              "type" : "text"
-            },
-            {
-              "code" : "numberOfTurns",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property to zero when the game starts,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "increments it each time a new turn begins,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and prints out the total number of turns once the game has ended.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The implementation of ",
-              "type" : "text"
-            },
-            {
-              "code" : "gameDidStart(_:)",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " shown above uses the ",
-              "type" : "text"
-            },
-            {
-              "code" : "game",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " parameter",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to print some introductory information about the game that’s about to be played.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
               "text" : "The ",
               "type" : "text"
             },
             {
-              "code" : "game",
+              "code" : "DiceGameTracker",
               "type" : "codeVoice"
             },
             {
-              "text" : " parameter has a type of ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGame",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ", not ",
-              "type" : "text"
-            },
-            {
-              "code" : "SnakesAndLadders",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ",",
+              "text" : " class implements all three methods",
               "type" : "text"
             },
             {
@@ -3655,27 +3300,11 @@
               "type" : "text"
             },
             {
-              "text" : "and so ",
+              "text" : "that are required by the ",
               "type" : "text"
             },
             {
-              "code" : "gameDidStart(_:)",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " can access and use only methods and properties that",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "are implemented as part of the ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGame",
+              "code" : "DiceGame.Delegate",
               "type" : "codeVoice"
             },
             {
@@ -3687,7 +3316,7 @@
               "type" : "text"
             },
             {
-              "text" : "However, the method is still able to use type casting to",
+              "text" : "It uses these methods to zero out both players’ scores",
               "type" : "text"
             },
             {
@@ -3695,7 +3324,7 @@
               "type" : "text"
             },
             {
-              "text" : "query the type of the underlying instance.",
+              "text" : "at the start of a new game,",
               "type" : "text"
             },
             {
@@ -3703,15 +3332,7 @@
               "type" : "text"
             },
             {
-              "text" : "In this example, it checks whether ",
-              "type" : "text"
-            },
-            {
-              "code" : "game",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is actually",
+              "text" : "to update their scores at the end of each round,",
               "type" : "text"
             },
             {
@@ -3719,128 +3340,7 @@
               "type" : "text"
             },
             {
-              "text" : "an instance of ",
-              "type" : "text"
-            },
-            {
-              "code" : "SnakesAndLadders",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " behind the scenes,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and prints an appropriate message if so.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The ",
-              "type" : "text"
-            },
-            {
-              "code" : "gameDidStart(_:)",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " method also accesses the ",
-              "type" : "text"
-            },
-            {
-              "code" : "dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property of the passed ",
-              "type" : "text"
-            },
-            {
-              "code" : "game",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " parameter.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Because ",
-              "type" : "text"
-            },
-            {
-              "code" : "game",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is known to conform to the ",
-              "type" : "text"
-            },
-            {
-              "code" : "DiceGame",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " protocol,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "it’s guaranteed to have a ",
-              "type" : "text"
-            },
-            {
-              "code" : "dice",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and so the ",
-              "type" : "text"
-            },
-            {
-              "code" : "gameDidStart(_:)",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " method is able to access and print the dice’s ",
-              "type" : "text"
-            },
-            {
-              "code" : "sides",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " property,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "regardless of what kind of game is being played.",
+              "text" : "and to announce a winner at the end of the game.",
               "type" : "text"
             }
           ],
@@ -3853,11 +3353,19 @@
               "type" : "text"
             },
             {
+              "code" : "DiceGame",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
               "code" : "DiceGameTracker",
               "type" : "codeVoice"
             },
             {
-              "text" : " looks in action:",
+              "text" : " look in action:",
               "type" : "text"
             }
           ],
@@ -3866,16 +3374,14 @@
         {
           "code" : [
             "let tracker = DiceGameTracker()",
-            "let game = SnakesAndLadders()",
+            "let game = DiceGame(sides: 6)",
             "game.delegate = tracker",
-            "game.play()",
-            "\/\/ Started a new game of Snakes and Ladders",
-            "\/\/ The game is using a 6-sided dice",
-            "\/\/ Rolled a 3",
-            "\/\/ Rolled a 5",
-            "\/\/ Rolled a 4",
-            "\/\/ Rolled a 5",
-            "\/\/ The game lasted for 4 turns"
+            "game.play(rounds: 3)",
+            "\/\/ Started a new game",
+            "\/\/ Player 2 won round 1",
+            "\/\/ Player 2 won round 2",
+            "\/\/ Player 1 won round 3",
+            "\/\/ Player 2 won!"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -9732,7 +9238,7 @@
               "type" : "text"
             },
             {
-              "text" : "a part of the standard library,",
+              "text" : "a part of the Swift standard library,",
               "type" : "text"
             },
             {
@@ -9938,49 +9444,6 @@
           "name" : "Note",
           "style" : "note",
           "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -10003,7 +9466,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -10036,30 +9499,6 @@
   "title" : "Structures and Enumerations Are Value Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/classesandstructures#Structures-and-Enumerations-Are-Value-Types"
-},
-"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow": {
-  "abstract" : [
-    {
-      "text" : "Structure code with branches, loops, and early exits.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow",
-  "kind" : "article",
-  "role" : "article",
-  "title" : "Control Flow",
-  "type" : "topic",
-  "url" : "\/documentation\/the-swift-programming-language\/controlflow"
-},
-"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow#Break": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Break",
-  "kind" : "section",
-  "title" : "Break",
-  "type" : "topic",
-  "url" : "\/documentation\/the-swift-programming-language\/controlflow#Break"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Extensions": {
   "abstract" : [
@@ -10139,6 +9578,20 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/methods#Modifying-Value-Types-from-Within-Instance-Methods"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/NestedTypes": {
+  "abstract" : [
+    {
+      "text" : "Define types inside the scope of another type.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/NestedTypes",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Nested Types",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/nestedtypes"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OpaqueTypes": {
   "abstract" : [
     {
@@ -10149,7 +9602,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes",
   "kind" : "article",
   "role" : "article",
-  "title" : "Opaque and Boxed Types",
+  "title" : "Opaque and Boxed Protocol Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
 },
@@ -10210,18 +9663,6 @@
   "title" : "Type Casting",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/typecasting"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

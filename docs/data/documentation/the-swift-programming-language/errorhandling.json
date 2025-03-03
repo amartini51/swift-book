@@ -1128,7 +1128,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : "—",
+              "text" : " —",
               "type" : "text"
             },
             {
@@ -2636,6 +2636,1494 @@
           "type" : "codeListing"
         },
         {
+          "anchor" : "Specifying-the-Error-Type",
+          "level" : 2,
+          "text" : "Specifying the Error Type",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "All of the examples above use the most common kind of error handling,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "where the errors that your code throws",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "can be values of any type that conforms to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This approach matches the reality that",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you don’t know ahead of time every error that could happen",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "while the code is running,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "especially when propagating errors thrown somewhere else.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It also reflects the fact that errors can change over time.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "New versions of a library —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "including libraries that your dependencies use —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "can throw new errors,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the rich complexity of real-world user configurations",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "can expose failure modes that weren’t visible during development or testing.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The error handling code in the examples above",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "always includes a default case to handle errors",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that don’t have a specific ",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Most Swift code doesn’t specify the type for the errors it throws.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you might limit code to throwing errors of only one specific type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in the following special cases:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "When running code on an embedded system",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "that doesn’t support dynamic allocation of memory.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "Throwing an instance of ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "any Error",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " or another boxed protocol type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "requires allocating memory at runtime to store the error.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "In contrast,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "throwing an error of a specific type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "lets Swift avoid heap allocation for errors.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "When the errors are an implementation detail of some unit of code,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "like a library,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and aren’t part of the interface to that code.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "Because the errors come from only the library,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and not from other dependencies or the library’s clients,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "you can make an exhaustive list of all possible failures.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "And because these errors are an implementation detail of the library,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "they’re always handled within that library.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "In code that only propagates errors described by generic parameters,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "like a function that takes a closure argument",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and propagates any errors from that closure.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "For a comparison between propagating a specific error type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and using ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "rethrows",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "see ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Rethrowing-Functions-and-Methods",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "consider code that summarizes ratings",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and uses the following error type:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "enum StatisticsError: Error {",
+            "    case noRatings",
+            "    case invalidRating(Int)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To specify that a function throws only ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " values as its errors,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you write ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws(StatisticsError)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instead of only ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when declaring the function.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This syntax is also called ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "typed throws",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because you write the error type after ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in the declaration.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the function below throws ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " values as its errors.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func summarize(_ ratings: [Int]) throws(StatisticsError) {",
+            "    guard !ratings.isEmpty else { throw .noRatings }",
+            "",
+            "    var counts = [1: 0, 2: 0, 3: 0]",
+            "    for rating in ratings {",
+            "        guard rating > 0 && rating <= 3 else { throw .invalidRating(rating) }",
+            "        counts[rating]! += 1",
+            "    }",
+            "",
+            "    print(\"*\", counts[1]!, \"-- **\", counts[2]!, \"-- ***\", counts[3]!)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the code above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "summarize(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function summarizes a list of ratings",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "expressed on a scale of 1 to 3.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This function throws an instance of ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " if the input isn’t valid.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Both places in the code above that throw an error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "omit the type of the error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because the function’s error type is already defined.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can use the short form, ",
+              "type" : "text"
+            },
+            {
+              "code" : "throw .noRatings",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "instead of writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "throw StatisticsError.noRatings",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when throwing an error in a function like this.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you write a specific error type at the start of the function,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift checks that you don’t throw any other errors.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if you tried to use ",
+              "type" : "text"
+            },
+            {
+              "code" : "VendingMachineError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " from examples earlier in this chapter",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "summarize(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that code would produce an error at compile time.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can call a function that uses typed throws",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "from within a regular throwing function:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func someThrowingFunction() -> throws {",
+            "    let ratings = [1, 2, 3, 2, 2, 1]",
+            "    try summarize(ratings)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The code above doesn’t specify an error type for ",
+              "type" : "text"
+            },
+            {
+              "code" : "someThrowingFunction()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so it throws ",
+              "type" : "text"
+            },
+            {
+              "code" : "any Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You could also write the error type explicitly as ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws(any Error)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ";",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the code below is equivalent to the code above:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func someThrowingFunction() -> throws(any Error) {",
+            "    let ratings = [1, 2, 3, 2, 2, 1]",
+            "    try summarize(ratings)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "someThrowingFunction()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " propagates any errors that ",
+              "type" : "text"
+            },
+            {
+              "code" : "summarize(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " throws.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The errors from ",
+              "type" : "text"
+            },
+            {
+              "code" : "summarize(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " are always ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " values,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which is also a valid error for ",
+              "type" : "text"
+            },
+            {
+              "code" : "someThrowingFunction()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to throw.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Just like you can write a function that never returns",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "with a return type of ",
+              "type" : "text"
+            },
+            {
+              "code" : "Never",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can write a function that never throws with ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws(Never)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func nonThrowingFunction() throws(Never) {",
+            "  \/\/ ...",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This function can’t throw because",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "it’s impossible to create a value of type ",
+              "type" : "text"
+            },
+            {
+              "code" : "Never",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to throw.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In addition to specifying a function’s error type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can also write a specific error type for a ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let ratings = []",
+            "do throws(StatisticsError) {",
+            "    try summarize(ratings)",
+            "} catch {",
+            "    switch error {",
+            "    case .noRatings:",
+            "        print(\"No ratings available\")",
+            "    case .invalidRating(let rating):",
+            "        print(\"Invalid rating: \\(rating)\")",
+            "    }",
+            "}",
+            "\/\/ Prints \"No ratings available\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "do throws(StatisticsError)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " indicates that",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement throws ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " values as its errors.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Like other ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause can either handle every possible error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or propagate unhandled errors for some surrounding scope to handle.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This code handles all of the errors,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using a ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement with one case for each enumeration value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Like other ",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clauses that don’t have a pattern,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the clause matches any error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and binds the error to a local constant named ",
+              "type" : "text"
+            },
+            {
+              "code" : "error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement throws ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " values,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is a value of type ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause above uses a ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to match and handle each possible error.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If you tried to add a new case to ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "without updating the error-handling code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift would give you an error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because the ",
+              "type" : "text"
+            },
+            {
+              "code" : "switch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement wouldn’t be exhaustive anymore.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For a library that catches all of its own errors,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you could use this approach to ensure any new errors",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "get corresponding new code to handle them.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If a function or ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " block throws errors of only a single type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift infers that this code is using typed throws.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Using this shorter syntax,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you could write the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " example above as follows:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let ratings = []",
+            "do {",
+            "    try summarize(ratings)",
+            "} catch {",
+            "    switch error {",
+            "    case .noRatings:",
+            "        print(\"No ratings available\")",
+            "    case .invalidRating(let rating):",
+            "        print(\"Invalid rating: \\(rating)\")",
+            "    }",
+            "}",
+            "\/\/ Prints \"No ratings available\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Even though the ",
+              "type" : "text"
+            },
+            {
+              "code" : "do",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "catch",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " block above",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "doesn’t specify what type of error it throws,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift infers that it throws ",
+              "type" : "text"
+            },
+            {
+              "code" : "StatisticsError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can explicitly write ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws(any Error)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to avoid letting Swift infer typed throws.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Specifying-Cleanup-Actions",
           "level" : 2,
           "text" : "Specifying Cleanup Actions",
@@ -2988,79 +4476,54 @@
           "type" : "paragraph"
         },
         {
-          "content" : [
+          "inlineContent" : [
             {
-              "inlineContent" : [
-                {
-                  "text" : "You can use a ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "defer",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " statement",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "even when no error handling code is involved.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
+              "text" : "You can use a ",
+              "type" : "text"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
+              "code" : "defer",
+              "type" : "codeVoice"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "even when no error handling code is involved.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For more information,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Deferred-Actions",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
             }
           ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
+          "type" : "paragraph"
         }
       ],
       "kind" : "content"
@@ -3083,9 +4546,29 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow#Deferred-Actions": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Deferred-Actions",
+  "kind" : "section",
+  "title" : "Deferred Actions",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/controlflow#Deferred-Actions"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Rethrowing-Functions-and-Methods": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Rethrowing-Functions-and-Methods",
+  "kind" : "section",
+  "title" : "Rethrowing Functions and Methods",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/declarations#Rethrowing-Functions-and-Methods"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Patterns": {
   "abstract" : [
@@ -3112,18 +4595,6 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/cocoa_design_patterns\/handling_cocoa_errors_in_swift"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

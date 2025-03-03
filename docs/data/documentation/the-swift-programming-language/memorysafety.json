@@ -741,7 +741,7 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "At least one is a write access or a nonatomic access.",
+                      "text" : "The accesses aren’t both reads, and aren’t both atomic.",
                       "type" : "text"
                     }
                   ],
@@ -854,7 +854,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "An operation is ",
+              "text" : "An access is ",
               "type" : "text"
             },
             {
@@ -867,11 +867,41 @@
               "type" : "emphasis"
             },
             {
+              "text" : " if",
+              "type" : "text"
+            },
+            {
               "text" : " ",
               "type" : "text"
             },
             {
-              "text" : "if it uses only C atomic operations;",
+              "text" : "it’s a call to an atomic operation on ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/synchronization\/atomic",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/synchronization\/atomiclazyreference",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or it it uses only C atomic operations;",
               "type" : "text"
             },
             {
@@ -887,7 +917,7 @@
               "type" : "text"
             },
             {
-              "text" : "For a list of those functions, see the ",
+              "text" : "For a list of C atomic functions, see the ",
               "type" : "text"
             },
             {
@@ -2909,49 +2939,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -2974,9 +2961,33 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
+},
+"https://developer.apple.com/documentation/synchronization/atomic": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/synchronization\/atomic",
+  "title" : "Atomic",
+  "titleInlineContent" : [
+    {
+      "code" : "Atomic",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/synchronization\/atomic"
+},
+"https://developer.apple.com/documentation/synchronization/atomiclazyreference": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/synchronization\/atomiclazyreference",
+  "title" : "AtomicLazyReference",
+  "titleInlineContent" : [
+    {
+      "code" : "AtomicLazyReference",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/synchronization\/atomiclazyreference"
 },
 "https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/xcode\/diagnosing_memory_thread_and_crash_issues_early",
@@ -2990,18 +3001,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/xcode\/diagnosing_memory_thread_and_crash_issues_early"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
-},
 "memory_increment": {
   "alt" : null,
   "identifier" : "memory_increment",
@@ -3012,14 +3011,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/memory_increment@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_increment@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/memory_increment~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_increment~dark@2x.png"
     }
   ]
 },
@@ -3033,14 +3032,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/memory_share_health_maria@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_share_health_maria@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/memory_share_health_maria~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_share_health_maria~dark@2x.png"
     }
   ]
 },
@@ -3054,14 +3053,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/memory_share_health_oscar@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_share_health_oscar@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/memory_share_health_oscar~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_share_health_oscar~dark@2x.png"
     }
   ]
 },
@@ -3075,14 +3074,14 @@
         "2x",
         "light"
       ],
-      "url" : "\/images\/memory_shopping@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_shopping@2x.png"
     },
     {
       "traits" : [
         "2x",
         "dark"
       ],
-      "url" : "\/images\/memory_shopping~dark@2x.png"
+      "url" : "\/images\/org.swift.tspl\/memory_shopping~dark@2x.png"
     }
   ]
 }

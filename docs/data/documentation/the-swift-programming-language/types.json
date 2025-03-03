@@ -378,12 +378,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -405,12 +408,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -432,12 +438,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -459,12 +468,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -486,12 +498,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -513,12 +528,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -540,12 +558,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -567,39 +588,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "type",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
                 },
                 {
-                  "text" : " → ",
+                  "text" : " ",
                   "type" : "text"
                 },
                 {
-                  "inlineContent" : [
-                    {
-                      "text" : "boxed-protocol-type",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -621,12 +618,45 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "type",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "boxed-protocol-type",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -648,12 +678,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -675,12 +708,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -702,12 +738,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -953,28 +992,6 @@
                     }
                   ],
                   "type" : "emphasis"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "?",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "code" : "inout",
-                      "type" : "codeVoice"
-                    }
-                  ],
-                  "type" : "strong"
                 },
                 {
                   "inlineContent" : [
@@ -1349,12 +1366,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1643,12 +1663,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1709,12 +1732,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1762,12 +1788,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -2546,7 +2575,7 @@
               "type" : "text"
             },
             {
-              "text" : "that can throw or rethrow an error must be marked with the ",
+              "text" : "that can throw or rethrow an error must include the ",
               "type" : "text"
             },
             {
@@ -2562,7 +2591,7 @@
               "type" : "text"
             },
             {
-              "text" : "The ",
+              "text" : "You can include a type after ",
               "type" : "text"
             },
             {
@@ -2570,7 +2599,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " keyword is part of a function’s type,",
+              "text" : " in parentheses",
               "type" : "text"
             },
             {
@@ -2578,7 +2607,7 @@
               "type" : "text"
             },
             {
-              "text" : "and nonthrowing functions are subtypes of throwing functions.",
+              "text" : "to specify the type of error that the function throws.",
               "type" : "text"
             },
             {
@@ -2586,13 +2615,341 @@
               "type" : "text"
             },
             {
-              "text" : "As a result, you can use a nonthrowing function in the same places as a throwing one.",
+              "text" : "The throw error type must conform to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
               "type" : "text"
             },
             {
               "text" : " ",
               "type" : "text"
             },
+            {
+              "text" : "Writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " without specifying a type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is the same as writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws(any Error)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Omitting ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is the same as writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "throws(Never)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The error type that a function throws",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "can be any type that conforms to ",
+              "type" : "text"
+            },
+            {
+              "code" : "Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "including generic types, boxed protocol types, and opaque types.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The type of error that a function throws is part of that function’s type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and a subtype relationship between error types",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "means the corresponding function types are also subtypes.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, if you declare a custom ",
+              "type" : "text"
+            },
+            {
+              "code" : "MyError",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the relationship between some function types is as follows,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "from supertype to subtype:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Functions that throw any error, marked ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "throws(any Error)",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Functions that throw a specific error, marked ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "throws(MyError)",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Functions that don’t throw, marked ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "throws(Never)",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "orderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "As a result of these subtype relationships:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "You can use a nonthrowing function",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "in the same places as a throwing function.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "You can use a function that throws a concrete error type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "in the same places as a throwing function.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "You can use a function that throws a more specific error type",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "in the same places as a function that throws a more general error type.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you use an associated type or a generic type parameter",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as the thrown error type in a function type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "then that associated type or generic type parameter",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is implicitly required to conform to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "Throwing and rethrowing functions are described in",
               "type" : "text"
@@ -3119,11 +3476,11 @@
                 {
                   "inlineContent" : [
                     {
-                      "code" : "throws",
-                      "type" : "codeVoice"
+                      "text" : "throws-clause",
+                      "type" : "text"
                     }
                   ],
-                  "type" : "strong"
+                  "type" : "emphasis"
                 },
                 {
                   "inlineContent" : [
@@ -3199,12 +3556,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -3340,12 +3700,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -3384,11 +3747,11 @@
                 {
                   "inlineContent" : [
                     {
-                      "code" : "inout",
-                      "type" : "codeVoice"
+                      "text" : "parameter-modifier",
+                      "type" : "text"
                     }
                   ],
-                  "type" : "strong"
+                  "type" : "emphasis"
                 },
                 {
                   "inlineContent" : [
@@ -3437,12 +3800,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -3464,6 +3830,85 @@
                     }
                   ],
                   "type" : "emphasis"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "throws-clause",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "throws",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "throws",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "(",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "type",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : ")",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
                 }
               ],
               "type" : "paragraph"
@@ -5302,12 +5747,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5936,12 +6384,17 @@
               "type" : "text"
             },
             {
-              "text" : "when working with a boxed protocol type is called :newTerm:",
+              "text" : "when working with a boxed protocol type is called ",
               "type" : "text"
             },
             {
-              "code" : "boxing",
-              "type" : "codeVoice"
+              "inlineContent" : [
+                {
+                  "text" : "boxing",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
             },
             {
               "text" : ".",
@@ -7726,12 +8179,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8171,49 +8627,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -8236,7 +8649,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -8459,18 +8872,6 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/anyobject"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

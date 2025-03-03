@@ -173,12 +173,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -200,12 +203,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -227,12 +233,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -254,12 +263,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -281,12 +293,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -308,12 +323,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -335,12 +353,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -362,12 +383,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -389,12 +413,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -416,12 +443,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -443,12 +473,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -470,12 +503,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -497,12 +533,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -524,12 +563,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -551,12 +593,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -578,12 +623,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -601,55 +649,6 @@
                   "inlineContent" : [
                     {
                       "text" : "precedence-group-declaration",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "declarations",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " → ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "declaration",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "declarations",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "?",
                       "type" : "text"
                     }
                   ],
@@ -1467,12 +1466,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1730,6 +1732,108 @@
               "text" : " ",
               "type" : "text"
             },
+            {
+              "text" : "This analysis is called ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "definite initialization",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the compiler proves that a value is definitely set before being read.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Definite initialization",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "can’t construct proofs that require domain knowledge,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and its ability to track state across conditionals has a limit.",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "If you can determine that constant always has a value set,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "but the compiler can’t prove this is the case,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "try simplifying the code paths that set the value,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "or use a variable declaration instead.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Note",
+          "style" : "note",
+          "type" : "aside"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "When a constant declaration occurs in the context of a class or structure",
               "type" : "text"
@@ -2245,12 +2349,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -2294,12 +2401,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -2697,6 +2807,43 @@
           "inlineContent" : [
             {
               "text" : "As with constant declarations,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if a variable declaration omits the initializer ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "expression",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the variable must have a value set before the first time it is read.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Also like constant declarations,",
               "type" : "text"
             },
             {
@@ -3910,12 +4057,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -3976,12 +4126,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4042,12 +4195,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4108,12 +4264,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4174,12 +4333,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4333,12 +4495,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4387,12 +4552,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4462,12 +4630,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4528,12 +4699,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4612,12 +4786,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4718,12 +4895,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4846,12 +5026,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4912,12 +5095,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4983,12 +5169,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5129,12 +5318,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5204,12 +5396,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5288,12 +5483,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5917,12 +6115,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5944,12 +6145,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6594,10 +6798,189 @@
           "type" : "codeListing"
         },
         {
-          "anchor" : "In-Out-Parameters",
+          "anchor" : "Parameter-Modifiers",
           "level" : 3,
+          "text" : "Parameter Modifiers",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "parameter modifier",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " changes how an argument is passed to the function.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "<#argument label#> <#parameter name#>: <#parameter modifier#> <#parameter type#>"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To use a parameter modifier,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "write ",
+              "type" : "text"
+            },
+            {
+              "code" : "inout",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "borrowing",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", or ",
+              "type" : "text"
+            },
+            {
+              "code" : "consuming",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "before the argument’s type.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func someFunction(a: inout A, b: consuming B, c: C) { ... }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "In-Out-Parameters",
+          "level" : 4,
           "text" : "In-Out Parameters",
           "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "By default, function arguments in Swift are passed by value:",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Any changes made within the function are not visible in the caller.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To make an in-out parameter instead,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you apply the ",
+              "type" : "text"
+            },
+            {
+              "code" : "inout",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " parameter modifier.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func someFunction(a: inout Int) {",
+            "    a += 1",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When calling a function that includes in-out parameters,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the in-out argument must be prefixed with an ampersand (",
+              "type" : "text"
+            },
+            {
+              "code" : "&",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ")",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to mark that the function call can change the argument’s value.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var x = 7",
+            "someFunction(&x)",
+            "print(x)  \/\/ Prints \"8\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
         },
         {
           "inlineContent" : [
@@ -6876,13 +7259,27 @@
               "type" : "text"
             },
             {
-              "text" : "which violates Swift’s memory exclusivity guarantee.",
+              "text" : "which violates memory exclusivity.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var someValue: Int",
+            "func someFunction(a: inout Int) {",
+            "    a += someValue",
+            "}",
+            "",
+            "\/\/ Error: This causes a runtime exclusivity violation",
+            "someFunction(&someValue)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "For the same reason,",
               "type" : "text"
@@ -6897,6 +7294,20 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var someValue: Int",
+            "func someFunction(a: inout Int, b: inout Int) {",
+            "    a += b",
+            "    b += 1",
+            "}",
+            "",
+            "\/\/ Error: Cannot pass the same value to multiple in-out parameters",
+            "someFunction(&someValue, &someValue)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
         },
         {
           "inlineContent" : [
@@ -7047,6 +7458,566 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "anchor" : "Borrowing-and-Consuming-Parameters",
+          "level" : 4,
+          "text" : "Borrowing and Consuming Parameters",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "By default, Swift uses a set of rules",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to automatically manage object lifetime across function calls,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "copying values when required.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The default rules are designed to minimize overhead in most cases —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if you want more specific control,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can apply the ",
+              "type" : "text"
+            },
+            {
+              "code" : "borrowing",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : "consuming",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " parameter modifier.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In this case,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "use ",
+              "type" : "text"
+            },
+            {
+              "code" : "copy",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to explicitly mark copy operations.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Regardless of whether you use the default rules,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift guarantees that object lifetime and",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "ownership are correctly managed in all cases.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "These parameter modifiers impact only the relative efficiency",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "of particular usage patterns, not correctness.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "borrowing",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " modifier indicates that the function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "does not keep the parameter’s value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In this case, the caller maintains ownership of the object",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the responsibility for the object’s lifetime.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Using ",
+              "type" : "text"
+            },
+            {
+              "code" : "borrowing",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " minimizes overhead when the function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "uses the object only transiently.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ `isLessThan` does not keep either argument",
+            "func isLessThan(lhs: borrowing A, rhs: borrowing A) -> Bool {",
+            "    ...",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If the function needs to keep the parameter’s value",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example, by storing it in a global variable —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you use ",
+              "type" : "text"
+            },
+            {
+              "code" : "copy",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to explicitly copy that value.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ As above, but this `isLessThan` also wants to record the smallest value",
+            "func isLessThan(lhs: borrowing A, rhs: borrowing A) -> Bool {",
+            "    if lhs < storedValue {",
+            "        storedValue = copy lhs",
+            "    } else if rhs < storedValue {",
+            "        storedValue = copy rhs",
+            "    }",
+            "    return lhs < rhs",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Conversely,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "consuming",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " parameter modifier indicates",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that the function takes ownership of the value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "accepting responsibility for either storing or destroying it",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "before the function returns.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ `store` keeps its argument, so mark it `consuming`",
+            "func store(a: consuming A) {",
+            "    someGlobalVariable = a",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Using ",
+              "type" : "text"
+            },
+            {
+              "code" : "consuming",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " minimizes overhead when the caller no longer",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "needs to use the object after the function call.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ Usually, this is the last thing you do with a value",
+            "store(a: value)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you keep using a copyable object after the function call,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the compiler automatically makes a copy of that object",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "before the function call.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ The compiler inserts an implicit copy here",
+            "store(a: someValue)  \/\/ This function consumes someValue",
+            "print(someValue)  \/\/ This uses the copy of someValue"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Unlike ",
+              "type" : "text"
+            },
+            {
+              "code" : "inout",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", neither ",
+              "type" : "text"
+            },
+            {
+              "code" : "borrowing",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " nor",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "consuming",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " parameters require any special",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "notation when you call the function:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func someFunction(a: borrowing A, b: consuming B) { ... }",
+            "",
+            "someFunction(a: someA, b: someB)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The explicit use of either ",
+              "type" : "text"
+            },
+            {
+              "code" : "borrowing",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : "consuming",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "indicates your intention to more tightly control",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the overhead of runtime ownership management.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because copies can cause unexpected runtime ownership",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "operations,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "parameters marked with either of these",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "modifiers cannot be copied unless you",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "use an explicit ",
+              "type" : "text"
+            },
+            {
+              "code" : "copy",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " keyword:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func borrowingFunction1(a: borrowing A) {",
+            "    \/\/ Error: Cannot implicitly copy a",
+            "    \/\/ This assignment requires a copy because",
+            "    \/\/ `a` is only borrowed from the caller.",
+            "    someGlobalVariable = a",
+            "}",
+            "",
+            "func borrowingFunction2(a: borrowing A) {",
+            "    \/\/ OK: Explicit copying works",
+            "    someGlobalVariable = copy a",
+            "}",
+            "",
+            "func consumingFunction1(a: consuming A) {",
+            "    \/\/ Error: Cannot implicitly copy a",
+            "    \/\/ This assignment requires a copy because",
+            "    \/\/ of the following `print`",
+            "    someGlobalVariable = a",
+            "    print(a)",
+            "}",
+            "",
+            "func consumingFunction2(a: consuming A) {",
+            "    \/\/ OK: Explicit copying works regardless",
+            "    someGlobalVariable = copy a",
+            "    print(a)",
+            "}",
+            "",
+            "func consumingFunction3(a: consuming A) {",
+            "    \/\/ OK: No copy needed here because this is the last use",
+            "    someGlobalVariable = a",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
         },
         {
           "anchor" : "Special-Kinds-of-Parameters",
@@ -8039,6 +9010,24 @@
         {
           "inlineContent" : [
             {
+              "text" : "A function that throws a specific error type has the following form:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func <#function name#>(<#parameters#>) throws(<#error type#>) -> <#return type#> {",
+            "   <#statements#>",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
               "text" : "Calls to a throwing function or method must be wrapped in a ",
               "type" : "text"
             },
@@ -8088,15 +9077,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The ",
-              "type" : "text"
-            },
-            {
-              "code" : "throws",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " keyword is part of a function’s type,",
+              "text" : "A function’s type includes whether it can throw an error",
               "type" : "text"
             },
             {
@@ -8104,7 +9085,7 @@
               "type" : "text"
             },
             {
-              "text" : "and nonthrowing functions are subtypes of throwing functions.",
+              "text" : "and what type of error it throws.",
               "type" : "text"
             },
             {
@@ -8112,7 +9093,7 @@
               "type" : "text"
             },
             {
-              "text" : "As a result, you can use a nonthrowing function",
+              "text" : "This subtype relationship means, for example, you can use a nonthrowing function",
               "type" : "text"
             },
             {
@@ -8120,7 +9101,57 @@
               "type" : "text"
             },
             {
-              "text" : "in a context where as a throwing one is expected.",
+              "text" : "in a context where a throwing one is expected.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For more information about the type of a throwing function,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Types#Function-Type",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For examples of working with errors that have explicit types,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-the-Error-Type",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -8489,6 +9520,81 @@
             },
             {
               "text" : "and a rethrowing method can satisfy a protocol requirement for a throwing method.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "An alternative to rethrowing is throwing a specific error type in generic code.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func someFunction<E: Error>(callback: () throws(E) -> Void) throws(E) {",
+            "    try callback()",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This approach to propagating an error",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "preserves type information about the error.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However, unlike marking a function ",
+              "type" : "text"
+            },
+            {
+              "code" : "rethrows",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "this approach doesn’t prevent the function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "from throwing an error of the same type.",
               "type" : "text"
             }
           ],
@@ -9125,12 +10231,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9222,11 +10331,11 @@
                 {
                   "inlineContent" : [
                     {
-                      "code" : "throws",
-                      "type" : "codeVoice"
+                      "text" : "throws-clause",
+                      "type" : "text"
                     }
                   ],
-                  "type" : "strong"
+                  "type" : "emphasis"
                 },
                 {
                   "inlineContent" : [
@@ -9258,12 +10367,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9342,12 +10454,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9404,12 +10519,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9510,12 +10628,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9576,12 +10697,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9633,7 +10757,7 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "type-annotation",
+                      "text" : "parameter-type-annotation",
                       "type" : "text"
                     }
                   ],
@@ -9660,12 +10784,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9717,17 +10844,20 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "type-annotation",
+                      "text" : "parameter-type-annotation",
                       "type" : "text"
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9779,7 +10909,7 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "type-annotation",
+                      "text" : "parameter-type-annotation",
                       "type" : "text"
                     }
                   ],
@@ -9824,12 +10954,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9851,12 +10984,154 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "parameter-type-annotation",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : ":",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "attributes",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "parameter-modifier",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "?",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "type",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "parameter-modifier",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "inout",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "borrowing",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "consuming",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11474,12 +12749,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11721,12 +12999,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11770,12 +13051,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11823,12 +13107,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11907,12 +13194,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11973,12 +13263,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12022,12 +13315,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12049,12 +13345,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12212,12 +13511,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12261,12 +13563,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12314,12 +13619,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12376,12 +13684,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12442,12 +13753,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12491,12 +13805,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12531,12 +13848,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13189,12 +14509,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13216,12 +14539,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -13327,12 +14653,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -14250,12 +15579,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -14426,12 +15758,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -14453,12 +15788,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -14564,12 +15902,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -15394,12 +16735,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -15421,12 +16765,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -15532,12 +16879,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -15611,7 +16961,7 @@
               "type" : "text"
             },
             {
-              "text" : "Protocol declarations are declared at global scope",
+              "text" : "Protocol declarations are declared",
               "type" : "text"
             },
             {
@@ -15641,6 +16991,23 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Protocol declarations can appear at global scope,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or nested inside a nongeneric type or nongeneric function.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         },
         {
           "inlineContent" : [
@@ -16556,12 +17923,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -16583,12 +17953,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -16694,12 +18067,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -16761,12 +18137,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -16788,12 +18167,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -16815,12 +18197,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -16842,12 +18227,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -16869,12 +18257,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -17876,11 +19267,11 @@
                 {
                   "inlineContent" : [
                     {
-                      "code" : "throws",
-                      "type" : "codeVoice"
+                      "text" : "throws-clause",
+                      "type" : "text"
                     }
                   ],
-                  "type" : "strong"
+                  "type" : "emphasis"
                 },
                 {
                   "inlineContent" : [
@@ -17912,12 +19303,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -19841,11 +21235,11 @@
                 {
                   "inlineContent" : [
                     {
-                      "code" : "throws",
-                      "type" : "codeVoice"
+                      "text" : "throws-clause",
+                      "type" : "text"
                     }
                   ],
-                  "type" : "strong"
+                  "type" : "emphasis"
                 },
                 {
                   "inlineContent" : [
@@ -19890,12 +21284,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -20022,12 +21419,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -20093,12 +21493,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -20177,12 +21580,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -20261,12 +21667,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -21609,7 +23018,7 @@
               "type" : "text"
             },
             {
-              "text" : "one for for arrays with ",
+              "text" : "one for arrays with ",
               "type" : "text"
             },
             {
@@ -22063,12 +23472,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -22174,12 +23586,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -22931,12 +24346,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -23006,12 +24424,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -23081,12 +24502,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -23187,12 +24611,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -23349,6 +24776,31 @@
               "type" : "text"
             },
             {
+              "text" : "The code that performs macro expansion is a separate Swift program,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that uses the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/github.com\/swiftlang\/swift-syntax",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " module to interact with Swift code.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
               "text" : "Call the ",
               "type" : "text"
             },
@@ -23407,7 +24859,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "For more information, see ",
+              "text" : "For an overview of macros in Swift, see ",
               "type" : "text"
             },
             {
@@ -23539,12 +24991,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -23610,12 +25065,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -23659,12 +25117,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -23699,12 +25160,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -24469,12 +25933,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -24522,12 +25989,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -24944,7 +26414,7 @@
               "type" : "text"
             },
             {
-              "text" : "with the operators provided by the standard library.",
+              "text" : "with the operators provided by the Swift standard library.",
               "type" : "text"
             },
             {
@@ -25365,7 +26835,7 @@
               "type" : "text"
             },
             {
-              "text" : "as the assignment operators from the standard library.",
+              "text" : "as the assignment operators from the Swift standard library.",
               "type" : "text"
             },
             {
@@ -25547,12 +27017,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -25574,12 +27047,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -25601,12 +27077,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -25681,12 +27160,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -25840,12 +27322,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -25893,12 +27378,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -26012,12 +27500,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -26777,6 +28268,37 @@
                   {
                     "inlineContent" : [
                       {
+                        "text" : "Apply this modifier to a declaration to indicate that the declaration can be accessed only by code in the same package as the declaration. A package is a unit of code distribution that you define in the build system you’re using. When the build system compiles code, it specifies the package name by passing the ",
+                        "type" : "text"
+                      },
+                      {
+                        "code" : "-package-name",
+                        "type" : "codeVoice"
+                      },
+                      {
+                        "text" : " flag to the Swift compiler. Two modules are part of the same package if the build system specifies the same package name when building them.",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "package",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
                         "text" : "Apply this modifier to a declaration to indicate the declaration can be accessed only by code in the same module as the declaration. By default, most declarations are implicitly marked with the ",
                         "type" : "text"
                       },
@@ -26862,67 +28384,119 @@
               "type" : "text"
             },
             {
-              "text" : "extensions to the same type that are in the same file",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "share an access-control scope.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "If the type they extend is also in the same file,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "they share the type’s access-control scope.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Private members declared in the type’s declaration",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "can be accessed from extensions,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and private members declared in one extension",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "can be accessed from other extensions and from the type’s declaration.",
+              "text" : "extensions behave as follows:",
               "type" : "text"
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "If there are multiple extensions in the same file,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and those extensions all extend the same type,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "then all of those extensions have the same access-control scope.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "The extensions and the type they extend can be in different files.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "If there are extensions in the same file as the type they extend,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "the extensions have the same access-control scope as the type they extend.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Private members declared in a type’s declaration",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "can be accessed from extensions to that type.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "Private members declared in one extension",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "can be accessed from other extensions",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and from the extended type’s declaration.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
         },
         {
           "inlineContent" : [
@@ -26943,7 +28517,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " keyword enclosed in parentheses (for example, ",
+              "text" : " keyword enclosed in parentheses —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example, ",
               "type" : "text"
             },
             {
@@ -26951,7 +28533,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ").",
+              "text" : ".",
               "type" : "text"
             },
             {
@@ -27305,12 +28887,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27332,12 +28917,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27359,12 +28947,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27386,12 +28977,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27514,12 +29108,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27593,12 +29190,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27672,12 +29272,97 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "access-level-modifier",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "package",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "package",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "(",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "set",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : ")",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27751,12 +29436,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -27905,49 +29593,6 @@
           "name" : "Grammar of a declaration modifier",
           "style" : "note",
           "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -27970,7 +29615,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -28285,6 +29930,16 @@
   "title" : "Raw Values",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/enumerations#Raw-Values"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling#Specifying-the-Error-Type": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ErrorHandling#Specifying-the-Error-Type",
+  "kind" : "section",
+  "title" : "Specifying the Error Type",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/errorhandling#Specifying-the-Error-Type"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Expressions#Implicit-Member-Expression": {
   "abstract" : [
@@ -28666,6 +30321,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/thebasics#Constants-and-Variables"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Types#Function-Type": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Types#Function-Type",
+  "kind" : "section",
+  "title" : "Function Type",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/types#Function-Type"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Types#Protocol-Composition-Type": {
   "abstract" : [
 
@@ -28710,17 +30375,17 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/operator_declarations"
 },
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
+"https://github.com/swiftlang/swift-syntax": {
+  "identifier" : "https:\/\/github.com\/swiftlang\/swift-syntax",
+  "title" : "SwiftSyntax",
   "titleInlineContent" : [
     {
-      "text" : "Apple’s beta software",
+      "text" : "SwiftSyntax",
       "type" : "text"
     }
   ],
   "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
+  "url" : "https:\/\/github.com\/swiftlang\/swift-syntax"
 }
 }
 }

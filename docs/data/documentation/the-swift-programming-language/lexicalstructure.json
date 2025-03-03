@@ -403,12 +403,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -430,12 +433,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -457,12 +463,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -484,12 +493,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -511,12 +523,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -545,14 +560,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+000A",
+                  "text" : " → U+000A ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -563,14 +577,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+000D",
+                  "text" : " → U+000D ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -632,12 +645,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -703,12 +719,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -805,12 +824,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -872,12 +894,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -899,12 +924,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -926,12 +954,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1425,12 +1456,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1500,12 +1534,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1527,12 +1564,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1554,12 +1594,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1636,14 +1679,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → Upper- or lowercase letter A through Z",
+                  "text" : " → Upper- or lowercase letter A through Z ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1665,12 +1707,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1681,14 +1726,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+00A8, U+00AA, U+00AD, U+00AF, U+00B2–U+00B5, or U+00B7–U+00BA",
+                  "text" : " → U+00A8, U+00AA, U+00AD, U+00AF, U+00B2–U+00B5, or U+00B7–U+00BA ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1699,14 +1743,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+00BC–U+00BE, U+00C0–U+00D6, U+00D8–U+00F6, or U+00F8–U+00FF",
+                  "text" : " → U+00BC–U+00BE, U+00C0–U+00D6, U+00D8–U+00F6, or U+00F8–U+00FF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1717,14 +1760,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+0100–U+02FF, U+0370–U+167F, U+1681–U+180D, or U+180F–U+1DBF",
+                  "text" : " → U+0100–U+02FF, U+0370–U+167F, U+1681–U+180D, or U+180F–U+1DBF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1735,14 +1777,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+1E00–U+1FFF",
+                  "text" : " → U+1E00–U+1FFF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1753,14 +1794,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+200B–U+200D, U+202A–U+202E, U+203F–U+2040, U+2054, or U+2060–U+206F",
+                  "text" : " → U+200B–U+200D, U+202A–U+202E, U+203F–U+2040, U+2054, or U+2060–U+206F ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1771,14 +1811,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2070–U+20CF, U+2100–U+218F, U+2460–U+24FF, or U+2776–U+2793",
+                  "text" : " → U+2070–U+20CF, U+2100–U+218F, U+2460–U+24FF, or U+2776–U+2793 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1789,14 +1828,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2C00–U+2DFF or U+2E80–U+2FFF",
+                  "text" : " → U+2C00–U+2DFF or U+2E80–U+2FFF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1807,14 +1845,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+3004–U+3007, U+3021–U+302F, U+3031–U+303F, or U+3040–U+D7FF",
+                  "text" : " → U+3004–U+3007, U+3021–U+302F, U+3031–U+303F, or U+3040–U+D7FF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1825,14 +1862,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+F900–U+FD3D, U+FD40–U+FDCF, U+FDF0–U+FE1F, or U+FE30–U+FE44",
+                  "text" : " → U+F900–U+FD3D, U+FD40–U+FDCF, U+FDF0–U+FE1F, or U+FE30–U+FE44 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1843,14 +1879,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+FE47–U+FFFD",
+                  "text" : " → U+FE47–U+FFFD ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1861,14 +1896,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+10000–U+1FFFD, U+20000–U+2FFFD, U+30000–U+3FFFD, or U+40000–U+4FFFD",
+                  "text" : " → U+10000–U+1FFFD, U+20000–U+2FFFD, U+30000–U+3FFFD, or U+40000–U+4FFFD ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1879,14 +1913,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+50000–U+5FFFD, U+60000–U+6FFFD, U+70000–U+7FFFD, or U+80000–U+8FFFD",
+                  "text" : " → U+50000–U+5FFFD, U+60000–U+6FFFD, U+70000–U+7FFFD, or U+80000–U+8FFFD ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1897,14 +1930,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+90000–U+9FFFD, U+A0000–U+AFFFD, U+B0000–U+BFFFD, or U+C0000–U+CFFFD",
+                  "text" : " → U+90000–U+9FFFD, U+A0000–U+AFFFD, U+B0000–U+BFFFD, or U+C0000–U+CFFFD ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1933,14 +1965,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → Digit 0 through 9",
+                  "text" : " → Digit 0 through 9 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1951,14 +1982,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+0300–U+036F, U+1DC0–U+1DFF, U+20D0–U+20FF, or U+FE20–U+FE2F",
+                  "text" : " → U+0300–U+036F, U+1DC0–U+1DFF, U+20D0–U+20FF, or U+FE20–U+FE2F ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -1980,12 +2010,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -2069,12 +2102,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -2313,7 +2349,31 @@
                       "type" : "text"
                     },
                     {
+                      "code" : "borrowing",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
                       "code" : "class",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "consuming",
                       "type" : "codeVoice"
                     },
                     {
@@ -2445,6 +2505,18 @@
                       "type" : "text"
                     },
                     {
+                      "code" : "nonisolated",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
                       "code" : "open",
                       "type" : "codeVoice"
                     },
@@ -2469,7 +2541,7 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "private",
+                      "code" : "precedencegroup",
                       "type" : "codeVoice"
                     },
                     {
@@ -2481,7 +2553,7 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "precedencegroup",
+                      "code" : "private",
                       "type" : "codeVoice"
                     },
                     {
@@ -2791,7 +2863,7 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "throw",
+                      "code" : "switch",
                       "type" : "codeVoice"
                     },
                     {
@@ -2803,7 +2875,7 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "switch",
+                      "code" : "throw",
                       "type" : "codeVoice"
                     },
                     {
@@ -3110,18 +3182,6 @@
                       "type" : "text"
                     },
                     {
-                      "code" : "#elseif",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ",",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
                       "code" : "#else",
                       "type" : "codeVoice"
                     },
@@ -3134,7 +3194,31 @@
                       "type" : "text"
                     },
                     {
+                      "code" : "#elseif",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
                       "code" : "#endif",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "#fileLiteral",
                       "type" : "codeVoice"
                     },
                     {
@@ -3198,6 +3282,18 @@
                       "type" : "codeVoice"
                     },
                     {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "#unavailable",
+                      "type" : "codeVoice"
+                    },
+                    {
                       "text" : ".",
                       "type" : "text"
                     }
@@ -3230,15 +3326,7 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "the following keywords are reserved,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "which are now implemented as macros in the Swift standard library:",
+                  "text" : "the following keywords were reserved:",
                   "type" : "text"
                 },
                 {
@@ -3283,18 +3371,6 @@
                 },
                 {
                   "code" : "#fileID",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ",",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "#fileLiteral",
                   "type" : "codeVoice"
                 },
                 {
@@ -3364,6 +3440,135 @@
                 {
                   "text" : ".",
                   "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "These are now implemented as macros in the Swift standard library:",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/column()",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle()",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID()",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath()",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/file()",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function()",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/line()",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ",",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
                 }
               ],
               "type" : "paragraph"
@@ -3389,6 +3594,18 @@
                     },
                     {
                       "code" : "associativity",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "async",
                       "type" : "codeVoice"
                     },
                     {
@@ -3557,6 +3774,18 @@
                     },
                     {
                       "code" : "override",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "package",
                       "type" : "codeVoice"
                     },
                     {
@@ -4620,12 +4849,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -4660,12 +4892,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5075,12 +5310,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5102,12 +5340,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5129,12 +5370,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5218,12 +5462,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5234,14 +5481,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → Digit 0 or 1",
+                  "text" : " → Digit 0 or 1 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5276,12 +5522,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5387,12 +5636,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5403,14 +5655,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → Digit 0 through 7",
+                  "text" : " → Digit 0 through 7 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5445,12 +5696,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5543,12 +5797,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5559,14 +5816,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → Digit 0 through 9",
+                  "text" : " → Digit 0 through 9 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5610,12 +5866,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5650,12 +5909,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5761,12 +6023,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5777,14 +6042,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → Digit 0 through 9, a through f, or A through F",
+                  "text" : " → Digit 0 through 9, a through f, or A through F ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -5819,12 +6083,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6441,12 +6708,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6543,12 +6813,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6667,12 +6940,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6769,12 +7045,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -6809,12 +7088,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8037,12 +8319,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8148,12 +8433,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8259,12 +8547,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8308,12 +8599,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8406,12 +8700,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8433,12 +8730,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8526,12 +8826,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8553,12 +8856,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8580,12 +8886,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8669,12 +8978,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8780,12 +9092,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -8895,12 +9210,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9001,12 +9319,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9197,12 +9518,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9276,12 +9600,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9812,12 +10139,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -9879,12 +10209,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11247,12 +11580,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11483,12 +11819,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11499,14 +11838,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+00A1–U+00A7",
+                  "text" : " → U+00A1–U+00A7 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11517,14 +11855,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+00A9 or U+00AB",
+                  "text" : " → U+00A9 or U+00AB ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11535,14 +11872,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+00AC or U+00AE",
+                  "text" : " → U+00AC or U+00AE ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11553,14 +11889,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+00B0–U+00B1",
+                  "text" : " → U+00B0–U+00B1 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11571,14 +11906,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+00B6, U+00BB, U+00BF, U+00D7, or U+00F7",
+                  "text" : " → U+00B6, U+00BB, U+00BF, U+00D7, or U+00F7 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11589,14 +11923,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2016–U+2017",
+                  "text" : " → U+2016–U+2017 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11607,14 +11940,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2020–U+2027",
+                  "text" : " → U+2020–U+2027 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11625,14 +11957,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2030–U+203E",
+                  "text" : " → U+2030–U+203E ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11643,14 +11974,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2041–U+2053",
+                  "text" : " → U+2041–U+2053 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11661,14 +11991,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2055–U+205E",
+                  "text" : " → U+2055–U+205E ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11679,14 +12008,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2190–U+23FF",
+                  "text" : " → U+2190–U+23FF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11697,14 +12025,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2500–U+2775",
+                  "text" : " → U+2500–U+2775 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11715,14 +12042,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2794–U+2BFF",
+                  "text" : " → U+2794–U+2BFF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11733,14 +12059,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+2E00–U+2E7F",
+                  "text" : " → U+2E00–U+2E7F ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11751,14 +12076,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+3001–U+3003",
+                  "text" : " → U+3001–U+3003 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11769,14 +12093,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+3008–U+3020",
+                  "text" : " → U+3008–U+3020 ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11816,12 +12139,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11832,14 +12158,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+0300–U+036F",
+                  "text" : " → U+0300–U+036F ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11850,14 +12175,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+1DC0–U+1DFF",
+                  "text" : " → U+1DC0–U+1DFF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11868,14 +12192,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+20D0–U+20FF",
+                  "text" : " → U+20D0–U+20FF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11886,14 +12209,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+FE00–U+FE0F",
+                  "text" : " → U+FE00–U+FE0F ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11904,14 +12226,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+FE20–U+FE2F",
+                  "text" : " → U+FE20–U+FE2F ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -11922,14 +12243,13 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " → U+E0100–U+E01EF",
+                  "text" : " → U+E0100–U+E01EF ",
                   "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12000,12 +12320,15 @@
                     }
                   ],
                   "type" : "strong"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12040,12 +12363,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12116,12 +12442,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12143,12 +12472,15 @@
                     }
                   ],
                   "type" : "emphasis"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
                 {
                   "inlineContent" : [
                     {
@@ -12178,49 +12510,6 @@
           "name" : "Grammar of operators",
           "style" : "note",
           "type" : "aside"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            },
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Learn more about using ",
-                  "type" : "text"
-                },
-                {
-                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-                  "isActive" : true,
-                  "type" : "reference"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Beta Software",
-          "style" : "note",
-          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -12243,7 +12532,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (5.9 beta)",
+  "title" : "The Swift Programming Language (6)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -12373,6 +12662,102 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/thebasics#Integers"
 },
+"https://developer.apple.com/documentation/swift/column()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/column()",
+  "title" : "column",
+  "titleInlineContent" : [
+    {
+      "code" : "column",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/column()"
+},
+"https://developer.apple.com/documentation/swift/dsohandle()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle()",
+  "title" : "dsohandle",
+  "titleInlineContent" : [
+    {
+      "code" : "dsohandle",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/dsohandle()"
+},
+"https://developer.apple.com/documentation/swift/error(_:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)",
+  "title" : "error(_:)",
+  "titleInlineContent" : [
+    {
+      "code" : "error(_:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/error(_:)"
+},
+"https://developer.apple.com/documentation/swift/file()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/file()",
+  "title" : "file",
+  "titleInlineContent" : [
+    {
+      "code" : "file",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/file()"
+},
+"https://developer.apple.com/documentation/swift/fileID()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID()",
+  "title" : "fileID",
+  "titleInlineContent" : [
+    {
+      "code" : "fileID",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/fileID()"
+},
+"https://developer.apple.com/documentation/swift/filePath()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath()",
+  "title" : "filePath",
+  "titleInlineContent" : [
+    {
+      "code" : "filePath",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/filePath()"
+},
+"https://developer.apple.com/documentation/swift/function()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/function()",
+  "title" : "function",
+  "titleInlineContent" : [
+    {
+      "code" : "function",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/function()"
+},
+"https://developer.apple.com/documentation/swift/line()": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/line()",
+  "title" : "line",
+  "titleInlineContent" : [
+    {
+      "code" : "line",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/line()"
+},
 "https://developer.apple.com/documentation/swift/string": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/string",
   "title" : "String",
@@ -12385,6 +12770,18 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/string"
 },
+"https://developer.apple.com/documentation/swift/warning(_:)": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)",
+  "title" : "warning(_:)",
+  "titleInlineContent" : [
+    {
+      "code" : "warning(_:)",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/warning(_:)"
+},
 "https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html": {
   "identifier" : "https:\/\/developer.apple.com\/library\/content\/documentation\/Xcode\/Reference\/xcode_markup_formatting_ref\/index.html",
   "title" : "Markup Formatting Reference",
@@ -12396,18 +12793,6 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/library\/content\/documentation\/Xcode\/Reference\/xcode_markup_formatting_ref\/index.html"
-},
-"https://developer.apple.com/support/beta-software/": {
-  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
-  "title" : "Apple’s beta software",
-  "titleInlineContent" : [
-    {
-      "text" : "Apple’s beta software",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }
