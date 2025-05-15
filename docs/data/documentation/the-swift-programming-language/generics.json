@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Generics"
   },
   "primaryContentSections" : [
@@ -200,9 +201,9 @@
           "type" : "paragraph"
         },
         {
-          "anchor" : "The-Problem-That-Generics-Solve",
+          "anchor" : "The-Problem-that-Generics-Solve",
           "level" : 2,
-          "text" : "The Problem That Generics Solve",
+          "text" : "The Problem that Generics Solve",
           "type" : "heading"
         },
         {
@@ -1782,11 +1783,65 @@
           "type" : "paragraph"
         },
         {
+          "inlineContent" : [
+            {
+              "text" : "Use upper camel case names for type parameters,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like ",
+              "type" : "text"
+            },
+            {
+              "code" : "T",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "MyTypeParameter",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to indicate that they’re a placeholder for a ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "type",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ", not a value.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "content" : [
             {
               "inlineContent" : [
                 {
-                  "text" : "Always give type parameters upper camel case names",
+                  "text" : "",
                   "type" : "text"
                 },
                 {
@@ -1794,23 +1849,7 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "(such as ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "T",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " and ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "MyTypeParameter",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ")",
+                  "text" : "If you don’t need to name a type parameter",
                   "type" : "text"
                 },
                 {
@@ -1818,20 +1857,32 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "to indicate that they’re a placeholder for a ",
+                  "text" : "and its generic type constraints are simple,",
                   "type" : "text"
                 },
                 {
-                  "inlineContent" : [
-                    {
-                      "text" : "type",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
+                  "text" : " ",
+                  "type" : "text"
                 },
                 {
-                  "text" : ", not a value.",
+                  "text" : "there’s an alternate, lightweight syntax you can use instead,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "as described in ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#Opaque-Parameter-Types",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
                   "type" : "text"
                 }
               ],
@@ -9274,6 +9325,570 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "anchor" : "Implicit-Constraints",
+          "level" : 2,
+          "text" : "Implicit Constraints",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In addition to constraints you write explicitly,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "many places in your generic code also implicitly require",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "conformance to some very common protocols like ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/copyable",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "These generic constraints that you don’t have to write",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "are known as ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "implicit constraints",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, both of the following function declarations",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "require ",
+              "type" : "text"
+            },
+            {
+              "code" : "MyType",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to be copyable:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "function someFunction<MyType> { ... }",
+            "function someFunction<MyType: Copyable> { ... }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Both declarations of ",
+              "type" : "text"
+            },
+            {
+              "code" : "someFunction()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in the code above",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "require the generic type parameter ",
+              "type" : "text"
+            },
+            {
+              "code" : "MyType",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to be copyable.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In the first version, the constraint is implicit;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the second version lists the explicitly.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In most code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "types also implicitly conform to these common protocols.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For more information,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Because most types in Swift conform to these protocols,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "writing them almost everywhere would be repetitive.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Instead, by marking only the exceptions,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "your call out the places that omit a common constraint.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To suppress an implicit constraint,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "write the protocol name with a tilde (",
+              "type" : "text"
+            },
+            {
+              "code" : "~",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") in front of it.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can read ",
+              "type" : "text"
+            },
+            {
+              "code" : "~Copyable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as “maybe copyable” —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "this suppressed constraint allows",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "both copyable and noncopyable types in this position.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Note that ",
+              "type" : "text"
+            },
+            {
+              "code" : "~Copyable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " doesn’t ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "require",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " the type to be noncopyable.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func f<MyType>(x: inout MyType) {",
+            "    let x1 = x  \/\/ The value of x1 is a copy of x's value.",
+            "    let x2 = x  \/\/ The value of x2 is a copy of x's value.",
+            "}",
+            "",
+            "func g<AnotherType: ~Copyable>(y: inout AnotherType) {",
+            "    let y1 = y  \/\/ The assignment consumes y's value.",
+            "    let y2 = y  \/\/ Error: Value consumed more than once.",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the code above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the function ",
+              "type" : "text"
+            },
+            {
+              "code" : "f()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " implicitly requires ",
+              "type" : "text"
+            },
+            {
+              "code" : "MyType",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to be copyable.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Within the function body,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the value of ",
+              "type" : "text"
+            },
+            {
+              "code" : "x",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is copied to ",
+              "type" : "text"
+            },
+            {
+              "code" : "x1",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "x2",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in the assignment.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In contrast, ",
+              "type" : "text"
+            },
+            {
+              "code" : "g()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " suppresses the implicit constraint on ",
+              "type" : "text"
+            },
+            {
+              "code" : "AnotherType",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which allows you to pass either a copyable or noncopyable value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Within the function body,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can’t copy the value of ",
+              "type" : "text"
+            },
+            {
+              "code" : "y",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because ",
+              "type" : "text"
+            },
+            {
+              "code" : "AnotherType",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " might be noncopyable.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Assignment consumes the value of ",
+              "type" : "text"
+            },
+            {
+              "code" : "y",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and it’s an error to consume that value more than once.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Noncopyable values like ",
+              "type" : "text"
+            },
+            {
+              "code" : "y",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "must be passed as in-out, borrowing, or consuming parameters —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for more information,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Borrowing-and-Consuming-Parameters",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For details about when generic code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "includes an implicit constraint to a given protocol,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see the reference for that protocol.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         }
       ],
       "kind" : "content"
@@ -9296,7 +9911,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -9309,6 +9924,16 @@
   "title" : "Dictionaries",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/collectiontypes#Dictionaries"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Borrowing-and-Consuming-Parameters": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Borrowing-and-Consuming-Parameters",
+  "kind" : "section",
+  "title" : "Borrowing and Consuming Parameters",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/declarations#Borrowing-and-Consuming-Parameters"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Functions#In-Out-Parameters": {
   "abstract" : [
@@ -9360,6 +9985,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/generics#Type-Constraints"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OpaqueTypes#Opaque-Parameter-Types": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#Opaque-Parameter-Types",
+  "kind" : "section",
+  "title" : "Opaque Parameter Types",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/opaquetypes#Opaque-Parameter-Types"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Adding-Protocol-Conformance-with-an-Extension": {
   "abstract" : [
 
@@ -9379,6 +10014,28 @@
   "title" : "Declaring Protocol Adoption with an Extension",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/protocols#Declaring-Protocol-Adoption-with-an-Extension"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Implicit-Conformance-to-a-Protocol": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+  "kind" : "section",
+  "title" : "Implicit Conformance to a Protocol",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/protocols#Implicit-Conformance-to-a-Protocol"
+},
+"https://developer.apple.com/documentation/swift/copyable": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/copyable",
+  "title" : "Copyable",
+  "titleInlineContent" : [
+    {
+      "code" : "Copyable",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/copyable"
 },
 "https://developer.apple.com/documentation/swift/hashable#2849490": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/hashable#2849490",

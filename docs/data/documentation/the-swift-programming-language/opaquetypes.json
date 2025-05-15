@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Opaque and Boxed Protocol Types"
   },
   "primaryContentSections" : [
@@ -171,9 +172,9 @@
           "type" : "paragraph"
         },
         {
-          "anchor" : "The-Problem-That-Opaque-Types-Solve",
+          "anchor" : "The-Problem-that-Opaque-Types-Solve",
           "level" : 2,
-          "text" : "The Problem That Opaque Types Solve",
+          "text" : "The Problem that Opaque Types Solve",
           "type" : "heading"
         },
         {
@@ -1132,9 +1133,8 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#The-Problem-That-Opaque-Types-Solve",
-              "isActive" : true,
-              "type" : "reference"
+              "text" : "doc:OpaqueTypes#The-Problem-That-Opaque-Types-Solve",
+              "type" : "text"
             },
             {
               "text" : " section earlier in this chapter.",
@@ -3374,6 +3374,444 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "anchor" : "Opaque-Parameter-Types",
+          "level" : 2,
+          "text" : "Opaque Parameter Types",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In addition to writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "some",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to return an opaque type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can also write ",
+              "type" : "text"
+            },
+            {
+              "code" : "some",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in the type for a parameter",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to a function, subscript, or initializer.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However, when you write ",
+              "type" : "text"
+            },
+            {
+              "code" : "some",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in a parameter type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that’s just a shorter syntax for generics, not an opaque type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "both of the functions below are equivalent:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func drawTwiceGeneric<SomeShape: Shape>(_ shape: SomeShape) -> String {",
+            "    let drawn = shape.draw()",
+            "    return drawn + \"\\n\" + drawn",
+            "}",
+            "",
+            "func drawTwiceSome(_ shape: some Shape) -> String {",
+            "    let drawn = shape.draw()",
+            "    return drawn + \"\\n\" + drawn",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "drawTwiceGeneric(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "declares a generic type parameter named ",
+              "type" : "text"
+            },
+            {
+              "code" : "SomeShape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "with a constraint that requires ",
+              "type" : "text"
+            },
+            {
+              "code" : "SomeShape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to conform to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "drawTwiceSome(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "uses the type ",
+              "type" : "text"
+            },
+            {
+              "code" : "some Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " for its argument.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This creates a new, unnamed generic type parameter for the function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "with a constraint that requires the type to conform to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because the generic type doesn’t have a name,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can’t refer to that type elsewhere in the function.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you write ",
+              "type" : "text"
+            },
+            {
+              "code" : "some",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " before more than one parameter’s type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "each of the generic types are independent.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func combine(shape s1: some Shape, with s2: some Shape) -> String {",
+            "    return s1.draw() + \"\\n\" + s2.draw()",
+            "}",
+            "",
+            "combine(smallTriangle, trapezoid)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the ",
+              "type" : "text"
+            },
+            {
+              "code" : "combine(shape:with:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the types of the first and second parameter",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "must both conform to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Shape",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but there’s no constraint that requires them to be the same type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When you call ",
+              "type" : "text"
+            },
+            {
+              "code" : "combine(shape:with)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can pass two different shapes —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in this case, one triangle and one trapezoid.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Unlike the syntax for named generic type parameters,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Generics",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " chapter,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "this lightweight syntax can’t include",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a generic ",
+              "type" : "text"
+            },
+            {
+              "code" : "where",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause or any same-type (",
+              "type" : "text"
+            },
+            {
+              "code" : "==",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") constraints.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In addition,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using the lightweight syntax for very complex constraints",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "can be hard to read.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         }
       ],
       "kind" : "content"
@@ -3396,7 +3834,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -3413,16 +3851,6 @@
   "title" : "Generics",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/generics"
-},
-"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OpaqueTypes#The-Problem-That-Opaque-Types-Solve": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#The-Problem-That-Opaque-Types-Solve",
-  "kind" : "section",
-  "title" : "The Problem That Opaque Types Solve",
-  "type" : "topic",
-  "url" : "\/documentation\/the-swift-programming-language\/opaquetypes#The-Problem-That-Opaque-Types-Solve"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TypeCasting#Downcasting": {
   "abstract" : [

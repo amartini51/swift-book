@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Error Handling"
   },
   "primaryContentSections" : [
@@ -3379,7 +3380,7 @@
         },
         {
           "code" : [
-            "func someThrowingFunction() -> throws {",
+            "func someThrowingFunction() throws {",
             "    let ratings = [1, 2, 3, 2, 2, 1]",
             "    try summarize(ratings)",
             "}"
@@ -3446,7 +3447,7 @@
         },
         {
           "code" : [
-            "func someThrowingFunction() -> throws(any Error) {",
+            "func someThrowingFunction() throws(any Error) {",
             "    let ratings = [1, 2, 3, 2, 2, 1]",
             "    try summarize(ratings)",
             "}"
@@ -4546,7 +4547,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },

@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "The Basics"
   },
   "primaryContentSections" : [
@@ -210,7 +211,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift also introduces optional types,",
+              "text" : "Swift handles the absence of a value",
               "type" : "text"
             },
             {
@@ -218,7 +219,7 @@
               "type" : "text"
             },
             {
-              "text" : "which handle the absence of a value.",
+              "text" : "using optional types.",
               "type" : "text"
             },
             {
@@ -239,7 +240,7 @@
               "type" : "emphasis"
             },
             {
-              "text" : " a value, and it equals ",
+              "text" : " a value, which is ",
               "type" : "text"
             },
             {
@@ -275,27 +276,13 @@
             {
               "text" : " a value at all”.",
               "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
+            },
             {
-              "text" : "Swift is a ",
+              "text" : " ",
               "type" : "text"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "type-safe",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
-            },
-            {
-              "text" : " language,",
+              "text" : "Optionals ensure that code always",
               "type" : "text"
             },
             {
@@ -303,7 +290,64 @@
               "type" : "text"
             },
             {
-              "text" : "which means the language helps you to be clear about the types of values your code can work with.",
+              "text" : "checks whether a value is missing before using the value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and non-optional values are guaranteed to never be missing.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Swift is a safe language,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which means it makes it easier for you find and fix several categories of bugs",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as early as possible during the development process,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and lets you guarantee that certain kinds of bugs can’t happen.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Type safety enables you to be clear about",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the types of values your code works with.",
               "type" : "text"
             },
             {
@@ -343,7 +387,7 @@
               "type" : "text"
             },
             {
-              "text" : "Likewise, type safety prevents you from",
+              "text" : "Memory safety ensures that you work with valid data only,",
               "type" : "text"
             },
             {
@@ -351,27 +395,7 @@
               "type" : "text"
             },
             {
-              "text" : "accidentally passing an optional ",
-              "type" : "text"
-            },
-            {
-              "code" : "String",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to a piece of code that requires a non-optional ",
-              "type" : "text"
-            },
-            {
-              "code" : "String",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
+              "text" : "not uninitialized memory or deinitialized objects,",
               "type" : "text"
             },
             {
@@ -379,7 +403,31 @@
               "type" : "text"
             },
             {
-              "text" : "Type safety helps you catch and fix errors as early as possible in the development process.",
+              "text" : "and ensures that you work with that data in safe ways —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "even in programs that run multiple pieces of code at the same time.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift performs most of its safety checks while building your code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and in some cases performs additional checks while your code is running.",
               "type" : "text"
             }
           ],
@@ -2791,7 +2839,111 @@
         {
           "inlineContent" : [
             {
-              "text" : "Swift is a ",
+              "text" : "Every value in a Swift program has a type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Every place you store a value —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "including constants, variables, and properties —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "also has a type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You might write the type explicitly using a type annotation,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or Swift might infer the type from an initial value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Every place in your code where you provide a value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that value’s type must match the place you use it.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if part of your code requires a ",
+              "type" : "text"
+            },
+            {
+              "code" : "String",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can’t pass it an ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " by mistake.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This kind of checking makes Swift a ",
               "type" : "text"
             },
             {
@@ -2806,11 +2958,12 @@
             {
               "text" : " language.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "A type safe language encourages you to be clear about",
               "type" : "text"
@@ -2820,7 +2973,7 @@
               "type" : "text"
             },
             {
-              "text" : "the types of values your code can work with.",
+              "text" : "the types of values your code works with.",
               "type" : "text"
             },
             {
@@ -2828,32 +2981,7 @@
               "type" : "text"
             },
             {
-              "text" : "If part of your code requires a ",
-              "type" : "text"
-            },
-            {
-              "code" : "String",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ", you can’t pass it an ",
-              "type" : "text"
-            },
-            {
-              "code" : "Int",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " by mistake.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Because Swift is type safe,",
+              "text" : "Values of one type are never implicitly converted to another type.",
               "type" : "text"
             },
             {
@@ -2861,20 +2989,23 @@
               "type" : "text"
             },
             {
-              "text" : "it performs ",
+              "text" : "However, some types can be explicitly converted.",
               "type" : "text"
             },
             {
-              "inlineContent" : [
-                {
-                  "text" : "type checks",
-                  "type" : "text"
-                }
-              ],
-              "type" : "emphasis"
+              "text" : " ",
+              "type" : "text"
             },
             {
-              "text" : " when compiling your code",
+              "text" : "When building code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift checks the code for type safety",
               "type" : "text"
             },
             {
@@ -2884,14 +3015,6 @@
             {
               "text" : "and flags any mismatched types as errors.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "This enables you to catch and fix errors as early as possible in the development process.",
-              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -2899,7 +3022,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Type-checking helps you avoid errors when you’re working with different types of values.",
+              "text" : "Type checking helps you avoid errors when you’re working with different types of values.",
               "type" : "text"
             },
             {
@@ -4993,22 +5116,6 @@
             {
               "text" : " as soon as you create them.",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Type inference helps make Swift code more concise and readable",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "when it initializes constants or variables with other values whose type is already known.",
-              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -5157,7 +5264,7 @@
               "type" : "text"
             },
             {
-              "text" : "and so this second example passes the type-check.",
+              "text" : "and so this second example passes the type checking.",
               "type" : "text"
             },
             {
@@ -8573,6 +8680,525 @@
           "type" : "codeListing"
         },
         {
+          "anchor" : "Memory-Safety",
+          "level" : 2,
+          "text" : "Memory Safety",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In addition to the checks that prevent type mismatches,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "described above in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Type-Safety-and-Type-Inference",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift also protects code against working with invalid memory.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This protection is known as ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "memory safety",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and includes the following requirements:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Values are set before being read.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "The protection against interacting with uninitialized regions of memory",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "is also known as ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "definite initialization",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Arrays and buffers are accessed only at valid indexes.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "The protection against out-of-bounds access",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "is also known as ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "bounds safety",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Memory is accessed only during the value’s lifetime.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "The protection against use-after-free errors",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "is also known as ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "lifetime safety",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Access to memory overlaps only in provably safe ways.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "The protection against possible data races in concurrent code",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "is also known as ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "thread safety",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "emphasis"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you’ve worked in languages that don’t provide these guarantees,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you may be familiar with some of the errors and bugs",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "named in the list above.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If you haven’t encountered these issues, that’s ok;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "safe code in Swift avoids these problems.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For information about how Swift ensures you set initial values,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Initialization",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for information about how Swift checks memory safety in concurrent code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and for information about how Swift checks overlapping accesses to memory,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/MemorySafety",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Sometimes you need to work outside of the bounds of safety —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example, because of limitations of the language or standard library —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so Swift also provides unsafe versions of some APIs.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When you use types or methods whose name includes words such as",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "“unsafe”, “unchecked”, or “unmanaged”,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you take on the responsibility for safety.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Safe code in Swift can still encounter errors and unexpected failures,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which might stop the program’s execution.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Safety doesn’t ensure that your code runs to completion.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift provides several ways to indicate and recover from errors,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "discussed in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Error-Handling",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Assertions-and-Preconditions",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " below.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However, in some cases,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "only",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " safe way to handle an error is to stop execution.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If you need to guarantee that a service never unexpected stops,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "incorporate fault tolerance into its overall architecture,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so it can recover from any of its components stopping unexpectedly.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Error-Handling",
           "level" : 2,
           "text" : "Error Handling",
@@ -10180,7 +10806,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -10245,6 +10871,20 @@
   "title" : "Collection Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/collectiontypes"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Concurrency": {
+  "abstract" : [
+    {
+      "text" : "Perform asynchronous operations.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Concurrency",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/concurrency"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow": {
   "abstract" : [
@@ -10327,6 +10967,34 @@
   "title" : "Functions with Multiple Return Values",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/functions#Functions-with-Multiple-Return-Values"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Initialization": {
+  "abstract" : [
+    {
+      "text" : "Set the initial values for a type’s stored properties and perform one-time setup.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Initialization",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Initialization",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/initialization"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/MemorySafety": {
+  "abstract" : [
+    {
+      "text" : "Structure your code to avoid conflicts when accessing memory.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/MemorySafety",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Memory Safety",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/memorysafety"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OptionalChaining": {
   "abstract" : [

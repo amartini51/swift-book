@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Version Compatibility"
   },
   "primaryContentSections" : [
@@ -26,7 +27,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "This book describes Swift 6,",
+              "text" : "This book describes Swift 6.1,",
               "type" : "text"
             },
             {
@@ -34,7 +35,7 @@
               "type" : "text"
             },
             {
-              "text" : "the default version of Swift that’s included in Xcode 16.",
+              "text" : "the default version of Swift that’s included in Xcode 16.3.",
               "type" : "text"
             },
             {
@@ -42,7 +43,7 @@
               "type" : "text"
             },
             {
-              "text" : "You can use the Swift 6 compiler to build code",
+              "text" : "You can use the Swift 6.1 compiler to build code",
               "type" : "text"
             },
             {
@@ -50,7 +51,7 @@
               "type" : "text"
             },
             {
-              "text" : "that’s written in Swift 6, Swift 5, Swift 4.2, or Swift 4.",
+              "text" : "that’s written in Swift 6.1, Swift 5, Swift 4.2, or Swift 4.",
               "type" : "text"
             }
           ],
@@ -59,7 +60,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "When you use the Swift 6 compiler",
+              "text" : "When you use the Swift 6.1 compiler",
               "type" : "text"
             },
             {
@@ -75,7 +76,7 @@
               "type" : "text"
             },
             {
-              "text" : "you can use the new features from Swift 6 —",
+              "text" : "you can use the new features from Swift 6.1 —",
               "type" : "text"
             },
             {
@@ -99,7 +100,7 @@
               "type" : "text"
             },
             {
-              "text" : "you need to upgrade to the Swift 6 language mode.",
+              "text" : "you need to upgrade to the Swift 6.1 language mode.",
               "type" : "text"
             }
           ],
@@ -290,7 +291,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "A target written in Swift 6 can depend on",
+              "text" : "A target written in Swift 6.1 can depend on",
               "type" : "text"
             },
             {
@@ -365,7 +366,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 }

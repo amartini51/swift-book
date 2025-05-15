@@ -12,7 +12,8 @@
   },
   "kind" : "article",
   "metadata" : {
-    "title" : "The Swift Programming Language (6)"
+    "role" : "collection",
+    "title" : "The Swift Programming Language (6.1)"
   },
   "schemaVersion" : {
     "major" : 0,

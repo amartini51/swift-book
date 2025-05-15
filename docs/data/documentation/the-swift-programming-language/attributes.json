@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Attributes"
   },
   "primaryContentSections" : [
@@ -3794,38 +3795,6 @@
           "type" : "paragraph"
         },
         {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "When the compiler isn’t in library evolution mode,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "all structures and enumerations are implicitly frozen,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "and this attribute is ignored.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
-        },
-        {
           "inlineContent" : [
             {
               "text" : "In library evolution mode,",
@@ -4194,6 +4163,177 @@
             },
             {
               "text" : " attribute.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "globalActor",
+          "level" : 3,
+          "text" : "globalActor",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Apply this attribute to an actor, structure, enumeration, or final class.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The type must define a static property named ",
+              "type" : "text"
+            },
+            {
+              "code" : "shared",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which provides a shared instance of an actor.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A global actor generalizes the concept of actor isolation",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to state that’s spread out in several different places in code —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "such as multiple types, files, and modules —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and makes it possible to safely assess global variables from concurrent code.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The actor that the global actor provides",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as the value of its ",
+              "type" : "text"
+            },
+            {
+              "code" : "shared",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " property",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "serializes access to all this state.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can also use a global actor to model constraints in concurrent code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "like code that all needs to execute on the same thread.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Global actors implicitly conform to the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/globalactor",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The main actor is a global actor provided by the standard library,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as discussed in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency#The-Main-Actor",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Most code can use the main actor instead of defining a new global actor.",
               "type" : "text"
             }
           ],
@@ -12192,7 +12332,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -12255,6 +12395,16 @@
   "title" : "Escaping Closures",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/closures#Escaping-Closures"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Concurrency#The-Main-Actor": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency#The-Main-Actor",
+  "kind" : "section",
+  "title" : "The Main Actor",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/concurrency#The-Main-Actor"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Top-Level-Code": {
   "abstract" : [
@@ -12367,6 +12517,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/expressiblebystringliteral"
+},
+"https://developer.apple.com/documentation/swift/globalactor": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/globalactor",
+  "title" : "GlobalActor",
+  "titleInlineContent" : [
+    {
+      "code" : "GlobalActor",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/globalactor"
 },
 "https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_swift_into_objective-c": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/imported_c_and_objective-c_apis\/importing_swift_into_objective-c",

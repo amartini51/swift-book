@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Protocols"
   },
   "primaryContentSections" : [
@@ -2229,6 +2230,344 @@
             },
             {
               "text" : "a nonfailable initializer or an implicitly unwrapped failable initializer.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Protocols-that-Have-Only-Semantic-Requirements",
+          "level" : 2,
+          "text" : "Protocols that Have Only Semantic Requirements",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "All of the example protocols above require some methods or properties,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but a protocol declaration doesn’t have to include any requirements.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can also use a protocol to describe ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "semantic",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " requirements —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that is, requirements about how values of those types behave",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and about operations that they support.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The Swift standard library defines several protocols",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that don’t have any required methods or properties:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/sendable",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " for values that can be shared across concurrency domains,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "as discussed in ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency#Sendable-Types",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/copyable",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " for values that Swift can copy",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "when you pass them to a function,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "as discussed in ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Borrowing-and-Consuming-Parameters",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/bitwisecopyable",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " for values that can be copied, bit-by-bit.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For information about these protocols’ requirements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see the overview in their documentation.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You use the same syntax to adopt these protocols",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as you do to adopt other protocols.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The only difference is that you don’t include",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "method or property declarations that implement the protocol’s requirements.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct MyStruct: Copyable {",
+            "    var counter = 12",
+            "}",
+            "",
+            "extension MyStruct: BitwiseCopyable { }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The code above defines a new structure.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because ",
+              "type" : "text"
+            },
+            {
+              "code" : "Copyable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " has only semantic requirements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "there isn’t any code in the structure declaration to adopt the protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Similarly, because ",
+              "type" : "text"
+            },
+            {
+              "code" : "BitwiseCopyable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " has only semantic requirements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the extension that adopts that protocol has an empty body.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You usually don’t need to write conformance to these protocols —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "instead, Swift implicitly adds the conformance for you,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -4625,6 +4964,459 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
+        },
+        {
+          "anchor" : "Implicit-Conformance-to-a-Protocol",
+          "level" : 2,
+          "text" : "Implicit Conformance to a Protocol",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Some protocols are so common that you would write them",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "almost every time you declare a new type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For the following protocols,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift automatically infers the conformance",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when you define a type that implements the protocol’s requirements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so you don’t have to write them yourself:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/copyable",
+                      "isActive" : true,
+                      "overridingTitle" : "Copyable",
+                      "overridingTitleInlineContent" : [
+                        {
+                          "code" : "Copyable",
+                          "type" : "codeVoice"
+                        }
+                      ],
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/sendable",
+                      "isActive" : true,
+                      "overridingTitle" : "Sendable",
+                      "overridingTitleInlineContent" : [
+                        {
+                          "code" : "Sendable",
+                          "type" : "codeVoice"
+                        }
+                      ],
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/bitwisecopyable",
+                      "isActive" : true,
+                      "overridingTitle" : "BitwiseCopyable",
+                      "overridingTitleInlineContent" : [
+                        {
+                          "code" : "BitwiseCopyable",
+                          "type" : "codeVoice"
+                        }
+                      ],
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can still write the conformance explicitly,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but it doesn’t change how your code behaves.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To suppress an implicit conformance,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "write a tilde (",
+              "type" : "text"
+            },
+            {
+              "code" : "~",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") before the protocol name in the conformance list:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct FileDescriptor: ~Sendable {",
+            "    let rawValue: Int",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The code above shows part of a wrapper around POSIX file descriptors.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "FileDescriptor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " structure",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "satisfies all of the requirements of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Sendable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which normally makes it sendable.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "~Sendable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " suppresses this implicit conformance.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Even though file descriptors use integers",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to identify and interact with open files,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and integer values are sendable,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "making it nonsendable can help avoid certain kinds of bugs.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Another way to suppress implicit conformance",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is with an extension that you mark as unavailable:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "@available(*, unavailable)",
+            "extension FileDescriptor Sendable { }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you write ",
+              "type" : "text"
+            },
+            {
+              "code" : "~Sendable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in one place in your code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as in the previous example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "code elsewhere in your program can still",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "extend the ",
+              "type" : "text"
+            },
+            {
+              "code" : "FileDescriptor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " type to add ",
+              "type" : "text"
+            },
+            {
+              "code" : "Sendable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " conformance.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In contrast,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the unavailable extension in this example",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "suppresses the implicit conformance to ",
+              "type" : "text"
+            },
+            {
+              "code" : "Sendable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and also prevents any extensions elsewhere in your code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "from adding ",
+              "type" : "text"
+            },
+            {
+              "code" : "Sendable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " conformance to the type.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "In addition to the protocols discussed above,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "distributed actors implicitly conform to the ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/codable",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : " protocol.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Note",
+          "style" : "note",
+          "type" : "aside"
         },
         {
           "anchor" : "Collections-of-Protocol-Types",
@@ -9466,7 +10258,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -9499,6 +10291,26 @@
   "title" : "Structures and Enumerations Are Value Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/classesandstructures#Structures-and-Enumerations-Are-Value-Types"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Concurrency#Sendable-Types": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency#Sendable-Types",
+  "kind" : "section",
+  "title" : "Sendable Types",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/concurrency#Sendable-Types"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Borrowing-and-Consuming-Parameters": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Declarations#Borrowing-and-Consuming-Parameters",
+  "kind" : "section",
+  "title" : "Borrowing and Consuming Parameters",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/declarations#Borrowing-and-Consuming-Parameters"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Extensions": {
   "abstract" : [
@@ -9640,6 +10452,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/protocols#Class-Only-Protocols"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Implicit-Conformance-to-a-Protocol": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+  "kind" : "section",
+  "title" : "Implicit Conformance to a Protocol",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/protocols#Implicit-Conformance-to-a-Protocol"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Protocols-as-Types": {
   "abstract" : [
 
@@ -9663,6 +10485,54 @@
   "title" : "Type Casting",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/typecasting"
+},
+"https://developer.apple.com/documentation/swift/bitwisecopyable": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/bitwisecopyable",
+  "title" : "BitwiseCopyable",
+  "titleInlineContent" : [
+    {
+      "code" : "BitwiseCopyable",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/bitwisecopyable"
+},
+"https://developer.apple.com/documentation/swift/codable": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/codable",
+  "title" : "Codable",
+  "titleInlineContent" : [
+    {
+      "code" : "Codable",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/codable"
+},
+"https://developer.apple.com/documentation/swift/copyable": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/copyable",
+  "title" : "Copyable",
+  "titleInlineContent" : [
+    {
+      "code" : "Copyable",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/copyable"
+},
+"https://developer.apple.com/documentation/swift/sendable": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/sendable",
+  "title" : "Sendable",
+  "titleInlineContent" : [
+    {
+      "code" : "Sendable",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/sendable"
 }
 }
 }

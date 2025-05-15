@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Control Flow"
   },
   "primaryContentSections" : [
@@ -6979,6 +6980,780 @@
           "type" : "paragraph"
         },
         {
+          "anchor" : "Patterns",
+          "level" : 2,
+          "text" : "Patterns",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the previous examples, each switch case includes a pattern",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that indicates what values match that case.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can also use a pattern as the condition for an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Here’s what that looks like:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let somePoint = (12, 100)",
+            "if case (let x, 100) = somePoint {",
+            "    print(\"Found a point on the y=100 line, at \\(x)\")",
+            "}",
+            "\/\/ Prints \"Found a point on the y=100 line, at 12\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the condition for the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement starts with ",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "indicating that the condition is a pattern instead of a Boolean value.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If the pattern matches,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "then the condition for the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is considered to be true,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and so the code in the body of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement runs.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The patterns you can write after ",
+              "type" : "text"
+            },
+            {
+              "code" : "if case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "are the same as the patterns you can write in a switch case.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In a ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can give names to parts of the value using a value binding pattern,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "even without writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in your code:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let points = [(10, 0), (30, -30), (-20, 0)]",
+            "",
+            "for (x, y) in points {",
+            "    if y == 0 {",
+            "        print(\"Found a point on the x-axis at \\(x)\")",
+            "    }",
+            "}",
+            "\/\/ Prints \"Found a point on the x-axis at 10\"",
+            "\/\/ Prints \"Found a point on the x-axis at -20\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop above iterates over an array of tuples,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "binding the first and second elements of the tuples",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "x",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "y",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " constants.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The statements inside the loop can use those constants,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "such as the ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement that checks whether the point lies on the x-axis.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "A more concise way to write this code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is to combine the value bindings and condition",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using a ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The code below has the same behavior as the ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop above:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "for case (let x, 0) in points {",
+            "    print(\"Found a point on the x-axis at \\(x)\")",
+            "}",
+            "\/\/ Prints \"Found a point on the x-axis at 10\"",
+            "\/\/ Prints \"Found a point on the x-axis at -20\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In this code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the condition is integrated into the ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as part of the pattern.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The statements in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop run only for points on the x-axis.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This code produces the same result as the ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but is a more compact way to iterate",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "over only certain elements in a collection.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop can also include a ",
+              "type" : "text"
+            },
+            {
+              "code" : "where",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to check for an additional condition.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The statements inside the loop run",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "only when ",
+              "type" : "text"
+            },
+            {
+              "code" : "where",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause matches the current element.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "for case let (x, y) in points where x == y || x == -y  {",
+            "    print(\"Found (\\(x), \\(y)) along a line through the origin\")",
+            "}",
+            "\/\/ Prints \"Found (30, -30) along a line through the origin\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This code binds the first and second elements of the tuple",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to ",
+              "type" : "text"
+            },
+            {
+              "code" : "x",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "y",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as constants,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and then checks their values in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "where",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If the ",
+              "type" : "text"
+            },
+            {
+              "code" : "where",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " clause is ",
+              "type" : "text"
+            },
+            {
+              "code" : "true",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "then the code in the body of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loop runs;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "otherwise, iteration continues with the next element.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Because patterns can bind values,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statements and ",
+              "type" : "text"
+            },
+            {
+              "code" : "for",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " loops",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "are useful for working with enumerations that have associated values,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Enumerations#Associated-Values",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Control-Transfer-Statements",
           "level" : 2,
           "text" : "Control Transfer Statements",
@@ -11093,7 +11868,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -11160,6 +11935,16 @@
   "title" : "Fallthrough",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/controlflow#Fallthrough"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Enumerations#Associated-Values": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Enumerations#Associated-Values",
+  "kind" : "section",
+  "title" : "Associated Values",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/enumerations#Associated-Values"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ErrorHandling": {
   "abstract" : [

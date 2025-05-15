@@ -18,11 +18,120 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Document Revision History"
   },
   "primaryContentSections" : [
     {
       "content" : [
+        {
+          "inlineContent" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "2025-03-31",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated for Swift 6.1.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#Opaque-Parameter-Types",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about using ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "some",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " as a lightweight syntax for generics.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information about the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "noasync",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " argument",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#available",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
         {
           "inlineContent" : [
             {
@@ -12283,7 +12392,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -13826,6 +13935,16 @@
   "title" : "Opaque and Boxed Protocol Types",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/opaquetypes"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OpaqueTypes#Opaque-Parameter-Types": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#Opaque-Parameter-Types",
+  "kind" : "section",
+  "title" : "Opaque Parameter Types",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/opaquetypes#Opaque-Parameter-Types"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OptionalChaining": {
   "abstract" : [

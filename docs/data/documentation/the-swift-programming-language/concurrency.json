@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Concurrency"
   },
   "primaryContentSections" : [
@@ -166,6 +167,31 @@
             {
               "text" : "and it suspends operations that are waiting for an external system.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The rest of this chapter uses the term ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "concurrency",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to refer to this common combination of asynchronous and parallel code.",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -189,7 +215,7 @@
               "type" : "text"
             },
             {
-              "text" : "Swift lets you express your intent",
+              "text" : "When you write concurrent code,",
               "type" : "text"
             },
             {
@@ -197,7 +223,7 @@
               "type" : "text"
             },
             {
-              "text" : "in a way that enables some compile-time checking —",
+              "text" : "you don’t know ahead of time what code will run at the same time,",
               "type" : "text"
             },
             {
@@ -205,7 +231,7 @@
               "type" : "text"
             },
             {
-              "text" : "for example, you can use actors to safely access mutable state.",
+              "text" : "and you might not always know the order that code will run.",
               "type" : "text"
             },
             {
@@ -213,7 +239,7 @@
               "type" : "text"
             },
             {
-              "text" : "However, adding concurrency to slow or buggy code",
+              "text" : "A common problem in concurrent code happens",
               "type" : "text"
             },
             {
@@ -221,7 +247,7 @@
               "type" : "text"
             },
             {
-              "text" : "isn’t a guarantee that it will become fast or correct.",
+              "text" : "when multiple pieces of code try to access",
               "type" : "text"
             },
             {
@@ -229,7 +255,7 @@
               "type" : "text"
             },
             {
-              "text" : "In fact, adding concurrency might even make your code harder to debug.",
+              "text" : "some piece of shared mutable state —",
               "type" : "text"
             },
             {
@@ -237,49 +263,60 @@
               "type" : "text"
             },
             {
-              "text" : "However, using Swift’s language-level support for concurrency",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "in code that needs to be concurrent",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "means Swift can help you catch problems at compile time.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The rest of this chapter uses the term ",
+              "text" : "this is known as a ",
               "type" : "text"
             },
             {
               "inlineContent" : [
                 {
-                  "text" : "concurrency",
+                  "text" : "data race",
                   "type" : "text"
                 }
               ],
               "type" : "emphasis"
             },
             {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
               "text" : " ",
               "type" : "text"
             },
             {
-              "text" : "to refer to this common combination of asynchronous and parallel code.",
+              "text" : "When you use the language-level support for concurrency,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift detects and prevents data races,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and most data races produce a compile-time error.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Some data races can’t be detected until your code is running;",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "these data races terminate code execution.",
               "type" : "text"
             }
           ],
@@ -792,7 +829,11 @@
               "type" : "text"
             },
             {
-              "text" : "the flow of execution is suspended ",
+              "text" : "the flow of execution is suspended",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
               "type" : "text"
             },
             {
@@ -4260,11 +4301,12 @@
             {
               "text" : "To create an unstructured task that’s not part of the current actor,",
               "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
             {
               "text" : "known more specifically as a ",
               "type" : "text"
@@ -4356,6 +4398,1314 @@
           "type" : "paragraph"
         },
         {
+          "anchor" : "The-Main-Actor",
+          "level" : 2,
+          "text" : "The Main Actor",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The previous sections discuss approaches for dividing up concurrent work.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In some cases,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "after divided-up work finishes,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you also need to join execution back together",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to do some synchronous work model.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when an app updates its user interface,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "changes need to be performed one at a time,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "with each update completing before the next one begins,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to prevent data races.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "UI updates can also come from many places in your code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so grouping all UI-related code on a single type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "doesn’t work very well.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To serialize concurrent work like this,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can use the ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "main actor",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "which is a shared instance of ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/mainactor",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Before you start using concurrency in your code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "everything runs on the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "As you identify long-running or resource-intensive code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can move this work off the main actor",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in a way that’s still safe and correct.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "The main actor is closely related to the main thread,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "but they’re not the same thing.",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "The main actor has private mutable state,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "and the main thread serializes access to that state.",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "When you run code on the main actor,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Swift executes that code on the main thread.",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Because of this connection,",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "you might see these two terms used interchangeably.",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "Your code interacts with the main actor;",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "the main thread is a lower-level implementation detail.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Note",
+          "style" : "note",
+          "type" : "aside"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "There are several ways to run work on the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To ensure a function always runs on the main actor,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "mark it with the ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " attribute:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "@MainActor",
+            "func show(_: Data) {",
+            "    \/\/ ... UI code to display the photo ...",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the code above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " attribute on the ",
+              "type" : "text"
+            },
+            {
+              "code" : "show(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "requires this function to run only on the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Within other code that’s running on the main actor,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can call ",
+              "type" : "text"
+            },
+            {
+              "code" : "show(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as a synchronous function.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to call ",
+              "type" : "text"
+            },
+            {
+              "code" : "show(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " from code that isn’t running on the main actor,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you have to include ",
+              "type" : "text"
+            },
+            {
+              "code" : "await",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and call it as an asynchronous function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because switching to the main actor introduces a potential suspension point.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func downloadAndShowPhoto(named name: String) async {",
+            "    let photo = await downloadPhoto(named: name)",
+            "    await show(photo)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the code above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "both the ",
+              "type" : "text"
+            },
+            {
+              "code" : "downloadPhoto(named:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "show(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " functions",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "might suspend when you call them.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This code also shows a common pattern:",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Perform long-running and CPU-intensive work in the background,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and then switch to the main actor to update the UI.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because the ",
+              "type" : "text"
+            },
+            {
+              "code" : "downloadAndShowPhoto(named:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function isn’t on the main actor,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the work in ",
+              "type" : "text"
+            },
+            {
+              "code" : "downloadPhoto(named:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " also doesn’t run on the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Only the work in ",
+              "type" : "text"
+            },
+            {
+              "code" : "show(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to update the UI runs on the main actor,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "because that function is marked with the ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " attribute.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To ensure that a closure runs on the main actor,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you write ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " before the capture list and before ",
+              "type" : "text"
+            },
+            {
+              "code" : "in",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "at the start of the closure.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let photo = await downloadPhoto(named: \"Trees at Sunrise\")",
+            "Task { @MainActor in",
+            "    show(photo)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The code above is similar to",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "downloadAndShowPhoto(named:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " from the previous code listing,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but the code in this example doesn’t wait for the UI update.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can also write ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " on a structure, class, or enumeration",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to ensure all of its methods and all access to its properties",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to run on the main actor:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "@MainActor",
+            "struct PhotoGallery {",
+            "    var photoNames: [String]",
+            "    func drawUI() { \/* ... other UI code ... *\/ }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "PhotoGallery",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " structure in the code above",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "draws the photos on screen,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using the names from its ",
+              "type" : "text"
+            },
+            {
+              "code" : "photoNames",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " property",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to determine which photos to display.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Because ",
+              "type" : "text"
+            },
+            {
+              "code" : "photoNames",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " effects the UI,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "code that changes it needs to run on the main actor",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to serialize that access.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you’re building on top of a framework,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that framework’s protocols and base classes",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "are typically already marked ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so you don’t usually write ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " on your own types in that case.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Here’s a simplified example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "@MainActor",
+            "protocol View { \/* ... *\/ }",
+            "",
+            "\/\/ Implicitly @MainActor",
+            "struct PhotoGalleryView: View { \/* ... *\/ }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the code above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a framework like SwiftUI defines the ",
+              "type" : "text"
+            },
+            {
+              "code" : "View",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protocol.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "By writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " on the protocol declaration,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "types like ",
+              "type" : "text"
+            },
+            {
+              "code" : "PhotoGalleryView",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " that conform to the protocol",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "are also implicitly marked ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You’d see the same behavior if ",
+              "type" : "text"
+            },
+            {
+              "code" : "View",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " were a base class",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
+              "type" : "text"
+            },
+            {
+              "code" : "PhotoGalleryView",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " were a subclass —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the subclass would be implicitly marked ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the examples above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "PhotoGallery",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " protects the entire structure on the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For more fine-grained control,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can write ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " on just the properties or methods",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that need to be accessed or run on the main thread:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct PhotoGallery {",
+            "    @MainActor var photoNames: [String]",
+            "    var hasCachedPhotos = false",
+            "",
+            "    @MainActor func drawUI() { \/* ... UI code ... *\/ }",
+            "    func cachePhotos() { \/* ... networking code ... *\/ }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the version of ",
+              "type" : "text"
+            },
+            {
+              "code" : "PhotoGallery",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " above,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "drawUI()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " method draws the gallery’s pictures on screen,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so it needs to be isolated to the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "photoNames",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " property doesn’t directly create the UI,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "but it does store state that the ",
+              "type" : "text"
+            },
+            {
+              "code" : "drawUI()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " function uses to draw the UI,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "so this property also needs to be accessed only on the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In contrast,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "changes to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "hasCachedPhotos",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " property",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "don’t interact with the UI,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and the ",
+              "type" : "text"
+            },
+            {
+              "code" : "cachePhotos()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " method doesn’t access any state",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that requires running it on the main actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "So these aren’t marked with ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "As with the earlier examples,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if you’re using a framework to build your UI,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the property wrappers from that framework",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "probably already mark your UI state properties as ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When defining a property wrapper,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "if its ",
+              "type" : "text"
+            },
+            {
+              "code" : "wrappedValue",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " property is marked ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "then any property you apply that property wrapper to",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is also implicitly marked ",
+              "type" : "text"
+            },
+            {
+              "code" : "@MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Actors",
           "level" : 2,
           "text" : "Actors",
@@ -4364,7 +5714,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "You can use tasks to break up your program into isolated, concurrent pieces.",
+              "text" : "Swift provides the main actor for you —",
               "type" : "text"
             },
             {
@@ -4372,23 +5722,7 @@
               "type" : "text"
             },
             {
-              "text" : "Tasks are isolated from each other,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "which is what makes it safe for them to run at the same time,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "but sometimes you need to share some information between tasks.",
+              "text" : "you can also define your own actors.",
               "type" : "text"
             },
             {
@@ -5258,6 +6592,30 @@
                     {
                       "text" : "without the possibility of interruption from other concurrent code.",
                       "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "However,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "multiple pieces of concurrent code can run at the same time,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "so other code could be running simultaneously.",
+                      "type" : "text"
                     }
                   ],
                   "type" : "paragraph"
@@ -5565,6 +6923,30 @@
             },
             {
               "text" : "before data consistency is restored by completing the work.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It’s important that Swift doesn’t switch from this code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to run code from another part of the program",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "during that period of time.",
               "type" : "text"
             },
             {
@@ -6152,23 +7534,15 @@
               "type" : "text"
             },
             {
-              "text" : "overriding an implicit conformance to the ",
+              "text" : "write ",
               "type" : "text"
             },
             {
-              "code" : "Sendable",
+              "code" : "~Sendable",
               "type" : "codeVoice"
             },
             {
-              "text" : " protocol,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "use an extension:",
+              "text" : " after the type:",
               "type" : "text"
             }
           ],
@@ -6176,12 +7550,9 @@
         },
         {
           "code" : [
-            "struct FileDescriptor {",
-            "    let rawValue: CInt",
-            "}",
-            "",
-            "@available(*, unavailable)",
-            "extension FileDescriptor: Sendable { }"
+            "struct FileDescriptor: ~Sendable {",
+            "    let rawValue: Int",
+            "}"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -6189,7 +7560,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The code above shows part of a wrapper around POSIX file descriptors.",
+              "text" : "For more information about",
               "type" : "text"
             },
             {
@@ -6197,7 +7568,7 @@
               "type" : "text"
             },
             {
-              "text" : "Even though interface for file descriptors uses integers",
+              "text" : "suppressing an implicit conformance to a protocol,",
               "type" : "text"
             },
             {
@@ -6205,80 +7576,16 @@
               "type" : "text"
             },
             {
-              "text" : "to identify and interact with open files,",
+              "text" : "see ",
               "type" : "text"
             },
             {
-              "text" : " ",
-              "type" : "text"
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
-              "text" : "and integer values are sendable,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "a file descriptor isn’t safe to send across concurrency domains.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "In the code above,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the ",
-              "type" : "text"
-            },
-            {
-              "code" : "FileDescriptor",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is a structure",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "that meets the criteria to be implicitly sendable.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "However, the extension makes its conformance to ",
-              "type" : "text"
-            },
-            {
-              "code" : "Sendable",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " unavailable,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "preventing the type from being sendable.",
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -6305,7 +7612,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -6329,6 +7636,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/concurrency#Unstructured-Concurrency"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Implicit-Conformance-to-a-Protocol": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+  "kind" : "section",
+  "title" : "Implicit Conformance to a Protocol",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/protocols#Implicit-Conformance-to-a-Protocol"
+},
 "https://developer.apple.com/documentation/swift/asyncsequence": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/asyncsequence",
   "title" : "AsyncSequence",
@@ -6340,6 +7657,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/asyncsequence"
+},
+"https://developer.apple.com/documentation/swift/mainactor": {
+  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/mainactor",
+  "title" : "MainActor",
+  "titleInlineContent" : [
+    {
+      "code" : "MainActor",
+      "type" : "codeVoice"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/mainactor"
 },
 "https://developer.apple.com/documentation/swift/sendable": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/sendable",

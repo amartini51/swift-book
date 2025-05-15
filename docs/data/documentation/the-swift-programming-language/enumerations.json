@@ -18,6 +18,7 @@
   },
   "kind" : "article",
   "metadata" : {
+    "role" : "article",
     "title" : "Enumerations"
   },
   "primaryContentSections" : [
@@ -2174,6 +2175,186 @@
           "type" : "codeListing"
         },
         {
+          "inlineContent" : [
+            {
+              "text" : "When you’re matching just one case of an enumeration —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "for example,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to extract its associated value —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you can use an ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statement",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "instead of writing a full switch statement.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Here’s what it looks like:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "if case .qrCode(let productCode) = productBarcode {",
+            "    print(\"QR code: \\(productCode).\")",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Just like in the switch statement earlier,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "productBarcode",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " variable is matched against",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the pattern ",
+              "type" : "text"
+            },
+            {
+              "code" : ".qrCode(let productCode)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " here.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "And as in the switch case,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "writing ",
+              "type" : "text"
+            },
+            {
+              "code" : "let",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " extracts the associated value as a constant.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For more information about ",
+              "type" : "text"
+            },
+            {
+              "code" : "if",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : "-",
+              "type" : "text"
+            },
+            {
+              "code" : "case",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " statements,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Patterns",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Raw-Values",
           "level" : 2,
           "text" : "Raw Values",
@@ -2358,89 +2539,93 @@
           "type" : "paragraph"
         },
         {
-          "content" : [
+          "inlineContent" : [
             {
-              "inlineContent" : [
-                {
-                  "text" : "Raw values are ",
-                  "type" : "text"
-                },
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "not",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "emphasis"
-                },
-                {
-                  "text" : " the same as associated values.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "Raw values are set to prepopulated values",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "when you first define the enumeration in your code,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "like the three ASCII codes above.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "The raw value for a particular enumeration case is always the same.",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "Associated values are set when you create a new constant or variable",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "based on one of the enumeration’s cases,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "and can be different each time you do so.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
+              "text" : "Although you can use both raw values and associated values",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to give an enumeration an additional value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "it’s important to understand the difference between them.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You pick the raw value for an enumeration case",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when you define that enumeration case in your code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "such as the three ASCII codes above.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The raw value for a particular enumeration case is always the same.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In contrast,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "you pick associated values when you create a new constant or variable",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using one of the enumeration’s cases,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and you can pick a different value each time you do so.",
+              "type" : "text"
             }
           ],
-          "name" : "Note",
-          "style" : "note",
-          "type" : "aside"
+          "type" : "paragraph"
         },
         {
           "anchor" : "Implicitly-Assigned-Raw-Values",
@@ -3515,7 +3700,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6)",
+  "title" : "The Swift Programming Language (6.1)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -3532,6 +3717,16 @@
   "title" : "Control Flow",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/controlflow"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow#Patterns": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Patterns",
+  "kind" : "section",
+  "title" : "Patterns",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/controlflow#Patterns"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Declarations#Failable-Initializers": {
   "abstract" : [
