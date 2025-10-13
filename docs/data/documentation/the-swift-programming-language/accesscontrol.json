@@ -1316,15 +1316,24 @@
               "type" : "text"
             },
             {
-              "text" : "one of the ",
+              "text" : "one of the modifiers listed in ",
               "type" : "text"
             },
             {
-              "code" : "open",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/AccessControl#Access-Levels",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
-              "text" : ", ",
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "such as ",
               "type" : "text"
             },
             {
@@ -1332,23 +1341,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : ", ",
-              "type" : "text"
-            },
-            {
-              "code" : "internal",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ", ",
-              "type" : "text"
-            },
-            {
-              "code" : "fileprivate",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ", or ",
+              "text" : " or ",
               "type" : "text"
             },
             {
@@ -1356,7 +1349,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " modifiers",
+              "text" : ",",
               "type" : "text"
             },
             {
@@ -1366,22 +1359,22 @@
             {
               "text" : "at the beginning of the entity’s declaration.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
         },
         {
           "code" : [
-            "open class SomeOpenClass {}",
             "public class SomePublicClass {}",
-            "internal class SomeInternalClass {}",
-            "fileprivate class SomeFilePrivateClass {}",
-            "private class SomePrivateClass {}",
-            "",
-            "open var someOpenVariable = 0",
-            "public var somePublicVariable = 0",
-            "internal let someInternalConstant = 0",
-            "fileprivate func someFilePrivateFunction() {}",
+            "internal struct SomeInternalStruct() {}",
             "private func somePrivateFunction() {}"
           ],
           "syntax" : "swift",
@@ -1390,7 +1383,67 @@
         {
           "inlineContent" : [
             {
-              "text" : "Unless otherwise specified, the default access level is internal,",
+              "text" : "The code above declares ",
+              "type" : "text"
+            },
+            {
+              "code" : "SomePublicClass",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as public,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "SomeInternalStruct",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as internal,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
+              "type" : "text"
+            },
+            {
+              "code" : "somePrivateFunction()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as private.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If you don’t write an explicit access level,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the default access level modifier is ",
+              "type" : "text"
+            },
+            {
+              "code" : "internal",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
               "type" : "text"
             },
             {
@@ -1415,39 +1468,15 @@
               "type" : "text"
             },
             {
-              "text" : "This means that ",
+              "text" : "For example, in the code below, ",
               "type" : "text"
             },
             {
-              "code" : "SomeInternalClass",
+              "code" : "SomeInternalStruct",
               "type" : "codeVoice"
             },
             {
-              "text" : " and ",
-              "type" : "text"
-            },
-            {
-              "code" : "someInternalConstant",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " can be written",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "without an explicit access-level modifier,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and will still have an access level of internal:",
+              "text" : " is implicitly internal:",
               "type" : "text"
             }
           ],
@@ -1455,8 +1484,7 @@
         },
         {
           "code" : [
-            "class SomeInternalClass {}              \/\/ implicitly internal",
-            "let someInternalConstant = 0            \/\/ implicitly internal"
+            "struct SomeInternalStruct() {}"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -4562,6 +4590,49 @@
           "name" : "Note",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -4584,9 +4655,19 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6.1)",
+  "title" : "The Swift Programming Language (6.2)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/AccessControl#Access-Levels": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/AccessControl#Access-Levels",
+  "kind" : "section",
+  "title" : "Access Levels",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/accesscontrol#Access-Levels"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/AccessControl#Custom-Types": {
   "abstract" : [
@@ -4649,6 +4730,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/packagedescription"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

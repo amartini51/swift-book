@@ -318,6 +318,22 @@
             {
               "text" : "these data races terminate code execution.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You use actors and isolation to protect against data races,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as described in this chapter.",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -829,7 +845,7 @@
               "type" : "text"
             },
             {
-              "text" : "the flow of execution is suspended",
+              "text" : "the flow of execution can be suspended",
               "type" : "text"
             },
             {
@@ -1511,122 +1527,6 @@
             }
           ],
           "type" : "unorderedList"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "You can explicitly insert a suspension point",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "by calling the ",
-              "type" : "text"
-            },
-            {
-              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/task\/3814840-yield",
-              "isActive" : true,
-              "type" : "reference"
-            },
-            {
-              "text" : " method.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "func generateSlideshow(forGallery gallery: String) async {",
-            "    let photos = await listPhotos(inGallery: gallery)",
-            "    for photo in photos {",
-            "        \/\/ ... render a few seconds of video for this photo ...",
-            "        await Task.yield()",
-            "    }",
-            "}"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Assuming the code that renders video is synchronous,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "it doesn’t contain any suspension points.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "The work to render video could also take a long time.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "However,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you can periodically call ",
-              "type" : "text"
-            },
-            {
-              "code" : "Task.yield()",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to explicitly add suspension points.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "Structuring long-running code this way",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "lets Swift balance between making progress on this task,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "and letting other tasks in your program make progress on their work.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
         },
         {
           "inlineContent" : [
@@ -3803,12 +3703,11 @@
         },
         {
           "code" : [
-            "let photos = await withTaskGroup(of: Optional<Data>.self) { group in",
+            "let photos = await withTaskGroup { group in",
             "    let photoNames = await listPhotos(inGallery: \"Summer Vacation\")",
             "    for name in photoNames {",
             "        let added = group.addTaskUnlessCancelled {",
-            "            guard !Task.isCancelled else { return nil }",
-            "            return await downloadPhoto(named: name)",
+            "            Task.isCancelled ? nil : await downloadPhoto(named: name)",
             "        }",
             "        guard added else { break }",
             "    }",
@@ -4268,13 +4167,22 @@
             {
               "text" : "but you’re also completely responsible for their correctness.",
               "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To create an unstructured task",
+              "type" : "text"
             },
             {
               "text" : " ",
               "type" : "text"
             },
             {
-              "text" : "To create an unstructured task that runs on the current actor,",
+              "text" : "that runs similarly to the surrounding code,",
               "type" : "text"
             },
             {
@@ -4299,14 +4207,37 @@
               "type" : "text"
             },
             {
-              "text" : "To create an unstructured task that’s not part of the current actor,",
+              "text" : "The new task defaults to running with",
               "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the same actor isolation, priority, and task-local state as the current task.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To create an unstructured task",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that’s more independent from the surrounding code,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
             {
               "text" : "known more specifically as a ",
               "type" : "text"
@@ -4338,7 +4269,23 @@
               "type" : "reference"
             },
             {
-              "text" : " class method.",
+              "text" : " static method.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The new task defaults to running without any actor isolation",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and doesn’t inherit the current task’s priority or task-local state.",
               "type" : "text"
             },
             {
@@ -4398,6 +4345,254 @@
           "type" : "paragraph"
         },
         {
+          "anchor" : "Isolation",
+          "level" : 2,
+          "text" : "Isolation",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The previous sections discuss approaches for splitting up concurrent work.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "That work can involve changing shared data, such as an app’s UI.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If different parts of your code can modify the same data at the same time,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "that risks creating a data race.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift protects you from data races in your code:",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Whenever you read or modify a piece of data,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift ensures that no other code is modifying it concurrently.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This guarantee is called ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "data isolation",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "There are three main ways to isolate data:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Immutable data is always isolated.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "Because you can’t modify a constant,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "there’s no risk of other code modifying a constant",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "at the same time you’re reading it.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Data that’s referenced by only the current task is always isolated.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "A local variable is safe to read and write",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "because no code outside the task has a reference to that memory,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "so no other code can modify that data.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "In addition,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "if you capture the variable in a closure,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "Swift ensures that the closure isn’t used concurrently.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Data that’s protected by an actor is isolated",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "if the code accessing that data is also isolated to the actor.",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "If the current function is isolated to an actor,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "it’s safe to read and write data that’s protected by that actor",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "because any other code that’s isolated to that same actor",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "must wait its turn before running.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "orderedList"
+        },
+        {
           "anchor" : "The-Main-Actor",
           "level" : 2,
           "text" : "The Main Actor",
@@ -4406,7 +4601,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The previous sections discuss approaches for dividing up concurrent work.",
+              "text" : "An actor is an object that protects access to mutable data",
               "type" : "text"
             },
             {
@@ -4414,7 +4609,7 @@
               "type" : "text"
             },
             {
-              "text" : "In some cases,",
+              "text" : "by forcing code to take turns accessing that data.",
               "type" : "text"
             },
             {
@@ -4422,104 +4617,7 @@
               "type" : "text"
             },
             {
-              "text" : "after divided-up work finishes,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you also need to join execution back together",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to do some synchronous work model.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "For example,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "when an app updates its user interface,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "changes need to be performed one at a time,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "with each update completing before the next one begins,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "to prevent data races.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "UI updates can also come from many places in your code,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "so grouping all UI-related code on a single type",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "doesn’t work very well.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "To serialize concurrent work like this,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you can use the ",
+              "text" : "The most important actor in many programs is the ",
               "type" : "text"
             },
             {
@@ -4532,7 +4630,7 @@
               "type" : "emphasis"
             },
             {
-              "text" : ",",
+              "text" : ".",
               "type" : "text"
             },
             {
@@ -4540,16 +4638,39 @@
               "type" : "text"
             },
             {
-              "text" : "which is a shared instance of ",
+              "text" : "In an app,",
               "type" : "text"
             },
             {
-              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/mainactor",
-              "isActive" : true,
-              "type" : "reference"
+              "text" : " ",
+              "type" : "text"
             },
             {
-              "text" : ".",
+              "text" : "the main actor protects all of the data that’s used to show the UI.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The main actor takes turns rendering the UI,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "handling UI events,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and running code that you write that needs to query or update the UI.",
               "type" : "text"
             }
           ],
@@ -5071,12 +5192,11 @@
             {
               "text" : "but the code in this example doesn’t wait for the UI update.",
               "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
             {
               "text" : "You can also write ",
               "type" : "text"
@@ -6985,6 +7105,160 @@
           "type" : "paragraph"
         },
         {
+          "anchor" : "Global-Actors",
+          "level" : 2,
+          "text" : "Global Actors",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The main actor is a global singleton instance of the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/mainactor",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "An actor can normally have multiple instances,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "each of which provides independent isolation.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This is why you declare all of an actor’s isolated data",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as instance properties of that actor.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "However, because ",
+              "type" : "text"
+            },
+            {
+              "code" : "MainActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is singleton —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "there is only ever a single instance of this type —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the type alone is sufficient to identify the actor,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "allowing you to mark main-actor isolation using just an attribute.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This approach gives you more flexibility to organize your code",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in the way that works best for you.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can define your own singleton global actors",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "using the ",
+              "type" : "text"
+            },
+            {
+              "code" : "@globalActor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " attribute,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "as described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#globalActor",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Sendable-Types",
           "level" : 2,
           "text" : "Sendable Types",
@@ -7534,15 +7808,15 @@
               "type" : "text"
             },
             {
-              "text" : "write ",
+              "text" : "write an unavailable conformance to ",
               "type" : "text"
             },
             {
-              "code" : "~Sendable",
+              "code" : "Sendable",
               "type" : "codeVoice"
             },
             {
-              "text" : " after the type:",
+              "text" : ":",
               "type" : "text"
             }
           ],
@@ -7550,9 +7824,12 @@
         },
         {
           "code" : [
-            "struct FileDescriptor: ~Sendable {",
+            "struct FileDescriptor {",
             "    let rawValue: Int",
-            "}"
+            "}",
+            "",
+            "@available(*, unavailable)",
+            "extension FileDescriptor: Sendable {}"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -7560,7 +7837,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "For more information about",
+              "text" : "You can also use an unavailable conformance",
               "type" : "text"
             },
             {
@@ -7568,7 +7845,7 @@
               "type" : "text"
             },
             {
-              "text" : "suppressing an implicit conformance to a protocol,",
+              "text" : "to suppress implicit conformance to a protocol,",
               "type" : "text"
             },
             {
@@ -7576,7 +7853,7 @@
               "type" : "text"
             },
             {
-              "text" : "see ",
+              "text" : "as discussed in ",
               "type" : "text"
             },
             {
@@ -7590,6 +7867,49 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -7612,9 +7932,19 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6.1)",
+  "title" : "The Swift Programming Language (6.2)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Attributes#globalActor": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Attributes#globalActor",
+  "kind" : "section",
+  "title" : "globalActor",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/attributes#globalActor"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ClassesAndStructures#Classes-Are-Reference-Types": {
   "abstract" : [
@@ -7718,18 +8048,6 @@
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/task\/3814826-checkcancellation"
 },
-"https://developer.apple.com/documentation/swift/task/3814840-yield": {
-  "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/task\/3814840-yield",
-  "title" : "Task.yield()",
-  "titleInlineContent" : [
-    {
-      "code" : "Task.yield()",
-      "type" : "codeVoice"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/documentation\/swift\/task\/3814840-yield"
-},
 "https://developer.apple.com/documentation/swift/task/detached(priority:operation:)-d24l": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/swift\/task\/detached(priority:operation:)-d24l",
   "title" : "Task.detached(priority:operation:)",
@@ -7825,6 +8143,18 @@
   ],
   "type" : "link",
   "url" : "https:\/\/developer.apple.com\/documentation\/swift\/withtaskcancellationhandler(operation:oncancel:isolation:)"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

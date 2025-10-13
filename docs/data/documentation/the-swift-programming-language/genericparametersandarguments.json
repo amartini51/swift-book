@@ -483,6 +483,263 @@
           "type" : "codeListing"
         },
         {
+          "anchor" : "Integer-Generic-Parameters",
+          "level" : 3,
+          "text" : "Integer Generic Parameters",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "An ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "integer generic parameter",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "acts as a placeholder for an integer value rather than a type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It has the following form:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let <#type parameter#>: <#type>"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "type",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " must be the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " type from the Swift standard library,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or a type alias or generic type that resolves to ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The value you provide for an integer generic parameter",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "must be either an integer literal",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or another integer generic parameter from the enclosing generic context.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct SomeStruct<let x: Int> { }",
+            "let a: SomeStruct<2>  \/\/ OK: integer literal",
+            "",
+            "struct AnotherStruct<let x: Int, T, each U> {",
+            "    let b: SomeStruct<x>  \/\/ OK: another integer generic parameter",
+            "",
+            "    static let c = 42",
+            "    let d: SomeStruct<c>  \/\/ Error: constant",
+            "",
+            "    let e: SomeStruct<T>  \/\/ Error: type generic parameter",
+            "    let f: SomeStruct<U>  \/\/ Error: pack generic parameter",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The value of an integer generic parameter on a type",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is accessible as a static constant member of that type,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "with the same visibility as the type itself.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The value of an integer generic parameter on a function",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is accessible as a constant from within the function.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "When used in an expression,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "these constants have type ",
+              "type" : "text"
+            },
+            {
+              "code" : "Int",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "print(a.x)  \/\/ Prints \"4\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The value of an integer generic parameter can be inferred",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "from the types of the arguments you use",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when initializing the type or calling the function.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct AnotherStruct<let y: Int> {",
+            "    var s: SomeStruct<y>",
+            "}",
+            "func someFunction<let z: Int>(s: SomeStruct<z>) {",
+            "    print(z)",
+            "}",
+            "",
+            "let s1 = SomeStruct<12>()",
+            "let s2 = AnotherStruct(s: s1)  \/\/ AnotherStruct.y is inferred to be 12.",
+            "someFunction(s: s1)  \/\/ Prints \"12\""
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
           "anchor" : "Generic-Where-Clauses",
           "level" : 3,
           "text" : "Generic Where Clauses",
@@ -751,6 +1008,14 @@
             {
               "text" : "This constraint ensures that each element of the sequence is equatable.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Integer generic parameters can’t have protocol or superclass requirements.",
+              "type" : "text"
             }
           ],
           "type" : "paragraph"
@@ -823,6 +1088,46 @@
             },
             {
               "text" : "and that the elements of both sequences must be of the same type.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For integer generic parameters,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "==",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " operator specifies a requirement for their values.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "You can require two integer generic parameters to have the same value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or you can require a specific integer value for the integer generic parameter.",
               "type" : "text"
             }
           ],
@@ -1380,6 +1685,79 @@
                     }
                   ],
                   "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "generic-parameter",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "let",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "type-name",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : ":",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "type",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " \\",
+                  "type" : "text"
                 }
               ],
               "type" : "paragraph"
@@ -1697,6 +2075,62 @@
                     }
                   ],
                   "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "\n",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "same-type-requirement",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " → ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "type-identifier",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "==",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "signed-integer-literal",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
                 }
               ],
               "type" : "paragraph"
@@ -1810,7 +2244,23 @@
               "type" : "text"
             },
             {
-              "text" : "a corresponding type parameter in the generic parameter clause of a generic type.",
+              "text" : "a corresponding type parameter in the generic parameter clause of a generic type —",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "or, for an integer generic parameter,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "a integer value that replaces that integer generic parameter.",
               "type" : "text"
             },
             {
@@ -2247,12 +2697,68 @@
                     }
                   ],
                   "type" : "emphasis"
+                },
+                {
+                  "text" : " | ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "signed-integer-literal",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
                 }
               ],
               "type" : "paragraph"
             }
           ],
           "name" : "Grammar of a generic argument clause",
+          "style" : "note",
+          "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
           "style" : "note",
           "type" : "aside"
         }
@@ -2277,7 +2783,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6.1)",
+  "title" : "The Swift Programming Language (6.2)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -2314,6 +2820,18 @@
   "title" : "Generic Where Clauses",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/generics#Generic-Where-Clauses"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

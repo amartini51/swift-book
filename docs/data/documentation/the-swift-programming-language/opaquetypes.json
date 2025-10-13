@@ -1133,8 +1133,9 @@
               "type" : "text"
             },
             {
-              "text" : "doc:OpaqueTypes#The-Problem-That-Opaque-Types-Solve",
-              "type" : "text"
+              "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#The-Problem-that-Opaque-Types-Solve",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
               "text" : " section earlier in this chapter.",
@@ -3812,6 +3813,49 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -3834,7 +3878,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6.1)",
+  "title" : "The Swift Programming Language (6.2)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -3852,6 +3896,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/generics"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/OpaqueTypes#The-Problem-that-Opaque-Types-Solve": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/OpaqueTypes#The-Problem-that-Opaque-Types-Solve",
+  "kind" : "section",
+  "title" : "The Problem that Opaque Types Solve",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/opaquetypes#The-Problem-that-Opaque-Types-Solve"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TypeCasting#Downcasting": {
   "abstract" : [
 
@@ -3861,6 +3915,18 @@
   "title" : "Downcasting",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/typecasting#Downcasting"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }

@@ -29,6 +29,220 @@
             {
               "inlineContent" : [
                 {
+                  "text" : "2025-06-09",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Updated for Swift 6.2.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Memory-Safety",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about issues that Swift helps you prevent.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Patterns",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "if case",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " syntax.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added information about the main actor, isolation, and global actors",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Concurrency",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " chapter.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information information about conforming to common protocols,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "without writing the conformance explicitly,",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and suppressing implicit conformance.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Added the ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Generics#Implicit-Constraints",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " section",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "with information about generic constraints",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "that require conformance to common protocols.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "inlineContent" : [
+                {
                   "text" : "2025-03-31",
                   "type" : "text"
                 }
@@ -12370,6 +12584,49 @@
             }
           ],
           "type" : "unorderedList"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested with final operating system software.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Learn more about using ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Beta Software",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -12392,7 +12649,7 @@
   "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language",
   "kind" : "article",
   "role" : "collection",
-  "title" : "The Swift Programming Language (6.1)",
+  "title" : "The Swift Programming Language (6.2)",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language"
 },
@@ -13019,6 +13276,16 @@
   "title" : "For-In Loops",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/controlflow#For-In-Loops"
+},
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow#Patterns": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/ControlFlow#Patterns",
+  "kind" : "section",
+  "title" : "Patterns",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/controlflow#Patterns"
 },
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/ControlFlow#Repeat-While": {
   "abstract" : [
@@ -13688,6 +13955,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/generics#Generic-Where-Clauses"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Generics#Implicit-Constraints": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Generics#Implicit-Constraints",
+  "kind" : "section",
+  "title" : "Implicit Constraints",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/generics#Implicit-Constraints"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Generics#Using-a-Protocol-in-Its-Associated-Types-Constraints": {
   "abstract" : [
 
@@ -14138,6 +14415,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/protocols#Failable-Initializer-Requirements"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Implicit-Conformance-to-a-Protocol": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/Protocols#Implicit-Conformance-to-a-Protocol",
+  "kind" : "section",
+  "title" : "Implicit Conformance to a Protocol",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/protocols#Implicit-Conformance-to-a-Protocol"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/Protocols#Initializer-Requirements": {
   "abstract" : [
 
@@ -14500,6 +14787,16 @@
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/thebasics#Implicitly-Unwrapped-Optionals"
 },
+"doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TheBasics#Memory-Safety": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/org.swift.tspl\/documentation\/The-Swift-Programming-Language\/TheBasics#Memory-Safety",
+  "kind" : "section",
+  "title" : "Memory Safety",
+  "type" : "topic",
+  "url" : "\/documentation\/the-swift-programming-language\/thebasics#Memory-Safety"
+},
 "doc://org.swift.tspl/documentation/The-Swift-Programming-Language/TheBasics#Optional-Binding": {
   "abstract" : [
 
@@ -14613,6 +14910,18 @@
   "title" : "Self Type",
   "type" : "topic",
   "url" : "\/documentation\/the-swift-programming-language\/types#Self-Type"
+},
+"https://developer.apple.com/support/beta-software/": {
+  "identifier" : "https:\/\/developer.apple.com\/support\/beta-software\/",
+  "title" : "Apple’s beta software",
+  "titleInlineContent" : [
+    {
+      "text" : "Apple’s beta software",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/developer.apple.com\/support\/beta-software\/"
 }
 }
 }
