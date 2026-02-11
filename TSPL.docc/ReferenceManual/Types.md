@@ -38,6 +38,7 @@ and describes the type inference behavior of Swift.
 >
 > *type* → *function-type* \
 > *type* → *array-type* \
+> *type* → *sized-array-type* \
 > *type* → *dictionary-type* \
 > *type* → *type-identifier* \
 > *type* → *tuple-type* \
@@ -597,6 +598,44 @@ see <doc:CollectionTypes#Arrays>.
 > Grammar of an array type:
 >
 > *array-type* → **`[`** *type* **`]`**
+
+## Sized Array Type
+
+The Swift language provides the following syntactic sugar for the Swift standard library
+`InlineArray<Count, Element>` type:
+
+```swift
+[<#expression#> of <#type#>]
+```
+
+In other words, the following two declarations are equivalent:
+
+```swift
+let sizeOfThreeArray: InlineArray<3, String> = ["Alex", "Brian", "Dave"]
+let sizeOfThreeArray: [3 of String] = ["Alex", "Brian", "Dave"]
+```
+
+<!--
+  - test: `sized-array-literal`
+
+  ```swifttest
+  >> let someArray1: InlineArray<3, String> = ["Alex", "Brian", "Dave"]
+  >> let someArray2: [3 of String] = ["Alex", "Brian", "Dave"]
+  >> assert(someArray1 == someArray2)
+  ```
+-->
+
+In both cases, the constant `sizeOfThreeArray`
+is declared as a sized array of three strings. The elements of a sized array can be accessed
+through subscripting by specifying a valid index value in square brackets:
+`sizeOfThreeArray[0]` refers to the element at index 0, `"Alex"`.
+
+For a detailed discussion of the Swift standard library `InlineArray` type,
+see <doc:CollectionTypes#InlineArray>.
+
+> Grammar of a sized array type:
+>
+> *sized-array-type* → **`[`** *expression* of *type* **`]`**
 
 ## Dictionary Type
 

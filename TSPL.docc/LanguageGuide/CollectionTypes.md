@@ -606,6 +606,77 @@ for (index, value) in shoppingList.enumerated() {
 
 For more about the `for`-`in` loop, see <doc:ControlFlow#For-In-Loops>.
 
+## InlineArray
+
+If you have known values and want a more performant data structure than
+`Array`, you can use an `InlineArray`. Swift's `InlineArray` is a specialized
+array which provides a fixed-size contiguously inline allocated list.
+
+You can use an inline array instead of an array when all values are
+known when creating the inline array.
+
+You can access elements using the same properties, methods,
+and subscript syntax as `Array`.
+
+### InlineArray Type Shorthand Syntax
+
+The type of a Swift sized array is written 
+in full as `InlineArray<Count, Element>`,
+where `Count` is the number of elements in the sized array and
+`Element` is the type of values the sized array is allowed to store.
+You can also write the type of a sized array in shorthand form as `[Count of Element]`.
+Although the two forms are functionally identical,
+the shorthand form is preferred.
+
+### Creating an InlineArray with an Array Literal
+
+You can create an `InlineArray` using array literals and explicit typing.
+
+```
+let elements: [4 of Int] = [1, 2, 3, 4]
+```
+
+### Creating an InlineArray with a Default Value
+
+Swift's `InlineArray` type also provides
+an initializer for creating an sized array
+with all of its values set to the same default value.
+You pass this initializer
+a default value of the appropriate type (called `repeating`). 
+Unlike the similar initializer of `Array`, the count is part of the type and
+not a parameter.
+
+```swift
+let sameStrings: [4 of String] = .init(repeating: "same")
+let sameNumbers = [4 of Int](repeating: 1)
+```
+
+### Creating an InlineArray Using Closures
+
+You can also create a sized array using initializers that
+get passed a closure which will be used to initialize each element. 
+There is an initializer for creating a sized array 
+where each value is determined by the element's index.
+You pass this initializer a closure which takes the current index and returns an
+initialized element:
+ 
+
+```swift
+let indexBasedValues = [4 of Int] { $0 + 10 }
+// indexBasedValues equals [10, 11, 12, 13]
+```
+
+There is also an initializer which takes
+the first element and a closure which uses
+the preceding element and returns an initialized element:
+
+```swift
+let multiplyPreviousByThree = [4 of Int](first: 1, next: {
+    $0 * 3
+})
+// multiplyPreviousByThree equals [1, 3, 9, 27]
+```
+
 ## Sets
 
 A *set* stores distinct values of the same type
