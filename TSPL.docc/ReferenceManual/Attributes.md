@@ -2501,6 +2501,19 @@ that inherits from `NSManagedObject`.
   ```
 -->
 
+### retroactive
+
+Adding conformance in an extension to a protocol declared in a different
+module can result in undefined behavior and will produce a compiler warning.
+
+Apply this attribute to the type extension adding protocol conformance 
+to suppress the compiler warning.
+
+With a few exceptions, the extension can apply this 
+attribute to a type if the following criteria are met:
+- The type being extended is declared in a different module.
+- The protocol, for which conformance is added, is declared in a different module.
+
 ### testable
 
 Apply this attribute to an `import` declaration
