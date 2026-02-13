@@ -3091,6 +3091,7 @@ see <doc:Declarations#Protocol-Subscript-Declaration>.
 > Grammar of a subscript expression:
 >
 > *subscript-expression* → *postfix-expression* **`[`** *function-call-argument-list* **`]`**
+> *subscript-expression* → *postfix-expression* **`[`** **`]`**
 
 <!--
   - test: `subscripts-can-take-operators`
