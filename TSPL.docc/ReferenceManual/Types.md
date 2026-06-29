@@ -599,24 +599,31 @@ see <doc:CollectionTypes#Arrays>.
 >
 > *array-type* → **`[`** *type* **`]`**
 
-## Sized Array Type
+## Inline Array Type
 
-The Swift language provides the following syntactic sugar for the Swift standard library
-`InlineArray<Count, Element>` type:
+The Swift language provides the following syntactic sugar
+for the Swift standard library `InlineArray<Count, Element>` type:
 
 ```swift
 [<#expression#> of <#type#>]
 ```
 
+The *expression* specifies the value of `Count` for the inline array.
+It must be an integer literal or an integer type parameter.
+<!--
+The above restriction comes from InlineArray;
+if the stdlib type becomes more flexible, update this too.
+-->
+
 In other words, the following two declarations are equivalent:
 
 ```swift
-let sizeOfThreeArray: InlineArray<3, String> = ["Alex", "Brian", "Dave"]
-let sizeOfThreeArray: [3 of String] = ["Alex", "Brian", "Dave"]
+let someArray: InlineArray<3, String> = ["Alex", "Brian", "Dave"]
+let someArray: [3 of String] = ["Alex", "Brian", "Dave"]
 ```
 
 <!--
-  - test: `sized-array-literal`
+  - test: `inline-array-literal`
 
   ```swifttest
   >> let someArray1: InlineArray<3, String> = ["Alex", "Brian", "Dave"]
@@ -626,16 +633,17 @@ let sizeOfThreeArray: [3 of String] = ["Alex", "Brian", "Dave"]
 -->
 
 In both cases, the constant `sizeOfThreeArray`
-is declared as a sized array of three strings. The elements of a sized array can be accessed
+is declared as an inline array of three strings.
+You access the elements of an inline array
 through subscripting by specifying a valid index value in square brackets:
 `sizeOfThreeArray[0]` refers to the element at index 0, `"Alex"`.
 
 For a detailed discussion of the Swift standard library `InlineArray` type,
 see <doc:CollectionTypes#InlineArray>.
 
-> Grammar of a sized array type:
+> Grammar of an inline array type:
 >
-> *sized-array-type* → **`[`** *expression* of *type* **`]`**
+> *inline-array-type* → **`[`** *expression* of *type* **`]`**
 
 ## Dictionary Type
 
