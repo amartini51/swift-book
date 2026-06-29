@@ -620,7 +620,7 @@ and subscript syntax as `Array`.
 
 ### InlineArray Type Shorthand Syntax
 
-The type of a Swift sized array is written 
+The type of a Swift sized array is written
 in full as `InlineArray<Count, Element>`,
 where `Count` is the number of elements in the sized array and
 `Element` is the type of values the sized array is allowed to store.
@@ -642,7 +642,7 @@ Swift's `InlineArray` type also provides
 an initializer for creating an sized array
 with all of its values set to the same default value.
 You pass this initializer
-a default value of the appropriate type (called `repeating`). 
+a default value of the appropriate type (called `repeating`).
 Unlike the similar initializer of `Array`, the count is part of the type and
 not a parameter.
 
@@ -654,12 +654,11 @@ let sameNumbers = [4 of Int](repeating: 1)
 ### Creating an InlineArray Using Closures
 
 You can also create a sized array using initializers that
-get passed a closure which will be used to initialize each element. 
-There is an initializer for creating a sized array 
+get passed a closure which will be used to initialize each element.
+There is an initializer for creating a sized array
 where each value is determined by the element's index.
 You pass this initializer a closure which takes the current index and returns an
 initialized element:
- 
 
 ```swift
 let indexBasedValues = [4 of Int] { $0 + 10 }
