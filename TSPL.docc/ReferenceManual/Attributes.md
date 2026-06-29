@@ -2503,16 +2503,32 @@ that inherits from `NSManagedObject`.
 
 ### retroactive
 
-Adding conformance in an extension to a protocol declared in a different
-module can result in undefined behavior and will produce a compiler warning.
+Apply this attribute to an extension that adds retroactive protocol conformance
+to indicate that you understand the risks and suppress the compiler warning.
+A type's conformance to a protocol is considered *retroactive*
+if all of the following are true:
 
-Apply this attribute to the type extension adding protocol conformance 
-to suppress the compiler warning.
+- The type's protocol conformance is added in an extension.
+- The type is defined in a different module from the extension.
+- The protocol is defined in a different module from the extension.
+- If the protocol is defined in a Clang module,
+  the extension isn't defined in a Swift overlay of the module
+  that defines the protocol.
+- If the protocol is declared or imported through a bridging header,
+  the type being extended doesn't belong to any other module.
 
-With a few exceptions, the extension can apply this 
-attribute to a type if the following criteria are met:
-- The type being extended is declared in a different module.
-- The protocol, for which conformance is added, is declared in a different module.
+<!-- TR: How does a type "belong" to a module?  Borrowed wording from SE. -->
+
+When you use a retroactive conformance,
+you take on responsibility for ensuring that
+the extended type has at most one conformance to that protocol,
+both now and in the future.
+
+> Warning:
+> Retroactive protocol conformance can result in undefined behavior.
+> If a type has multiple conformances to the same protocol,
+> you can't predict or control which implementation is used.
+
 
 ### testable
 
