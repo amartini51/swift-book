@@ -507,14 +507,14 @@ that meet the following criteria can be back deployed:
 
 ### c
 
-Apply this attribute to any declaration that can be represented in C ---
-for example, global functions,
+Apply this attribute to any declaration that can be represented in C,
+such as global functions
 and nongeneric enumerations (constrained to integer raw-value types).
 The `c` attribute tells the compiler
 that a declaration is available to use in C code.
 
-If you apply the `c` attribute to an enumeration,
-each enumeration case is exposed to C code
+Applying the `c` attribute to an enumeration
+exposes each enumeration case to C code
 as the concatenation of the enumeration name and the case name.
 The first letter of the case name is capitalized.
 For example, a case named `venus` in a Swift `Planet` enumeration
@@ -1079,7 +1079,7 @@ without changing the header file.
 #### Swift Implementation of Objective-C Declarations
 
 For declarations that are defined in an Objective-C header,
-apply both the `objc` and `implementation` attributes
+apply the `objc` and `implementation` attributes
 to an extension in Swift that provides the implementations.
 Other code in Swift treats these implementations
 as if they were implemented in Objective-C and imported into Swift.
@@ -1122,12 +1122,14 @@ a member implementation must meet the following requirements:
 - Its type matches the type of the declaration it implements.
   Types marked `_Nonnull` in Objective-C can be implemented in Swift
   either as non-optional or as an implicitly unwrapped optional.
-- Its error handling (`throws`) and concurrency (`async`)
-  matches the declaration it implements.
+- Its error handling (`throws`) matches the declaration it implements.
+- Its concurrency (`async`) matches the declaration it implements.
   For an Objective-C method that takes a completion handler as an argument,
-  it can match either the version imported as `async`
-  or the version imported with a closure.
-  However, you can't implement both versions.
+  which is imported into Swift
+  as both an `async` method and a method that takes a closure,
+  you can write a member implementation
+  that matches either method.
+  However, you can't implement both methods.
 - It isn't marked `final` or `override`.
 - Its access control level is `open`, `public`, `package`, or `internal`.
 - It doesn't have any other traits
@@ -1142,8 +1144,8 @@ If the Objective-C header doesn't specify a category,
 the declarations are part of the default category.
 When using this attribute to migrate Objective-C code into Swift,
 you either migrate one category at a time
-or you migrate individual methods by moving them between categories,
-which isn't source- or ABI-breaking.
+or you migrate individual methods by moving them between categories;
+migrating this way doesn't break source compatibility or ABI compatibility.
 For information about categories in Objective-C,
 see [Customizing Existing Classes][objc-category]
 in *Programming with Objective-C*.
@@ -1159,8 +1161,8 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Objec
 -->
 
 In addition to member implementations,
-you can also write the following declarations in the extension,
-which must not match a declaration in the Objective-C header:
+you can write the following declarations in the extension,
+but they can't match a declaration in the Objective-C header:
 
 - Overrides for superclass members.
   You mark these declarations with `override` as usual.
@@ -1181,11 +1183,12 @@ which must not match a declaration in the Objective-C header:
   For initializers, you apply the `nonobjc` attribute instead.
 
 The extension can include declarations for stored properties and initializers,
-which is an exception to the rule that these can't be declared in extensions.
+which is an exception to the rule that
+you can't declare stored properties or initializers in extensions.
 
-If you provide an argument to the `objc` attribute,
-the extension's members are placed in an Objective-C category with that name,
-which must match an category declared in the Objective-C header file.
+To specify an Objective-C category for an extension's members,
+write its name as an argument to the `objc` attribute.
+The name must match an category declared in the Objective-C header file.
 For example, if the header contains the following:
 
 ```objc
@@ -1206,7 +1209,7 @@ extension MyClass {
 #### Swift Implementation of C Declarations
 
 For a declaration that's defined in an C header,
-apply both the `c` and `implementation` attributes
+apply the `c` and `implementation` attributes
 to an declaration in Swift that provides the implementation.
 Other code in Swift treats these implementations
 as if they were implemented in C and imported into Swift.
